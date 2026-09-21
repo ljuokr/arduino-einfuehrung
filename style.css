@@ -143,6 +143,8 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
   align-items: start;
 }
 .media-copy .content-cell + .content-cell { margin: 0; }
+/* Verbindungen: kurze Beschriftungen mittig neben dem Bild */
+.page-verbindungen .media-copy { align-items: center; }
 .page-smart-textiles .media-copy:nth-child(2) img { max-width: 208px; }
 
 /* --- Aufgaben (aufklappbar, natives details): sanfte Karten --- */
@@ -276,7 +278,8 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
 .video-block {
   aspect-ratio: 16/9;
   width: min(100%, 760px);
-  background: #f3f3f3;
+  border-radius: 6px;
+  overflow: hidden;
 }
 .video-block iframe { width: 100%; height: 100%; border: 0; }
 .video-load {
@@ -286,10 +289,23 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 12px;
-  background: #f5f5f5;
-  border: 1px solid #ddd;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
   color: #646464;
+  transition: border-color 0.15s;
+}
+.video-load:hover { border-color: #087d84; }
+.video-load svg {
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  padding: 18px;
+  border-radius: 50%;
+  background: #087d84;
+  stroke: #fff;
+  fill: #fff;
 }
 .video-load span { font-weight: 700; color: #222; }
 .video-load small { color: #666; font-size: 14px; }

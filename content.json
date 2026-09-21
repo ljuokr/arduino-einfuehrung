@@ -103,7 +103,7 @@
       {
         "id": "h.461dd4f2f4126a3e_49",
         "accordion": true,
-        "title": "Arduino IDE Installieren und Arduino verbinden",
+        "title": "Arduino IDE installieren und Arduino verbinden",
         "anchor": "h.j85gfcxnlnj8",
         "cells": [
           {
@@ -446,7 +446,7 @@
       {
         "id": "h.6e871418926883c2_39",
         "accordion": true,
-        "title": "weitere Aufgaben",
+        "title": "Weitere Aufgaben",
         "anchor": "h.7jxze44tex1x",
         "cells": [
           {
@@ -1595,21 +1595,89 @@
         "gallery": false
       },
       {
-        "id": "h.461dd4f2f4126a3e_139",
+        "id": "fehlersuche-intro",
+        "anchor": "fehlersuche-intro",
         "accordion": false,
+        "gallery": false,
         "title": "",
-        "anchor": "",
         "cells": [
           {
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Fehlersuche</strong></p><p>Wer ein Programm erstellt, braucht in der Regel einen wesentlichen Teil der Zeit, um Fehler im Programmcode zu erkennen und zu korrigieren, oder um den Aufbau der Hardware anzupassen. Es gibt verschiedene Möglichkeiten, dies anzugehen, hier ein Vorschlag:</p><br/><p>Beim Überprüfen oder Hochladen kompiliert die Arduino IDE dein Programm und prüft dabei unter anderem die Syntax, also die Regeln der Programmiersprache (aber nicht die beabsichtigte Logik des Programmes). Wenn du in der Arduino IDE auf den Haken klickst, werden eventuelle Syntaxfehler angezeigt. Der häufigste Fehler ist, dass man ein Semikolon (;) vergisst. Weitere häufige Fehler sind: Klammern, die falsch gesetzt sind, Variablen, die nicht definiert sind, Libraries, die nicht im Kopf des Programmes eingebunden werden (siehe <a href=\"/arduino-programmieren\"><u>Arduino programmieren</u></a>). Wenn das Programm keine Syntaxfehler aufweist, können die folgenden Schritte durchgearbeitet werden.</p><br/><p><strong>Verbindungsfehler</strong></p><p>1. Überprüfe, ob das Arduino eingesteckt ist. Wenn eine LED leuchtet, ist das Arduino mit Strom versorgt.</p><br/><p>2. Überprüfe, ob du den richtigen Port und das richtige Board ausgewählt hast. Wird kein passender Port angezeigt, prüfe das USB-Datenkabel und die USB-Verbindung. Je nach Board kann auch ein fehlender Treiber die Ursache sein.</p><br/><p>3. Wenn du das Blink-Programm aus den Beispielen auf das Arduino laden kannst, weisst du, dass die Verbindung zwischen Computer und Arduino funktioniert.</p><br/><p><strong>Hardwarefehler</strong></p><p>4. Ist deine Hardware korrekt aufgebaut? Es kann Sinn machen, die einzelnen Hardwarekomponenten isoliert anzuschliessen. Also zum Beispiel zuerst nur die LED, dann nur den Lichtsensor und dann nur den Taster und die Funktion dieser Teilsysteme mit einem eigenen Programm anzusteuern.</p><br/><p><strong>Softwarefehler</strong></p><p>5. Fehler in der Programmlogik:</p><p>Wenn die einzelnen Systeme wie Sensor oder LED funktionieren, aber nicht das passiert, was passieren soll, liegt der Fehler wahrscheinlich in der Programmlogik. Dann kann es Sinn machen, die Programmlogik grafisch darzustellen, z. B. mit einem Flussdiagramm.</p><br/>"
+                "html": "<p>Wer ein Programm erstellt, braucht in der Regel einen wesentlichen Teil der Zeit, um Fehler im Programmcode zu erkennen und zu korrigieren, oder um den Aufbau der Hardware anzupassen. Es gibt verschiedene Möglichkeiten, dies anzugehen, hier ein Vorschlag:</p>"
               }
             ]
           }
-        ],
-        "gallery": false
+        ]
+      },
+      {
+        "id": "fehlersuche-syntax",
+        "anchor": "fehlersuche-syntax",
+        "accordion": true,
+        "gallery": false,
+        "title": "Syntaxfehler prüfen",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p>Beim Überprüfen oder Hochladen kompiliert die Arduino IDE dein Programm und prüft dabei unter anderem die Syntax, also die Regeln der Programmiersprache (aber nicht die beabsichtigte Logik des Programmes). Wenn du in der Arduino IDE auf den Haken klickst, werden eventuelle Syntaxfehler angezeigt.</p><p>Häufige Fehler:</p><ul><li><p>ein vergessenes Semikolon (;) - der häufigste Fehler</p></li><li><p>Klammern, die falsch gesetzt sind</p></li><li><p>Variablen, die nicht definiert sind</p></li><li><p>Libraries, die nicht im Kopf des Programmes eingebunden werden (siehe <a href=\"/arduino-programmieren\"><u>Arduino programmieren</u></a>)</p></li></ul><p>Wenn das Programm keine Syntaxfehler aufweist, können die folgenden Schritte durchgearbeitet werden.</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fehlersuche-verbindung",
+        "anchor": "fehlersuche-verbindung",
+        "accordion": true,
+        "gallery": false,
+        "title": "Verbindung prüfen",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<ol><li><p>Überprüfe, ob das Arduino eingesteckt ist. Wenn eine LED leuchtet, ist das Arduino mit Strom versorgt.</p></li><li><p>Überprüfe, ob du den richtigen Port und das richtige Board ausgewählt hast. Wird kein passender Port angezeigt, prüfe das USB-Datenkabel und die USB-Verbindung. Je nach Board kann auch ein fehlender Treiber die Ursache sein.</p></li><li><p>Wenn du das Blink-Programm aus den Beispielen auf das Arduino laden kannst, weisst du, dass die Verbindung zwischen Computer und Arduino funktioniert.</p></li></ol>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fehlersuche-hardware",
+        "anchor": "fehlersuche-hardware",
+        "accordion": true,
+        "gallery": false,
+        "title": "Hardware prüfen",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p>Ist deine Hardware korrekt aufgebaut? Es kann Sinn machen, die einzelnen Hardwarekomponenten isoliert anzuschliessen. Also zum Beispiel zuerst nur die LED, dann nur den Lichtsensor und dann nur den Taster und die Funktion dieser Teilsysteme mit einem eigenen Programm anzusteuern.</p>"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fehlersuche-logik",
+        "anchor": "fehlersuche-logik",
+        "accordion": true,
+        "gallery": false,
+        "title": "Programmlogik prüfen",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p>Wenn die einzelnen Systeme wie Sensor oder LED funktionieren, aber nicht das passiert, was passieren soll, liegt der Fehler wahrscheinlich in der Programmlogik. Dann kann es Sinn machen, die Programmlogik grafisch darzustellen, z. B. mit einem Flussdiagramm.</p>"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -1628,7 +1696,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><a href=\"https://www.bastelgarage.ch/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.bastelgarage.ch/</u></a> ;<a href=\"https://www.distrelec.ch/\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://www.distrelec.ch/</u></a> ;<a href=\"https://best.aliexpress.com/?lan=en\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://best.aliexpress.com/?lan=en</u><u><br/></u> </a><u> https://www.opitec.ch/technisches-zubehoer/</u></p><p>Mögliche Bezugsquellen für Elektronikmaterial.</p>"
+                "html": "<h1 id=\"bezugsquellen-titel\">Bezugsquellen  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Mögliche Bezugsquellen für Elektronikmaterial.</strong></p><ul><li><p><a href=\"https://www.bastelgarage.ch/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>bastelgarage.ch</u></a></p></li><li><p><a href=\"https://www.distrelec.ch/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>distrelec.ch</u></a></p></li><li><p><a href=\"https://best.aliexpress.com/?lan=en\" rel=\"noopener noreferrer\" target=\"_blank\"><u>aliexpress.com</u></a></p></li><li><p><a href=\"https://www.opitec.ch/technisches-zubehoer/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>opitec.ch/technisches-zubehoer</u></a></p></li></ul>"
               }
             ]
           }
@@ -1912,7 +1980,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Diese Seite befindet sich im Aufbau. Teile von Texten und Codes auf dieser Seite wurden mit ChatGPT-4o generiert und überarbeitet. Fragen oder Rückmeldungen können an <a href=\"mailto:lukas.jordi@phbern.ch\" rel=\"noopener noreferrer\" target=\"_blank\"><u>lukas.jordi@phbern.ch</u></a> gerichtet werden.</p><p>Lukas Jordi, Juni 2026</p>"
+                "html": "<h1 id=\"impressum-titel\">Impressum  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p>Teile von Texten und Codes auf dieser Seite wurden mit ChatGPT-4o generiert und überarbeitet. Fragen oder Rückmeldungen können an <a href=\"mailto:lukas.jordi@phbern.ch\" rel=\"noopener noreferrer\" target=\"_blank\"><u>lukas.jordi@phbern.ch</u></a> gerichtet werden.</p><p>Lukas Jordi, Juni 2026</p>"
               }
             ]
           }
