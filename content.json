@@ -193,7 +193,7 @@
               },
               {
                 "type": "html",
-                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Baue die Schaltung zu einem Wechselblinker um. Ergänze dazu eine zweite LED mit einem eigenen 220-Ω-Vorwiderstand in Reihe an Pin A0 und GND (Ground = 0 V).</p></li><li><p>Passe den Code an, damit ein Wechselblinker entsteht. Du musst dazu die drei Zeilen unten an der jeweils richtigen Stelle in den Code einfügen.</p></li></ul><br/>"
+                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Baue die Schaltung zu einem Wechselblinker um. Ergänze dazu eine zweite LED an Pin A0 und GND (Ground = 0 V).</p></li><li><p>Passe den Code an, damit ein Wechselblinker entsteht. Du musst dazu die drei Zeilen unten an der jeweils richtigen Stelle in den Code einfügen.</p></li></ul><br/>"
               },
               {
                 "type": "code",
@@ -210,14 +210,6 @@
                 "href": "",
                 "width": 1280,
                 "height": 570
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "type": "html",
-                "html": "<p>Hinweis: Verwende bei jeder externen LED einen passenden Vorwiderstand, auch bei kurzen Experimenten. Für die hier verwendeten LEDs am Arduino Uno eignet sich zum Beispiel ein Widerstand von 220 Ω in Reihe zur LED. Ergänze ihn auch dort, wo er im Bild fehlt.</p>"
               }
             ]
           }
@@ -345,10 +337,6 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Hinweis:</strong> Ergänze einen 220-Ω-Vorwiderstand in Reihe zur LED an Pin 11. Die Anschlussbeispiele verwenden ein Arduino Uno mit 5-V-Logik. Bei anderen Boards gelten deren Pin- und Spannungsangaben.</p>"
-              },
-              {
-                "type": "html",
                 "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino</p></li></ul><br/>"
               },
               {
@@ -386,7 +374,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Verbinde folgende Komponenten: </p></li></ul><p>LED mit einem 220-Ω-Vorwiderstand in Reihe zwischen Pin 12 und GND</p><p>Touch-Sensor auf GND, VCC und Pin 11</p><ul><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Verbinde folgende Komponenten: </p></li></ul><p>LED auf GND und Pin 12</p><p>Touch-Sensor auf GND, VCC und Pin 11</p><ul><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/><br/>"
               },
               {
                 "type": "code",
@@ -531,7 +519,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Starte die Simulation, beobachte, was passiert und stoppe sie wieder. </p><br/><p><strong>Aufgabe</strong></p><ul><li><p>Erstelle einen Wechselblinker: Schliesse am Anschluss 6 eine weitere LED mit einem eigenen 220-Ω-Vorwiderstand in Reihe an, verwende dazu den Block <em>Anschluss </em><em>6</em><em> </em><em>auf</em><em> HOCH</em> stellen.</p></li><li><p>Füge eine Schlaufe (zu finden unter Steuerung) in das Programm ein und variiere mit dieser den Rhythmus.</p></li></ul>"
+                "html": "<p>Starte die Simulation, beobachte, was passiert und stoppe sie wieder. </p><br/><p><strong>Aufgabe</strong></p><ul><li><p>Erstelle einen Wechselblinker: Schliesse am Anschluss 6 eine weitere LED an, verwende dazu den Block <em>Anschluss </em><em>6</em><em> </em><em>auf</em><em> HOCH</em> stellen.</p></li><li><p>Füge eine Schlaufe (zu finden unter Steuerung) in das Programm ein und variiere mit dieser den Rhythmus.</p></li></ul>"
               }
             ]
           }
@@ -1832,7 +1820,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Verbinde einen digitalen Ausgang des LilyPad über einen 220-Ω-Vorwiderstand mit der Anode (langes Beinchen) einer roten LED. Verbinde die Kathode (kurzes Beinchen) mit GND. Im Originalfoto fehlt der Widerstand, ergänze ihn beim Aufbau. Jede weitere einzelne LED braucht einen eigenen Vorwiderstand. Bei einem fertigen LilyPad-LED-Modul kann dieser bereits eingebaut sein. Teste den Aufbau mit dem Code, den du unter Datei / Beispiele / Basics / Blink findest. Allenfalls musst du die Angaben zum Pin entsprechend deinem Aufbau anpassen. Erweitere dann Code und Aufbau um eine zweite LED.</p>"
+                "html": "<p>Verbinde ein LilyPad mit einer LED. Teste den Aufbau mit dem Code, den du unter Datei / Beispiele / Basics / Blink findest. Allenfalls musst du die Angaben zum Pin entsprechend deinem Aufbau anpassen. Erweitere dann Code und Aufbau um eine zweite LED.</p>"
               }
             ]
           },
