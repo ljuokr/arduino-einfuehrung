@@ -1,0 +1,418 @@
+/* Arduino-Einfuehrung - Gestaltung. Wird von build.py in arduino.html eingebettet. */
+
+/* --- Grundlagen --- */
+*, *::before, *::after { box-sizing: border-box; }
+html {
+  font-family: Lato, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  background: #fff;
+  color: #222;
+  display: flex;
+  min-height: 100vh;
+}
+button { cursor: pointer; font: inherit; }
+button, a, input { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, input:focus-visible,
+pre:focus-visible, summary:focus-visible {
+  outline: 2px solid #087d84;
+  outline-offset: 4px;
+}
+[id] { scroll-margin-top: 24px; }
+[hidden] { display: none !important; }
+
+/* --- Navigation links --- */
+.site-sidebar {
+  width: 248px;
+  flex: 0 0 248px;
+  border-right: 1px solid #ddd;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 100vh;
+  overflow-y: auto;
+}
+.brand {
+  margin: 0 18px;
+  padding: 65px 10px 24px;
+  border-bottom: 2px solid #949494;
+  text-align: center;
+}
+.brand a {
+  font-size: 24px;
+  font-weight: 900;
+  color: #080808;
+  text-decoration: none;
+}
+.site-navigation { padding: 25px 24px 24px 39px; }
+.site-navigation a {
+  display: block;
+  color: #626262;
+  font-weight: 700;
+  padding: 9px 0;
+  text-decoration: none;
+  line-height: 1.55;
+}
+.site-navigation a:hover { color: #000; }
+.site-navigation a[aria-current='page'] { color: #252525; }
+
+/* --- Hauptbereich --- */
+.site-main { flex: 1; min-width: 0; }
+.utility-bar { height: 0; position: relative; z-index: 10; }
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: #646464;
+  width: 42px;
+  height: 42px;
+}
+.search-toggle { position: absolute; right: 12px; top: 7px; }
+.mobile-menu { display: none; }
+.article {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 33px 60px 80px;
+}
+.content-section { margin-bottom: 46px; }
+.content-cell { min-width: 0; }
+.content-cell + .content-cell { margin-top: 22px; }
+
+/* --- Fliesstext --- */
+.prose-content p { margin: 0 0 16px; line-height: 1.4; }
+.prose-content p:last-child { margin-bottom: 0; }
+.prose-content a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  overflow-wrap: anywhere;
+}
+.prose-content strong { font-weight: 700; }
+.prose-content h1 {
+  color: #050505;
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+.prose-content h1 a {
+  font-size: 12px;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: baseline;
+  letter-spacing: 0.02em;
+  margin-left: 5px;
+}
+.prose-content h2 { font-size: 24px; font-weight: 700; margin: 26px 0 18px; }
+.prose-content h3 { font-size: 20px; font-weight: 700; margin: 24px 0 16px; }
+.prose-content ul { list-style: square; }
+.prose-content ol { list-style: decimal; }
+.prose-content ul, .prose-content ol { padding-left: 23px; margin: 8px 0 18px; }
+.prose-content li { padding-left: 0; margin: 0 0 5px; }
+.prose-content li p { margin: 0; }
+.prose-content code { font-size: 0.94em; }
+.prose-content br + br { display: none; }
+.prose-content:has(h1) + * { margin-top: 20px; }
+.content-section .prose-content { padding-inline: 8px; }
+.page-home .content-section:first-child,
+.page-home .content-section:nth-child(2) { margin-bottom: 64px; }
+
+/* --- Bilder --- */
+figure { margin: 0; }
+figure img { display: block; width: 100%; height: auto; object-fit: contain; }
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  gap: 20px;
+  align-items: center;
+}
+.image-gallery .content-cell { margin: 0; }
+.image-gallery figure img { max-height: 280px; }
+.media-copy {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  align-items: start;
+}
+.media-copy .content-cell + .content-cell { margin: 0; }
+.page-smart-textiles .media-copy:nth-child(2) img { max-width: 208px; }
+
+/* --- Aufgaben (aufklappbar, natives details): sanfte Karten --- */
+.lesson {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  margin: 12px 0;
+  scroll-margin-top: 24px;
+  transition: border-color 0.15s;
+}
+.lesson:hover { border-color: #087d84; }
+.lesson:last-child { margin-bottom: 42px; }
+.lesson-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font: 700 21px/1.4 Lato, Arial, sans-serif;
+  padding: 15px 20px;
+  color: #090909;
+  list-style: none;
+}
+.lesson-title::-webkit-details-marker { display: none; }
+.lesson[open] > .lesson-title { border-bottom: 1px solid #ececec; }
+.lesson-heading {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+.lesson-icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  color: #999;
+  transition: transform 0.2s;
+}
+.lesson[open] > .lesson-title .lesson-icon { transform: rotate(180deg); }
+.lesson-content { font-size: 16px; padding: 20px 20px 14px; }
+.lesson-content p { margin-bottom: 16px; }
+.lesson-content .content-cell { margin-top: 0; }
+.lesson-content .content-cell + .content-cell { margin-top: 24px; }
+.lesson-content figure { margin: 25px auto; max-width: 1050px; }
+
+/* --- Codeblöcke --- */
+.code-block {
+  margin: 23px 0 28px;
+  border: 1px solid #d7dfe0;
+  background: #f8fafb;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.code-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 3px 6px 3px 14px;
+  border-bottom: 1px solid #dce3e4;
+  font: 13px/1.4 Lato, Arial, sans-serif;
+  color: #576568;
+  background: #eff4f4;
+}
+.code-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  color: #263b3e;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  min-height: 26px;
+  font-size: 13px;
+}
+.code-toolbar button:hover { background: #dcebeb; }
+.code-toolbar svg { flex: none; }
+.code-block pre {
+  margin: 0;
+  padding: 18px;
+  overflow: auto;
+  tab-size: 2;
+  color: #33464b;
+  font: 14px/1.55 'Courier New', monospace;
+}
+.code-comment { color: #61766b; }
+.code-keyword { color: #00777d; }
+.code-number { color: #864a0b; }
+.code-string { color: #8a4921; }
+
+/* --- Suche --- */
+.site-search {
+  margin: 32px 60px;
+  padding: 22px;
+  border: 1px solid #b9b9b9;
+  background: #fff;
+}
+.site-search label { display: block; font-weight: 700; margin-bottom: 10px; }
+.site-search input {
+  width: 100%;
+  border: 1px solid #aaa;
+  padding: 10px 12px;
+  font: inherit;
+}
+.search-count {
+  display: block;
+  margin: 16px 0 5px;
+  color: #666;
+  font-size: 14px;
+}
+.site-search ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 50vh;
+  overflow: auto;
+}
+.site-search li a {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px 0;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #e1e1e1;
+}
+.site-search li strong { font-weight: 700; }
+.site-search li span { font-size: 14px; color: #666; }
+
+/* --- Video --- */
+.video-block {
+  aspect-ratio: 16/9;
+  width: min(100%, 760px);
+  background: #f3f3f3;
+}
+.video-block iframe { width: 100%; height: 100%; border: 0; }
+.video-load {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  color: #646464;
+}
+.video-load span { font-weight: 700; color: #222; }
+.video-load small { color: #666; font-size: 14px; }
+
+/* --- Info-Kästen (Breadboard, Stromkreis) --- */
+.didactic-note {
+  margin: 24px 0;
+  padding: 20px 22px;
+  background: #f5f8f8;
+  border: 1px solid #ccd9da;
+  border-left: 5px solid #087d84;
+  border-radius: 3px;
+  scroll-margin-top: 76px;
+}
+.didactic-title {
+  margin: 0 0 15px;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+.didactic-note .prose-content { padding-inline: 0; }
+.didactic-note .prose-content p,
+.didactic-note .prose-content li { line-height: 1.55; }
+.didactic-note .prose-content > :last-child { margin-bottom: 0; }
+
+/* --- Breadboard-Grafik --- */
+.breadboard-guide { margin: 0 0 20px; max-width: 580px; }
+.breadboard-diagram {
+  overflow-x: auto;
+  background: #fff;
+  border: 1px solid #ccd9da;
+  border-radius: 3px;
+  padding: 12px;
+}
+.breadboard-diagram svg { display: block; width: 100%; min-width: 440px; }
+.breadboard-diagram:focus-visible { outline: 2px solid #087d84; outline-offset: 3px; }
+.breadboard-guide figcaption { margin-top: 10px; font-size: 14px; line-height: 1.5; }
+
+/* --- Sprungmarke --- */
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 270px;
+  z-index: 100;
+  padding: 12px;
+  background: #fff;
+  border: 2px solid #087d84;
+}
+.skip-link:focus { top: 8px; }
+
+/* --- Breite Bildschirme --- */
+@media (min-width: 1600px) {
+  .article { padding-left: 68px; padding-right: 68px; }
+}
+@media (max-width: 1000px) and (min-width: 768px) {
+  .article { padding-left: 36px; padding-right: 36px; }
+  .site-search { margin-left: 36px; margin-right: 36px; }
+}
+
+/* --- Mobil: Navigation als Overlay --- */
+@media (max-width: 767px) {
+  .site-sidebar {
+    position: fixed;
+    z-index: 40;
+    left: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
+  }
+  body.nav-open .site-sidebar { transform: none; }
+  body.nav-open::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    background: rgba(0, 0, 0, 0.35);
+  }
+  .utility-bar {
+    height: 55px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  .mobile-menu { display: flex; position: absolute; left: 12px; top: 6px; }
+  .article { padding: 26px 22px 50px; }
+  .prose-content h1 { font-size: 26px; }
+  .lesson { margin: 10px 0; }
+  .lesson:last-child { margin-bottom: 28px; }
+  .lesson-title { font-size: 19px; padding: 13px 14px; }
+  .lesson-content { padding: 16px 14px 12px; }
+  .brand { padding-top: 36px; }
+  .site-navigation { padding-top: 18px; }
+  .image-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .site-search { margin: 20px 22px; }
+  .code-block pre { padding: 13px; }
+  .code-toolbar { padding: 8px 10px; }
+  .skip-link { left: 70px; }
+  .didactic-note { padding: 16px; }
+  .page-home .content-section:first-child,
+  .page-home .content-section:nth-child(2) { margin-bottom: 38px; }
+}
+@media (max-width: 600px) {
+  .media-copy { grid-template-columns: 1fr; gap: 20px; }
+  .media-copy img { max-width: 285px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* --- Druck: alle Seiten hintereinander --- */
+@media print {
+  .site-sidebar, .utility-bar, .site-search, .code-toolbar button,
+  .skip-link { display: none !important; }
+  .article { padding: 0; max-width: none; }
+  .site-main { width: 100%; }
+  .page[hidden] { display: block !important; }
+  .lesson { break-inside: avoid; }
+  .lesson-content { display: block !important; }
+  .code-block pre { white-space: pre-wrap; }
+  .didactic-note { border: 1px solid #4a6b6e; border-left-width: 5px; }
+  .breadboard-diagram svg { min-width: 0; }
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Layout-Vorschläge</title>
+<style>
+@font-face { font-family: Lato; src: url("public/fonts/Lato-Regular.ttf"); font-weight: 400; }
+@font-face { font-family: Lato; src: url("public/fonts/Lato-Bold.ttf"); font-weight: 700 900; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 16px/1.5 Lato, Arial, sans-serif;
+  color: #222;
+  background: #fff;
+}
+.intro {
+  max-width: 760px;
+  margin: 48px auto 10px;
+  padding: 0 24px;
+}
+.intro h1 { font-size: 26px; font-weight: 900; margin: 0 0 8px; }
+.intro p { color: #555; margin: 0; }
+.variant {
+  max-width: 760px;
+  margin: 56px auto;
+  padding: 0 24px;
+}
+.tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #087d84;
+  border: 1px solid #b8d6d8;
+  border-radius: 999px;
+  padding: 3px 12px;
+  margin-bottom: 6px;
+}
+.variant > h2 { font-size: 21px; margin: 6px 0 4px; }
+.variant > .note { font-size: 14px; color: #666; margin: 0 0 22px; }
+.demo { border: 1px dashed #d9d9d9; border-radius: 6px; padding: 26px 28px 30px; }
+.demo h3 { font-size: 17px; font-weight: 700; margin: 0 0 4px; color: #050505; }
+.demo .lede { margin: 0 0 18px; color: #444; font-size: 15px; }
+summary { cursor: pointer; list-style: none; }
+summary::-webkit-details-marker { display: none; }
+.body { padding: 14px 0 6px; font-size: 15px; }
+.body p { margin: 0 0 12px; }
+.code {
+  border: 1px solid #d7dfe0;
+  border-radius: 3px;
+  background: #f8fafb;
+  font: 13px/1.55 "Courier New", monospace;
+  color: #33464b;
+  padding: 10px 14px;
+  margin: 4px 0 8px;
+  white-space: pre;
+  overflow: auto;
+}
+.k { color: #00777d; } .n { color: #864a0b; } .c { color: #61766b; }
+
+/* ---------- 3b · Flache Karte (dritter Vorschlag) ---------- */
+.v6 details {
+  border: 1px solid #dfdfdf;
+  border-radius: 3px;
+  margin: 10px 0;
+  transition: border-color 0.15s;
+}
+.v6 details:hover { border-color: #087d84; }
+.v6 summary {
+  font-size: 19px;
+  font-weight: 700;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.v6 summary svg { margin-left: auto; color: #999; transition: transform 0.2s; flex: none; }
+.v6 details[open] > summary svg { transform: rotate(180deg); }
+.v6 details[open] > summary { border-bottom: 1px solid #ececec; }
+.v6 .body { padding: 16px 18px 12px; }
+
+/* ---------- 1 · Stille Linie ---------- */
+.v1 details { border-bottom: 1px solid #e2e2e2; }
+.v1 details:first-of-type { border-top: 1px solid #e2e2e2; }
+.v1 summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 4px;
+  transition: color 0.15s;
+}
+.v1 summary:hover { color: #087d84; }
+.v1 summary svg { margin-left: auto; color: #999; transition: transform 0.2s, color 0.15s; flex: none; }
+.v1 summary:hover svg { color: #087d84; }
+.v1 details[open] > summary svg { transform: rotate(180deg); }
+.v1 .body { padding-left: 4px; padding-right: 4px; }
+
+/* ---------- 2 · Akzentbalken ---------- */
+.v2 details { margin: 2px 0; }
+.v2 summary {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 14px 8px 14px 18px;
+  border-left: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.15s, color 0.15s;
+}
+.v2 summary:hover { border-left-color: #9fc6c9; }
+.v2 details[open] > summary { border-left-color: #087d84; color: #000; }
+.v2 summary svg { margin-left: auto; color: #b5b5b5; transition: transform 0.2s; flex: none; }
+.v2 details[open] > summary svg { transform: rotate(180deg); color: #087d84; }
+.v2 .body { border-left: 3px solid #e4eeef; padding-left: 18px; margin-left: 0; }
+
+/* ---------- 3 · Sanfte Karte ---------- */
+.v3 details {
+  border: 1px solid #e4e4e4;
+  border-radius: 6px;
+  margin: 10px 0;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.v3 details:hover { border-color: #aecdcf; box-shadow: 0 1px 6px rgba(8, 125, 132, 0.07); }
+.v3 summary {
+  font-size: 19px;
+  font-weight: 700;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.v3 summary svg { margin-left: auto; color: #999; transition: transform 0.2s; flex: none; }
+.v3 details[open] > summary svg { transform: rotate(180deg); }
+.v3 details[open] > summary { border-bottom: 1px solid #ececec; }
+.v3 .body { padding: 16px 20px 12px; }
+
+/* ---------- 4 · Plus und Minus ---------- */
+.v4 details { padding: 6px 0; }
+.v4 details + details { border-top: 1px solid #ececec; }
+.v4 summary {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  padding: 14px 2px;
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+.v4 .pm {
+  font-size: 22px;
+  font-weight: 400;
+  color: #b0b0b0;
+  width: 20px;
+  flex: none;
+  transition: color 0.15s;
+}
+.v4 summary:hover .pm { color: #087d84; }
+.v4 .pm::before { content: "+"; }
+.v4 details[open] .pm::before { content: "\2212"; }
+.v4 details[open] .pm { color: #087d84; }
+.v4 .body { padding-left: 36px; }
+
+/* ---------- 5 · Nummeriert ---------- */
+.v5 { counter-reset: aufgabe; }
+.v5 details { border-bottom: 1px solid #eaeaea; }
+.v5 summary {
+  counter-increment: aufgabe;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 18px 2px;
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+}
+.v5 summary::before {
+  content: counter(aufgabe, decimal-leading-zero);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: #9db9bb;
+  flex: none;
+  transition: color 0.15s;
+}
+.v5 summary:hover::before, .v5 details[open] > summary::before { color: #087d84; }
+.v5 summary .t { position: relative; }
+.v5 summary .t::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 100%; bottom: -4px;
+  border-bottom: 2px solid #087d84;
+  transition: right 0.25s;
+}
+.v5 summary:hover .t::after, .v5 details[open] > summary .t::after { right: 0; }
+.v5 .body { padding-left: 44px; }
+</style>
+</head>
+<body>
+
+<div class="intro">
+<h1>Fünf sanfte Aufklapp-Varianten</h1>
+<p>Gleicher Inhalt, fünf Behandlungen. Alle ohne graues Hinterlegen beim Überfahren, alle mit der bestehenden Schrift und der Akzentfarbe der Seite. Zum Vergleichen einfach die Aufgaben auf- und zuklappen.</p>
+</div>
+
+<section class="variant v6">
+<span class="tag">Dritter Vorschlag</span>
+<h2>Flache Karte</h2>
+<p class="note">Wie die gewählte «Sanfte Karte», aber ganz ohne Schatten, mit 3&nbsp;px Eckenradius wie die Codeblöcke der Seite und einem klaren Rahmen-Hover. Fügt sich nahtlos in die bestehende, nüchterne Formensprache.</p>
+<div class="demo">
+<h3>Erste Schritte</h3>
+<p class="lede">Hier erfährst du, wie du einfache Arduino-Schaltungen aufbaust.</p>
+<details open>
+<summary>Aufgabe LED <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="body">
+<p><strong>Vorbereitung</strong> - Baue die Schaltung gemäss dem Bild unten auf. Lade den Code auf das Arduino und teste diesen.</p>
+<div class="code"><span class="k">void</span> loop() {
+  digitalWrite(<span class="n">12</span>, HIGH);  <span class="c">// LED ein</span>
+  delay(<span class="n">500</span>);              <span class="c">// 0.5 s warten</span>
+}</div>
+</div>
+</details>
+<details>
+<summary>Aufgabe Servo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="body"><p>Verändere das Verhalten des Servos, indem du die Werte Position und delay änderst.</p></div>
+</details>
+</div>
+</section>
+
+<section class="variant v1">
+<span class="tag">Vorschlag 1</span>
+<h2>Stille Linie</h2>
+<p class="note">Am nächsten am jetzigen Stand: feine statt dunkle Trennlinien, beim Überfahren färbt sich nur der Titel, nichts wird hinterlegt.</p>
+<div class="demo">
+<h3>Erste Schritte</h3>
+<p class="lede">Hier erfährst du, wie du einfache Arduino-Schaltungen aufbaust.</p>
+<details open>
+<summary>Aufgabe LED <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="body">
+<p><strong>Vorbereitung</strong> - Baue die Schaltung gemäss dem Bild unten auf. Lade den Code auf das Arduino und teste diesen.</p>
+<div class="code"><span class="k">void</span> loop() {
+  digitalWrite(<span class="n">12</span>, HIGH);  <span class="c">// LED ein</span>
+  delay(<span class="n">500</span>);              <span class="c">// 0.5 s warten</span>
+}</div>
+</div>
+</details>
+<details>
+<summary>Aufgabe Servo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="body"><p>Verändere das Verhalten des Servos, indem du die Werte Position und delay änderst.</p></div>
+</details>
+</div>
+</section>
+
+<section class="variant v2">
+<span class="tag">Vorschlag 2</span>
+<h2>Akzentbalken</h2>
+<p class="note">Keine Unterlinien mehr. Ein schmaler Balken links zeigt Hover und offenen Zustand, der Inhalt hängt sichtbar an seiner Aufgabe.</p>
+<div class="demo">
+<h3>Erste Schritte</h3>
+<p class="lede">Hier erfährst du, wie du einfache Arduino-Schaltungen aufbaust.</p>
+<details open>
+<summary>Aufgabe LED <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="body">
+<p><strong>Vorbereitung</strong> - Baue die Schaltung gemäss dem Bild unten auf. Lade den Code auf das Arduino und teste diesen.</p>
+<div class="code"><span class="k">void</span> loop() {
+  digitalWrite(<span class="n">12</span>, HIGH);  <span class="c">// LED ein</span>
+  delay(<span class="n">500</span>);              <span class="c">// 0.5 s warten</span>
+}</div>
+</div>
+</details>
+<details>
+<summary>Aufgabe Servo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="body"><p>Verändere das Verhalten des Servos, indem du die Werte Position und delay änderst.</p></div>
+</details>
+</div>
+</section>
+
+<section class="variant v3">
+<span class="tag">Vorschlag 3</span>
+<h2>Sanfte Karte</h2>
+<p class="note">Jede Aufgabe als ruhige Karte mit feinem Rahmen. Hover hebt den Rahmen leicht hervor, kein Flächen-Grau.</p>
+<div class="demo">
+<h3>Erste Schritte</h3>
+<p class="lede">Hier erfährst du, wie du einfache Arduino-Schaltungen aufbaust.</p>
+<details open>
+<summary>Aufgabe LED <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="body">
+<p><strong>Vorbereitung</strong> - Baue die Schaltung gemäss dem Bild unten auf. Lade den Code auf das Arduino und teste diesen.</p>
+<div class="code"><span class="k">void</span> loop() {
+  digitalWrite(<span class="n">12</span>, HIGH);  <span class="c">// LED ein</span>
+  delay(<span class="n">500</span>);              <span class="c">// 0.5 s warten</span>
+}</div>
+</div>
+</details>
+<details>
+<summary>Aufgabe Servo <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></summary>
+<div class="body"><p>Verändere das Verhalten des Servos, indem du die Werte Position und delay änderst.</p></div>
+</details>
+</div>
+</section>
+
+<section class="variant v4">
+<span class="tag">Vorschlag 4</span>
+<h2>Plus und Minus</h2>
+<p class="note">Typografisch am ruhigsten: ein feines Plus statt Chevron, kaum Linien, viel Weissraum. Beim Öffnen wird das Plus zum Minus.</p>
+<div class="demo">
+<h3>Erste Schritte</h3>
+<p class="lede">Hier erfährst du, wie du einfache Arduino-Schaltungen aufbaust.</p>
+<details open>
+<summary><span class="pm"></span>Aufgabe LED</summary>
+<div class="body">
+<p><strong>Vorbereitung</strong> - Baue die Schaltung gemäss dem Bild unten auf. Lade den Code auf das Arduino und teste diesen.</p>
+<div class="code"><span class="k">void</span> loop() {
+  digitalWrite(<span class="n">12</span>, HIGH);  <span class="c">// LED ein</span>
+  delay(<span class="n">500</span>);              <span class="c">// 0.5 s warten</span>
+}</div>
+</div>
+</details>
+<details>
+<summary><span class="pm"></span>Aufgabe Servo</summary>
+<div class="body"><p>Verändere das Verhalten des Servos, indem du die Werte Position und delay änderst.</p></div>
+</details>
+</div>
+</section>
+
+<section class="variant v5">
+<span class="tag">Vorschlag 5</span>
+<h2>Nummeriert</h2>
+<p class="note">Dezente Ordnungsnummern geben den Aufgaben eine Reihenfolge, der Hover zieht eine feine Linie unter den Titel. Wirkt wie ein Kursheft.</p>
+<div class="demo">
+<h3>Erste Schritte</h3>
+<p class="lede">Hier erfährst du, wie du einfache Arduino-Schaltungen aufbaust.</p>
+<details open>
+<summary><span class="t">Aufgabe LED</span></summary>
+<div class="body">
+<p><strong>Vorbereitung</strong> - Baue die Schaltung gemäss dem Bild unten auf. Lade den Code auf das Arduino und teste diesen.</p>
+<div class="code"><span class="k">void</span> loop() {
+  digitalWrite(<span class="n">12</span>, HIGH);  <span class="c">// LED ein</span>
+  delay(<span class="n">500</span>);              <span class="c">// 0.5 s warten</span>
+}</div>
+</div>
+</details>
+<details>
+<summary><span class="t">Aufgabe Servo</span></summary>
+<div class="body"><p>Verändere das Verhalten des Servos, indem du die Werte Position und delay änderst.</p></div>
+</details>
+</div>
+</section>
+
+</body>
+</html>
