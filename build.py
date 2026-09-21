@@ -21,11 +21,10 @@ from fontTools.ttLib import TTFont
 ROOT = Path(__file__).parent
 OUT = ROOT / "arduino.html"
 
-# Quellen. Sie liegen noch in der Next-Struktur, falls die mal wegfaellt hier anpassen.
-CONTENT = ROOT / "app" / "content.json"
+CONTENT = ROOT / "content.json"
 STYLE = ROOT / "style.css"
-ASSETS = ROOT / "public" / "assets"
-FONTS = ROOT / "public" / "fonts"
+ASSETS = ROOT / "assets"
+FONTS = ROOT / "fonts"
 
 WEBP_QUALITY = 86
 
@@ -368,6 +367,7 @@ def build() -> None:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(pages[0]["title"])}</title>
+<link rel="icon" href="data:image/svg+xml;base64,{base64.b64encode((ROOT / "favicon.svg").read_bytes()).decode()}">
 <style>__STYLE__</style>
 </head>
 <body>

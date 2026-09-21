@@ -15,13 +15,17 @@ Stand: 9. September 2026. Seitenstruktur, Aufgaben und Bilder bleiben erhalten.
 - **Fehlersuche:** Weitere mögliche Ursachen eines fehlenden Ports berücksichtigt; Syntaxprüfung beim Kompilieren erläutert. [Arduino-Verbindungsprüfung](https://support.arduino.cc/hc/en-us/articles/4412955149586-If-your-board-is-not-detected-by-Arduino-IDE)
 - **Redaktionell:** Tippfehler wie „Piezzo“, „Variabeln“ und „einzlene“ korrigiert, Schweizer Schreibweise vereinheitlicht und einen defekten Sprunglink repariert.
 
-## Markierte didaktische Ergänzungen
+## Didaktische Ergänzungen
 
-Auf Wunsch wurden anschliessend 22 didaktische Lernhilfen ergänzt und sichtbar nummeriert markiert: Lernweg, Arbeitsweise, Breadboard-Grundlagen, LED-Stromkreis, Aufgabenimpulse, KI-Verständnisprüfung und Gestaltungsprozess. Die vorhandenen Inhalte bleiben dabei unverändert. Einzelübersicht mit Sprunglinks: `DIDAKTISCHE-ERGAENZUNGEN.md`.
+Zwischenzeitlich waren 22 markierte Lernhilfen ergänzt. Da der Workshop begleitet stattfindet und die Zielgruppe Lehrpersonen ohne Vorkenntnisse sind, wurden sie am 20. September 2026 auf zwei Hardware-Infokästen reduziert: Breadboard-Kontaktgruppen (mit neuer Grafik) und LED-Stromkreis mit Vorwiderstand, beide am Ende der Seite Verbindungen. Die übrigen Selbstlern-Aufträge übernimmt die Kursleitung mündlich.
+
+## Nachträgliche Textprüfung (20. September 2026)
+
+Vollständiger Wort-für-Wort-Durchgang mit rund 90 Korrekturen: restliche „ß" auf Schweizer Schreibweise, Anführungszeichen einheitlich «…», Grammatik- und Tippfehler (u. a. „under", „GND der Arduinos"), Durchkopplungen, NeoPixel-Schreibweise, beschreibende Alt-Texte für alle Galeriebilder. Alle 30 Codeblöcke einheitlich formatiert (2 Leerzeichen, bündige Kommentare) und die Kommentare für die Zielgruppe redigiert.
 
 ## Lokale Umsetzung
 
-30 Codeblöcke mit Kopierbuttons und Kennzeichnung unvollständiger Lehrbeispiele als „Codeausschnitt“. Kopiert wird der reine Programmtext ohne Überschrift oder Buttontext. 29 Bilder und Lato-Schriften werden lokal geladen. Die bisherige Seitensuche ist als lokale Inhaltssuche neu implementiert. Originalvideos bleiben per Klick eingebettet.
+Die Website ist eine einzelne Datei `arduino.html`, erzeugt aus `content.json` per `build.py`. 30 Codeblöcke mit Kopierbuttons als „Codeausschnitt". Kopiert wird der reine Programmtext ohne Überschrift oder Buttontext. 29 Bilder (als WebP) und die Lato-Schrift sind eingebettet. Die Seitensuche ist als lokale Inhaltssuche implementiert. Originalvideos bleiben per Klick eingebettet. Aufklappbare Aufgaben als Karten mit runden Ecken statt der Google-Sites-Trennlinien.
 
 Keine Veröffentlichung und keine Änderung an der bestehenden Google-Sites-Seite.
 
