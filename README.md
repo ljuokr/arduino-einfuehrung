@@ -4,7 +4,7 @@ Single-File-Version von https://sites.google.com/view/arduino-einfuehrung/home f
 
 ## Verwenden
 
-Doppelklick auf **arduino.html**. Kein Server, kein Node, kein Internet nötig. Alle 12 Seiten, 28 Bilder, 30 Codebeispiele mit Kopierbutton, Suche und Schriften stecken in der einen Datei (rund 2 MB). Nur die zwei SWITCHtube-Videos laden auf Klick von extern.
+Doppelklick auf **arduino.html**. Kein Server, kein Node, kein Internet nötig. Alle 13 Seiten, 29 Bilder, 30 Codebeispiele mit Kopierbutton, Suche und Schriften stecken in der einen Datei (rund 2 MB). Nur die zwei SWITCHtube-Videos laden auf Klick von extern.
 
 ## Bearbeiten
 

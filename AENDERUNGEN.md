@@ -25,13 +25,13 @@ Vollständiger Wort-für-Wort-Durchgang mit rund 90 Korrekturen: restliche „ß
 
 ## Lokale Umsetzung
 
-Die Website ist eine einzelne Datei `arduino.html`, erzeugt aus `content.json` per `build.py`. 30 Codeblöcke mit Kopierbuttons als „Codeausschnitt". Kopiert wird der reine Programmtext ohne Überschrift oder Buttontext. 28 Bilder (als WebP) und die Lato-Schrift sind eingebettet. Die Seitensuche ist als lokale Inhaltssuche implementiert. Originalvideos bleiben per Klick eingebettet. Aufklappbare Aufgaben als Karten mit runden Ecken statt der Google-Sites-Trennlinien.
+Die Website ist eine einzelne Datei `arduino.html`, erzeugt aus `content.json` per `build.py`. 30 Codeblöcke mit Kopierbuttons als „Codeausschnitt". Kopiert wird der reine Programmtext ohne Überschrift oder Buttontext. 29 Bilder (als WebP) und die Lato-Schrift sind eingebettet. Die Seitensuche ist als lokale Inhaltssuche implementiert. Originalvideos bleiben per Klick eingebettet. Aufklappbare Aufgaben als Karten mit runden Ecken statt der Google-Sites-Trennlinien.
 
 Veröffentlicht über GitHub Pages (https://ljuokr.github.io/arduino-einfuehrung/). Die bestehende Google-Sites-Seite bleibt unverändert.
 
 ## Ergänzende fachliche Prüfung
 
-- Ein Hinweis zum LED-Vorwiderstand beim Smart-Textiles-Foto wurde am 21. September 2026 mit den übrigen Vorwiderstand-Vorschriften wieder entfernt.
+- Die Erweiterungsaufgabe in Tinkercad ergänzt. Ein Hinweis zum LED-Vorwiderstand beim Smart-Textiles-Foto wurde am 21. September 2026 mit den übrigen Vorwiderstand-Vorschriften wieder entfernt.
 - Die OLED-Voraussetzungen konkretisiert (SSD1306, I²C, 128 × 32 Pixel). Am 28. Oktober 2026 für Einsteigende gekürzt, dafür Bibliothek und Pins am Uno (SDA = A4, SCL = A5) genannt. [Adafruit](https://learn.adafruit.com/monochrome-oled-breakouts/arduino-library-and-examples)
 - Texte, vollständige Codebeispiele und relevante Schaltungsbilder nochmals miteinander abgeglichen. Unvollständige Ergänzungsaufgaben sind absichtlich keine eigenständig lauffähigen Programme.
 
@@ -52,4 +52,3 @@ Review aus mehreren Perspektiven. Umgesetzt wurde nur, was für Studierende ohne
 - Sprache: «Vorhaben» statt «Projekt» im Unterrichtskontext (Seite «Vorhaben», Slug `projekte` bleibt), Seitentitel ohne Versalien, «Sinn machen», «Setup», Kommentare «Liest», Tippfehler, Strichpunkte und Ausrufezeichen.
 - Impressum: Co-Autorschaft Claude, Lizenzsatz CC BY-NC-SA 4.0 mit Ausnahme Bilder Dritter, Stand Oktober 2026.
 - Bedienung: mobiles Menü schliesst per Escape und Tipp daneben und ist geschlossen nicht mehr per Tab erreichbar, Fokus beim Seitenwechsel auf den Titel, Aufgabentitel als Überschriften, beschreibende Alt-Texte der Tinkercad-Schaltungen, aktive Seite sichtbar markiert, gut lesbare Codeschrift, grösserer Kopierbutton.
-- Seite «Erste Schritte (mit Tinkercad)» entfernt (Lukas, 28. Oktober 2026).

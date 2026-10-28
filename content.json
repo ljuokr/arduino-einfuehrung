@@ -451,6 +451,118 @@
     ]
   },
   {
+    "slug": "erste-schritte-mit-tinkercad",
+    "label": "Erste Schritte (mit Tinkercad)",
+    "title": "Erste Schritte (mit Tinkercad)",
+    "sections": [
+      {
+        "id": "h.2101a2480b72aca4_274",
+        "accordion": false,
+        "title": "",
+        "anchor": "",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<h1 id=\"h.qtmwb2xo9vka\">Erste Schritte (mit Tinkercad)  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Hier erfährst du, wie du einfache Arduino-Programme mithilfe von Tinkercad erstellen kannst. Die </strong><strong>A</strong><strong>ufgaben eignen sich, um erste Erfahrungen mit Arduino zu sammeln, ohne die</strong><strong> Schaltungen physisch aufbauen zu müssen</strong><strong>. </strong><strong>Tinkercad ermöglicht, Programme mit Codeblöcken zu erstellen und elektronische Schaltkreise zu simulieren.</strong></p>"
+              }
+            ]
+          }
+        ],
+        "gallery": false
+      },
+      {
+        "id": "h.461dd4f2f4126a3e_56",
+        "accordion": true,
+        "title": "Tinkercad und Arduino",
+        "anchor": "h.kufosiq5m1xo",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p>Mit Tinkercad können 3D-Entwürfe erstellt und elektronische Schaltkreise simuliert werden. Beide Funktionen können nützlich sein im TTG-Unterricht. Wir werden im Folgenden mit dem Simulator für Schaltkreise arbeiten. Tinkercad ermöglicht, mit Codeblöcken zu programmieren, welche etwas einfacher zu verstehen sind als Code.</p><br/><p><strong>Einführung Tinkercad</strong></p><ul><li><p>Öffne <a href=\"http://www.tinkercad.com\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Tinkercad</u> </a>und melde dich an, evtl. musst du noch ein Konto erstellen.</p></li><li><p>Arbeite die ersten vier Übungen durch, die du <a href=\"https://www.tinkercad.com/learn/circuits\" rel=\"noopener noreferrer\" target=\"_blank\"><u>hier</u></a> findest. Diese musst du nicht physisch aufbauen.</p></li></ul>"
+              }
+            ]
+          }
+        ],
+        "gallery": false
+      },
+      {
+        "id": "h.461dd4f2f4126a3e_62",
+        "accordion": true,
+        "title": "Aufgabe LED",
+        "anchor": "h.u39isetgesf2",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Klicke unter <em>Schaltkreise</em> auf <em>Neuen Schaltkreis erstellen</em></p></li><li><p>Ändere <em>Komponenten Einfach </em>zu <em>Arduino.</em></p></li><li><p>Ziehe <em>Blinken </em>auf die Arbeitsfläche</p></li><li><p>Klicke auf <em>Code</em></p></li><li><p>Ändere <em>Blöcke </em>zu <em>Blöcke und Text</em></p></li></ul><br/><p>Die Ansicht sollte sich nun ähnlich präsentieren, wie hier dargestellt. Du siehst das Programm in der <em>für immer-</em>Schlaufe als Blockdarstellung und als Code unter <em>void loop.</em></p>"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "type": "image",
+                "src": "/assets/erste-schritte-mit-tinkercad-01.png",
+                "alt": "Aufgabe LED",
+                "href": "",
+                "width": 1280,
+                "height": 702
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p>Starte die Simulation, beobachte, was passiert und stoppe sie wieder. </p><br/><p><strong>Aufgabe</strong></p><ul><li><p>Erstelle einen Wechselblinker: Schliesse am Anschluss 6 eine weitere LED an, verwende dazu den Block <em>Anschluss </em><em>6</em><em> </em><em>auf</em><em> HOCH</em> stellen.</p></li><li><p>Füge eine Schlaufe (zu finden unter Steuerung) in das Programm ein und variiere mit dieser den Rhythmus.</p></li></ul>"
+              }
+            ]
+          }
+        ],
+        "gallery": false
+      },
+      {
+        "id": "h.49ad2ce75a458ef7_2",
+        "accordion": true,
+        "title": "Aufgabe Servo",
+        "anchor": "h.xsf3rgi755u0",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Klicke unter <em>Schaltkreise</em> auf <em>Neuen Schaltkreis erstellen</em></p></li><li><p>Ändere <em>Komponenten Einfach </em>zu <em>Arduino.</em></p></li><li><p>Ziehe <em>Servo </em>auf die Arbeitsfläche</p></li><li><p>Klicke auf <em>Code</em></p></li><li><p>Ändere <em>Blöcke </em>zu <em>Blöcke und Text</em></p></li></ul><br/><p><strong>Aufgabe</strong></p><ul><li><p>Verändere das Verhalten des Servos, indem du die Werte <em>Position</em> und <em>warten</em> änderst.</p></li></ul>"
+              }
+            ]
+          }
+        ],
+        "gallery": false
+      },
+      {
+        "id": "h.461dd4f2f4126a3e_83",
+        "accordion": true,
+        "title": "Aufgabe Ton-Tastatur",
+        "anchor": "h.h5720yf8slb2",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Klicke unter <em>Schaltkreise</em> auf <em>Neuen Schaltkreis erstellen</em></p></li><li><p>Ändere <em>Komponenten Einfach </em>zu <em>Arduino.</em></p></li><li><p>Ziehe <em>Ton-Tastatur</em><em> </em>auf die Arbeitsfläche</p></li><li><p>Klicke auf <em>Code</em></p></li><li><p>Ändere <em>Blöcke </em>zu <em>Blöcke und Text</em></p></li></ul><br/><p><strong>Aufgabe</strong></p><ul><li><p>Verändere die Tonhöhen im Code.</p></li><li><p>Ergänze einen weiteren Taster, mit welchem ein zusätzlicher Ton abgespielt werden kann.</p></li><li><p>Ergänze einen Servo, der sich je nach Ton in eine andere Position begibt.</p></li></ul>"
+              }
+            ]
+          }
+        ],
+        "gallery": false
+      }
+    ]
+  },
+  {
     "slug": "arduino-programmieren",
     "label": "Arduino programmieren",
     "title": "Arduino programmieren",
