@@ -226,7 +226,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p>Falls die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code> erscheint, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo und klicke auf Installieren.</p></li></ul><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p>Falls die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code> erscheint, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo.h ein und klicke auf Installieren.</p></li></ul><br/>"
               },
               {
                 "type": "code",
