@@ -59,7 +59,7 @@ pre:focus-visible, summary:focus-visible {
   line-height: 1.55;
 }
 .site-navigation a:hover { color: #000; }
-.site-navigation a[aria-current='page'] { color: #252525; }
+.site-navigation a[aria-current='page'] { color: #087d84; text-decoration: underline; text-underline-offset: 4px; }
 
 /* --- Hauptbereich --- */
 .site-main { flex: 1; min-width: 0; }
@@ -169,6 +169,8 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
 .lesson-title::-webkit-details-marker { display: none; }
 .lesson[open] > .lesson-title { border-bottom: 1px solid #ececec; }
 .lesson-heading {
+  margin: 0;
+  font: inherit;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -179,7 +181,7 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
   width: 20px;
   height: 20px;
   flex: none;
-  color: #999;
+  color: #6b6b6b;
   transition: transform 0.2s;
 }
 .lesson[open] > .lesson-title .lesson-icon { transform: rotate(180deg); }
@@ -217,7 +219,7 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
   border: 0;
   border-radius: 3px;
   background: transparent;
-  min-height: 26px;
+  min-height: 36px;
   font-size: 13px;
 }
 .code-toolbar button:hover { background: #dcebeb; }
@@ -228,7 +230,7 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
   overflow: auto;
   tab-size: 2;
   color: #33464b;
-  font: 14px/1.55 'Courier New', monospace;
+  font: 14px/1.55 ui-monospace, Menlo, Consolas, 'Courier New', monospace;
 }
 .code-comment { color: #61766b; }
 .code-keyword { color: #00777d; }
@@ -373,10 +375,15 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
     left: 0;
     top: 0;
     transform: translateX(-100%);
-    transition: transform 0.2s;
+    visibility: hidden;
+    transition: transform 0.2s, visibility 0.2s;
+  }
+  body.nav-open .site-sidebar {
+    transform: none;
+    visibility: visible;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
   }
-  body.nav-open .site-sidebar { transform: none; }
+  [id], .lesson { scroll-margin-top: 70px; }
   body.nav-open::after {
     content: '';
     position: fixed;
@@ -402,7 +409,7 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
   .site-navigation { padding-top: 18px; }
   .image-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
   .site-search { margin: 20px 22px; }
-  .code-block pre { padding: 13px; }
+  .code-block pre { padding: 13px; font-size: 13px; }
   .code-toolbar { padding: 8px 10px; }
   .skip-link { left: 70px; }
   .didactic-note { padding: 16px; }

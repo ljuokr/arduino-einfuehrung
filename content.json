@@ -93,7 +93,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<h1 id=\"h.2c3oe8p9pgu7\">Arduino Einrichten  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Hier erfährst du, wie du die Arduino Entwicklungsumgebung einrichtest und die Verbindung zum Arduino überprüfst.</strong></p>"
+                "html": "<h1 id=\"h.2c3oe8p9pgu7\">Arduino einrichten  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Hier erfährst du, wie du die Arduino Entwicklungsumgebung einrichtest und die Verbindung zum Arduino überprüfst.</strong></p>"
               }
             ]
           }
@@ -110,7 +110,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<ul><li><p>Installiere zuerst die <a href=\"https://www.arduino.cc/en/main/software\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Arduino ID</u><u>E</u></a> (Integrated development environment).</p></li><li><p>Verbinde dann das Arduino-Board per USB mit deinem Computer.</p></li><li><p>Wähle das angeschlossene Board und den zugehörigen Port in der Board-Auswahl oben in der Arduino IDE aus. Wird das Board als «Unknown» angezeigt, wähle «Select other board and port…» und stelle Board und Port manuell ein.</p></li></ul>"
+                "html": "<ul><li><p>Installiere zuerst die <a href=\"https://www.arduino.cc/en/main/software\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Arduino ID</u><u>E</u></a> (Integrated Development Environment).</p></li><li><p>Verbinde dann das Arduino-Board per USB mit deinem Computer.</p></li><li><p>Wähle das angeschlossene Board und den zugehörigen Port in der Board-Auswahl oben in der Arduino IDE aus. Wird das Board als «Unknown» angezeigt, wähle «Select other board and port…» und stelle Board und Port manuell ein.</p></li></ul>"
               }
             ]
           }
@@ -127,7 +127,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<ul><li><p>Öffne das Beispiel <em>Blink</em>. Dieses findest du unter Datei/Beispiele/Basics/Blink.</p></li><li><p>Klicke oben links auf den Pfeil, um das Programm hochzuladen.</p></li><li><p>Nun sollte eine LED auf dem Arduino-Board 1000 Millisekunden (also eine Sekunde) lang eingeschaltet sein, dann 1000 ms ausgeschaltet, dann wieder eingeschaltet sein und so weiter.</p></li><li><p>Passe die Werte für die Pausen (delay) an und lade das Programm erneut hoch. Du solltest eine Veränderung im Blinkrhythmus erkennen. Wenn du den Rhythmus so verändern kannst, weisst du, dass die Verbindung zwischen deinem Computer und dem Arduino funktioniert.</p></li></ul>"
+                "html": "<ul><li><p>Öffne das Beispiel <em>Blink</em>. Dieses findest du unter Datei › Beispiele › 01.Basics › Blink.</p></li><li><p>Klicke oben links auf den Pfeil, um das Programm hochzuladen.</p></li><li><p>Nun sollte eine LED auf dem Arduino-Board 1000 Millisekunden (also eine Sekunde) lang eingeschaltet sein, dann 1000 ms ausgeschaltet, dann wieder eingeschaltet sein und so weiter.</p></li><li><p>Passe die Werte für die Pausen (delay) an und lade das Programm erneut hoch. Du solltest eine Veränderung im Blinkrhythmus erkennen. Wenn du den Rhythmus so verändern kannst, weisst du, dass die Verbindung zwischen deinem Computer und dem Arduino funktioniert.</p></li></ul>"
               }
             ]
           }
@@ -144,7 +144,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<ul><li><p>Normalerweise werden Port (Anschluss) und Board (Typ des Arduinos) automatisch erkannt. Manchmal hilft es, dies manuell einzustellen unter Werkzeuge/Port und Werkzeuge/Boards.</p></li><li><p>Eventuell müssen noch Treiber heruntergeladen werden, damit sich Arduino und Computer verstehen (<a href=\"https://www.wch-ic.com/download/file?id=178\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Mac</u></a> / <a href=\"https://www.wch-ic.com/download/file?id=5\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Windows</u></a>). Die Daten entpacken und die Installationsdatei ausführen.</p></li><li><p>Manche USB-Kabel haben keine Datenkabel. Das Arduino leuchtet dann, es können aber keine Daten übertragen werden, darum wird das Arduino vom Computer nicht erkannt. Tausche dein Kabel mit einem Kabel aus, das bereits bei jemandem funktioniert hat.</p></li><li><p>Manchmal sind die Fehlermeldungen aufschlussreich. Wenn du diese nicht verstehst, kannst du sie kopieren und in einer Suchmaschine oder einem KI-Tool eingeben.</p></li></ul><br/>"
+                "html": "<ul><li><p>Normalerweise werden Port (Anschluss) und Board (Typ des Arduinos) automatisch erkannt. Manchmal hilft es, dies manuell einzustellen unter Werkzeuge › Port und Werkzeuge › Board.</p></li><li><p>Bei günstigen Nachbauten mit CH340-Chip muss eventuell noch ein Treiber installiert werden, meist nur unter Windows (<a href=\"https://www.wch-ic.com/download/file?id=178\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Mac</u></a> / <a href=\"https://www.wch-ic.com/download/file?id=5\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Windows</u></a>). Die Daten entpacken und die Installationsdatei ausführen.</p></li><li><p>Manche USB-Kabel sind reine Ladekabel ohne Datenleitungen. Das Arduino leuchtet dann, es können aber keine Daten übertragen werden, darum wird das Arduino vom Computer nicht erkannt. Tausche dein Kabel gegen ein Kabel aus, das bereits bei jemandem funktioniert hat.</p></li><li><p>Manchmal sind die Fehlermeldungen aufschlussreich. Wenn du diese nicht verstehst, kannst du sie kopieren und in eine Suchmaschine oder ein KI-Tool eingeben.</p></li></ul><br/>"
               }
             ]
           }
@@ -206,7 +206,7 @@
               {
                 "type": "image",
                 "src": "/assets/erste-schritte-01.png",
-                "alt": "Aufgabe LED",
+                "alt": "Schaltung: LED mit dem kurzen Bein an GND und dem langen Bein an Pin 12",
                 "href": "",
                 "width": 1280,
                 "height": 570
@@ -226,7 +226,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p>Wahrscheinlich bekommst du die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code></p></li><li><p>Um den Fehler zu beheben, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo und klicke auf Installieren.</p></li></ul><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p>Falls die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code> erscheint, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo und klicke auf Installieren.</p></li></ul><br/>"
               },
               {
                 "type": "code",
@@ -243,7 +243,7 @@
               {
                 "type": "image",
                 "src": "/assets/erste-schritte-02.png",
-                "alt": "Aufgabe Servo",
+                "alt": "Schaltung: Servo mit Plus an 5V, Minus an GND und Signal an Pin 9",
                 "href": "",
                 "width": 1280,
                 "height": 543
@@ -280,7 +280,7 @@
               {
                 "type": "image",
                 "src": "/assets/erste-schritte-03.png",
-                "alt": "Aufgabe Lautsprecher",
+                "alt": "Schaltung: Piezo-Lautsprecher mit Minus an GND und Plus an Pin 8",
                 "href": "",
                 "width": 1280,
                 "height": 674
@@ -317,7 +317,7 @@
               {
                 "type": "image",
                 "src": "/assets/erste-schritte-04.png",
-                "alt": "Aufgabe NeoPixel",
+                "alt": "Schaltung: NeoPixel-Streifen mit +5V an 5V, GND an GND und DIN an Pin 2",
                 "href": "",
                 "width": 1280,
                 "height": 558
@@ -345,7 +345,7 @@
               },
               {
                 "type": "html",
-                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Öffne den Seriellen Plotter (unter Werkzeuge) und beobachte, wie sich der Messwert verändert, wenn du deine Hand über den Lichtsensor haltest.</p></li><li><p>Verändere den Schwellenwert (250) so, dass die LED leuchtet, wenn der Lichtsensor im Schatten deiner Hand ist.</p></li></ul>"
+                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Öffne den Seriellen Plotter (unter Werkzeuge) und beobachte, wie sich der Messwert verändert, wenn du deine Hand über den Lichtsensor hältst. Hier gilt: Je dunkler, desto grösser der Wert.</p></li><li><p>Verändere den Schwellenwert (250) so, dass die LED leuchtet, wenn der Lichtsensor im Schatten deiner Hand ist.</p></li></ul>"
               }
             ]
           },
@@ -354,7 +354,7 @@
               {
                 "type": "image",
                 "src": "/assets/erste-schritte-05.png",
-                "alt": "Aufgabe Lichtsensor",
+                "alt": "Schaltung: LED an GND und Pin 11, Lichtsensor zwischen GND und A0",
                 "href": "",
                 "width": 1280,
                 "height": 647
@@ -374,7 +374,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Verbinde folgende Komponenten: </p></li></ul><p>LED auf GND und Pin 12</p><p>Touch-Sensor auf GND, VCC und Pin 11</p><ul><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Verbinde folgende Komponenten: </p></li></ul><p>LED auf GND und Pin 12</p><p>Touch-Sensor: GND auf GND, VCC auf 5V, OUT (bzw. SIG) auf Pin 11</p><ul><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/><br/>"
               },
               {
                 "type": "code",
@@ -399,7 +399,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die <a href=\"https://sites.google.com/view/elektronikimunterricht/feldefekt-transistor-fet?authuser=0\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Schaltung mit dem FET</u></a> auf.</p></li></ul><ul><li><p>Lade den Blink-Code aus den Beispielen</p></li><li><p>Verbinde das Gate des FET mit Pin 13 des Arduinos, die Source mit dem GND des Arduinos.</p></li><li><p>Teste die Schaltung</p></li></ul><br/><p><strong>Aufgabe</strong></p><ul><li><p>Ersetze LED_BUILTIN im Blink-Code durch 6 und verbinde das Gate des FET mit Pin 6. Teste die Schaltung.</p></li><li><p>Gib den Code einer KI mit der Anweisung, das Blinken mit analogWrite() an Pin 6 in ein Ein- und Ausdimmen zu verwandeln. Zum Dimmen benötigst du einen PWM-Pin. A0 unterstützt beim Arduino Uno keine Hardware-PWM.</p></li></ul>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die <a href=\"https://sites.google.com/view/elektronikimunterricht/feldefekt-transistor-fet?authuser=0\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Schaltung mit dem FET</u></a> auf.</p></li></ul><ul><li><p>Lade den Blink-Code aus den Beispielen.</p></li><li><p>Verbinde das Gate des FET mit Pin 13 des Arduinos, die Source mit dem GND des Arduinos.</p></li><li><p>Teste die Schaltung.</p></li></ul><br/><p><strong>Aufgabe</strong></p><ul><li><p>Ersetze LED_BUILTIN im Blink-Code durch 6 und verbinde das Gate des FET mit Pin 6. Teste die Schaltung.</p></li><li><p>Gib den Code einer KI mit der Anweisung, das Blinken mit analogWrite() an Pin 6 in ein Ein- und Ausdimmen zu verwandeln. Zum Dimmen braucht es einen PWM-Pin (auf dem Board mit ~ markiert), darum Pin 6.</p></li></ul>"
               }
             ]
           }
@@ -416,7 +416,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Dieses Beispiel verwendet ein SSD1306-I²C-OLED mit 128 × 32 Pixeln, der I²C-Adresse 0x3C und ohne separat angesteuerten Reset-Pin. Bei einer anderen Auflösung, Adresse oder einem anderen Controller musst du Code beziehungsweise Bibliothek anpassen. Verbinde das passende OLED-Modul folgendermassen: </p></li></ul><p>GND auf GND</p><p>VCC auf die laut Datenblatt zulässige Versorgungsspannung des OLED-Moduls (bei 5-V-tauglichen Modulen: 5 V)</p><p>SCL auf SCL</p><p>SDA auf SDA</p><ul><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Der Code passt zu einem OLED-Display SSD1306 mit 128 × 32 Pixeln (I²C). Installiere die Bibliothek «Adafruit SSD1306» und wähle bei der Rückfrage «Alle installieren».</p></li><li><p>Verbinde das Display folgendermassen: </p></li></ul><p>GND auf GND</p><p>VCC auf 5V</p><p>SCL auf A5</p><p>SDA auf A4</p><ul><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/><br/>"
               },
               {
                 "type": "code",
@@ -441,119 +441,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Du kannst nun versuchen, weitere <a href=\"/sensoren\"><u>Sensoren</u></a> und <a href=\"/aktoren\"><u>Aktoren</u></a> einzeln oder in Kombination in Betrieb zu nehmen. Wenn du die Beispielcodes selbstständig (und nicht mit KI) zusammenführen willst, musst du den Abschnitt <a href=\"/arduino-programmieren\"><u>Programmcodes zusammenführen unter Aufbau eines Arduino-Programms</u></a> beachten.</p><br/><p>Weitere Lehrgänge finden sich hier:</p><p><a href=\"https://www.arduino.cc/en/Tutorial/BuiltInExamples\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.arduino.cc/en/Tutorial/BuiltInExamples</u></a></p><p>Erklärungen zu den Einsteigerprojekten, die in der Arduino IDE bereits enthalten sind. (EN)</p><br/><p><a href=\"https://funduino.de/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://funduino.de/</u></a> ;<a href=\"https://starthardware.org/\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://starthardware.org/</u></a> ;<a href=\"https://www.makinginderschule.ch/arduino.html\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://www.makinginderschule.ch/arduino.html</u></a></p><p><a href=\"https://starthardware.org/category/kurs/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://starthardware.org/category/kurs/</u></a> ;</p><p>Anleitungen, Lehrgänge, teilweise auch zu den Einsteigerprojekten. (DE)</p>"
-              }
-            ]
-          }
-        ],
-        "gallery": false
-      }
-    ]
-  },
-  {
-    "slug": "erste-schritte-mit-tinkercad",
-    "label": "Erste Schritte (mit Tinkercad)",
-    "title": "Erste Schritte (mit Tinkercad)",
-    "sections": [
-      {
-        "id": "h.2101a2480b72aca4_274",
-        "accordion": false,
-        "title": "",
-        "anchor": "",
-        "cells": [
-          {
-            "blocks": [
-              {
-                "type": "html",
-                "html": "<h1 id=\"h.qtmwb2xo9vka\">Erste Schritte (mit Tinkercad)  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Hier erfährst du, wie du einfache Arduino-Programme mithilfe von Tinkercad erstellen kannst. Die </strong><strong>A</strong><strong>ufgaben eignen sich, um erste Erfahrungen mit Arduino zu sammeln, ohne die</strong><strong> Schaltungen physisch aufbauen zu müssen</strong><strong>. </strong><strong>Tinkercad ermöglicht, Programme mit Codeblöcken zu erstellen und elektronische Schaltkreise zu simulieren.</strong></p>"
-              }
-            ]
-          }
-        ],
-        "gallery": false
-      },
-      {
-        "id": "h.461dd4f2f4126a3e_56",
-        "accordion": true,
-        "title": "Tinkercad und Arduino",
-        "anchor": "h.kufosiq5m1xo",
-        "cells": [
-          {
-            "blocks": [
-              {
-                "type": "html",
-                "html": "<p>Mit Tinkercad können 3D-Entwürfe erstellt und elektronische Schaltkreise simuliert werden. Beide Funktionen können nützlich sein im TTG-Unterricht. Wir werden im Folgenden mit dem Simulator für Schaltkreise arbeiten. Tinkercad ermöglicht, mit Codeblöcken zu programmieren, welche etwas einfacher zu verstehen sind als Code.</p><br/><p><strong>Einführung Tinkercad</strong></p><ul><li><p>Öffne <a href=\"http://www.tinkercad.com\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Tinkercad</u> </a>und melde dich an, evtl. musst du noch ein Konto erstellen.</p></li><li><p>Arbeite die ersten vier Übungen durch, die du <a href=\"https://www.tinkercad.com/learn/circuits\" rel=\"noopener noreferrer\" target=\"_blank\"><u>hier</u></a> findest. Diese musst du nicht physisch aufbauen.</p></li></ul>"
-              }
-            ]
-          }
-        ],
-        "gallery": false
-      },
-      {
-        "id": "h.461dd4f2f4126a3e_62",
-        "accordion": true,
-        "title": "Aufgabe LED",
-        "anchor": "h.u39isetgesf2",
-        "cells": [
-          {
-            "blocks": [
-              {
-                "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Klicke unter <em>Schaltkreise</em> auf <em>Neuen Schaltkreis erstellen</em></p></li><li><p>Ändere <em>Komponenten Einfach </em>zu <em>Arduino.</em></p></li><li><p>Ziehe <em>Blinken </em>auf die Arbeitsfläche</p></li><li><p>Klicke auf <em>Code</em></p></li><li><p>Ändere <em>Blöcke </em>zu <em>Blöcke und Text</em></p></li></ul><br/><p>Die Ansicht sollte sich nun ähnlich präsentieren, wie hier dargestellt. Du siehst das Programm in der <em>für immer-</em>Schlaufe als Blockdarstellung und als Code unter <em>void loop.</em></p>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "type": "image",
-                "src": "/assets/erste-schritte-mit-tinkercad-01.png",
-                "alt": "Aufgabe LED",
-                "href": "",
-                "width": 1280,
-                "height": 702
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "type": "html",
-                "html": "<p>Starte die Simulation, beobachte, was passiert und stoppe sie wieder. </p><br/><p><strong>Aufgabe</strong></p><ul><li><p>Erstelle einen Wechselblinker: Schliesse am Anschluss 6 eine weitere LED an, verwende dazu den Block <em>Anschluss </em><em>6</em><em> </em><em>auf</em><em> HOCH</em> stellen.</p></li><li><p>Füge eine Schlaufe (zu finden unter Steuerung) in das Programm ein und variiere mit dieser den Rhythmus.</p></li></ul>"
-              }
-            ]
-          }
-        ],
-        "gallery": false
-      },
-      {
-        "id": "h.49ad2ce75a458ef7_2",
-        "accordion": true,
-        "title": "Aufgabe Servo",
-        "anchor": "h.xsf3rgi755u0",
-        "cells": [
-          {
-            "blocks": [
-              {
-                "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Klicke unter <em>Schaltkreise</em> auf <em>Neuen Schaltkreis erstellen</em></p></li><li><p>Ändere <em>Komponenten Einfach </em>zu <em>Arduino.</em></p></li><li><p>Ziehe <em>Servo </em>auf die Arbeitsfläche</p></li><li><p>Klicke auf <em>Code</em></p></li><li><p>Ändere <em>Blöcke </em>zu <em>Blöcke und Text</em></p></li></ul><br/><p><strong>Aufgabe</strong></p><ul><li><p>Verändere das Verhalten des Servos, indem du die Werte <em>Position</em> und <em>warten</em> änderst.</p></li></ul>"
-              }
-            ]
-          }
-        ],
-        "gallery": false
-      },
-      {
-        "id": "h.461dd4f2f4126a3e_83",
-        "accordion": true,
-        "title": "Aufgabe Ton-Tastatur",
-        "anchor": "h.h5720yf8slb2",
-        "cells": [
-          {
-            "blocks": [
-              {
-                "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Klicke unter <em>Schaltkreise</em> auf <em>Neuen Schaltkreis erstellen</em></p></li><li><p>Ändere <em>Komponenten Einfach </em>zu <em>Arduino.</em></p></li><li><p>Ziehe <em>Ton-Tastatur</em><em> </em>auf die Arbeitsfläche</p></li><li><p>Klicke auf <em>Code</em></p></li><li><p>Ändere <em>Blöcke </em>zu <em>Blöcke und Text</em></p></li></ul><br/><p><strong>Aufgabe</strong></p><ul><li><p>Verändere die Tonhöhen im Code.</p></li><li><p>Ergänze einen weiteren Taster, mit welchem ein zusätzlicher Ton abgespielt werden kann.</p></li><li><p>Ergänze einen Servo, der sich je nach Ton in eine andere Position begibt.</p></li></ul>"
+                "html": "<p>Du kannst nun versuchen, weitere <a href=\"/sensoren\"><u>Sensoren</u></a> und <a href=\"/aktoren\"><u>Aktoren</u></a> einzeln oder in Kombination in Betrieb zu nehmen. Wenn du die Beispielcodes selbstständig (und nicht mit KI) zusammenführen willst, musst du den Abschnitt <a href=\"/arduino-programmieren\"><u>Programmcodes zusammenführen unter Aufbau eines Arduino-Programms</u></a> beachten.</p><br/><p>Weitere Lehrgänge finden sich hier:</p><p><a href=\"https://www.arduino.cc/en/Tutorial/BuiltInExamples\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.arduino.cc/en/Tutorial/BuiltInExamples</u></a></p><p>Erklärungen zu den Einsteigerprojekten, die in der Arduino IDE bereits enthalten sind. (EN)</p><br/><p><a href=\"https://funduino.de/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://funduino.de/</u></a><br/><a href=\"https://starthardware.org/\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://starthardware.org/</u></a> ;<a href=\"https://www.makinginderschule.ch/arduino.html\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://www.makinginderschule.ch/arduino.html</u></a></p><p><a href=\"https://starthardware.org/category/kurs/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://starthardware.org/category/kurs/</u></a> ;</p><p>Anleitungen, Lehrgänge, teilweise auch zu den Einsteigerprojekten. (DE)</p>"
               }
             ]
           }
@@ -577,7 +465,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<h1 id=\"h.e35m1nt953rc\">ARDUINO PROGRAMMIEREN  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Hier erfährst du einige wichtige Grundlagen zum Programmieren von Arduino. </strong><strong>Bevor du mit der Arbeit mit Arduino beginnst, macht es Sinn, die ersten beiden Abschnitte aufmerksam durchzulesen und die weiteren Abschnitte zu überfliegen.</strong></p>"
+                "html": "<h1 id=\"h.e35m1nt953rc\">Arduino programmieren  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Hier erfährst du einige wichtige Grundlagen zum Programmieren von Arduino. </strong><strong>Bevor du mit der Arbeit mit Arduino beginnst, macht es Sinn, die ersten beiden Abschnitte aufmerksam durchzulesen und die weiteren Abschnitte zu überfliegen.</strong></p>"
               }
             ]
           }
@@ -688,7 +576,7 @@
               },
               {
                 "type": "html",
-                "html": "<ul><li><p><strong>Erläuterung:</strong></p></li></ul><p>In diesem Beispiel wird eine LED zehn Mal ein- und ausgeschaltet. Die Schlaufe läuft 10 Mal, wobei die Zählvariable i jedes Mal um 1 erhöht wird. Die LED wird jedes Mal für 500 Millisekunden eingeschaltet und dann wieder ausgeschaltet.</p>"
+                "html": "<ul><li><p><strong>Erläuterung:</strong></p></li></ul><p>In diesem Beispiel wird eine LED zehnmal ein- und ausgeschaltet. Die Schlaufe läuft zehnmal, wobei die Zählvariable i jedes Mal um 1 erhöht wird. Die LED wird jedes Mal für 500 Millisekunden eingeschaltet und dann wieder ausgeschaltet.</p>"
               }
             ]
           }
@@ -705,7 +593,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Ein Arduino-Programm erscheint erst mal sehr kryptisch. Hier findest du die wichtigsten Operatoren, die dir beim Entziffern helfen können.</p><br/><ol><li><p><strong>Zuweisungsoperator (</strong><strong>=</strong><strong>)</strong>: Weist einer Variablen einen Wert zu. Beispiel: int x = 5;</p></li><li><p><strong>Vergleichsoperator (</strong><strong>==</strong><strong>)</strong>: Vergleicht zwei Werte auf Gleichheit. Beispiel: if (x == 5)</p></li><li><p><strong>Inkrementoperator (</strong><strong>++</strong><strong>)</strong>: Erhöht den Wert einer Variablen um 1. Beispiel: x++;</p></li><li><p><strong>Dekrementoperator (</strong><strong>--</strong><strong>)</strong>: Verringert den Wert einer Variablen um 1. Beispiel: x--;</p></li><li><p><strong>Mathematische Operatoren (</strong><strong>+</strong><strong>, </strong><strong>-</strong><strong>, </strong><strong>/</strong><strong>, </strong><strong>*</strong><strong>)</strong>:</p><ul><li><p><strong>Addition (</strong><strong>+</strong><strong>)</strong>: Addiert zwei Werte. Beispiel: int y = x + 2;</p></li><li><p><strong>Subtraktion (</strong><strong>-</strong><strong>)</strong>: Subtrahiert einen Wert von einem anderen. Beispiel: int y = x - 2;</p></li><li><p><strong>Multiplikation (</strong><strong>*</strong><strong>)</strong>: Multipliziert zwei Werte. Beispiel: int y = x * 2;</p></li><li><p><strong>Division (</strong><strong>/</strong><strong>)</strong>: Teilt einen Wert durch einen anderen. Beispiel: int y = x / 2;</p></li></ul></li><li><p><strong>Logische Operatoren (</strong><strong>&amp;&amp;</strong><strong>, </strong><strong>||</strong><strong>)</strong>:</p><ul><li><p><strong>Und (</strong><strong>&amp;&amp;</strong><strong>)</strong>: Wahr, wenn beide Bedingungen wahr sind. Beispiel: if (x &gt; 0 &amp;&amp; y &gt; 0)</p></li><li><p><strong>Oder (</strong><strong>||</strong><strong>)</strong>: Wahr, wenn eine der Bedingungen wahr ist. Beispiel: if (x &gt; 0 || y &gt; 0)</p></li></ul></li><li><p><strong>HIGH und LOW</strong>: Zustände, die häufig in digitalen Ein-/Ausgängen verwendet werden.</p><ul><li><p><strong>HIGH</strong>: Entspricht einem hohen Spannungspegel (meist 5 V oder 3.3 V). Beispiel: digitalWrite(pin, HIGH);</p></li><li><p><strong>LOW</strong>: Entspricht einem niedrigen Spannungspegel (0 V). Beispiel: digitalWrite(pin, LOW);</p></li></ul></li><li><p><strong>Semikolon (</strong><strong>;</strong><strong>)</strong>: Markiert das Ende einer Anweisung. Beispiel: int x = 5;</p></li><li><p><strong>Nicht-Operator (</strong><strong>!</strong><strong>)</strong>: Invertiert den Wahrheitswert einer Bedingung. Beispiel: if (!x)</p></li><li><p><strong>Vergleichsoperatoren (</strong><strong>&lt;</strong><strong>, </strong><strong>&gt;</strong><strong>, </strong><strong>&lt;=</strong><strong>, </strong><strong>&gt;=</strong><strong>)</strong>: Vergleicht zwei Werte.</p></li></ol><ul><li><p>Beispiel: if (x &lt; 5), if (x &gt;= 3)</p></li></ul><p>11. <strong>Klammern (</strong><strong>()</strong><strong>, </strong><strong>{}</strong><strong>)</strong>:</p><ul><li><p><strong>Runde Klammern (</strong><strong>()</strong><strong>)</strong>: Werden für Funktionsaufrufe und zur Gruppierung von Ausdrücken verwendet. Beispiel: if (x &gt; 0), digitalWrite(pin, HIGH);</p></li><li><p><strong>Geschweifte Klammern (</strong><strong>{}</strong><strong>)</strong>: Markieren den Anfang und das Ende eines Codeblocks. Beispiel: if (x &gt; 0) { /* Codeblock */ }</p></li></ul>"
+                "html": "<p>Ein Arduino-Programm erscheint erst mal sehr kryptisch. Hier findest du die wichtigsten Operatoren, die dir beim Entziffern helfen können.</p><br/><ol><li><p><strong>Zuweisungsoperator (</strong><strong>=</strong><strong>)</strong>: Weist einer Variablen einen Wert zu. Beispiel: int x = 5;</p></li><li><p><strong>Vergleichsoperator (</strong><strong>==</strong><strong>)</strong>: Vergleicht zwei Werte auf Gleichheit. Beispiel: if (x == 5)</p></li><li><p><strong>Inkrementoperator (</strong><strong>++</strong><strong>)</strong>: Erhöht den Wert einer Variablen um 1. Beispiel: x++;</p></li><li><p><strong>Dekrementoperator (</strong><strong>--</strong><strong>)</strong>: Verringert den Wert einer Variablen um 1. Beispiel: x--;</p></li><li><p><strong>Mathematische Operatoren (</strong><strong>+</strong><strong>, </strong><strong>-</strong><strong>, </strong><strong>/</strong><strong>, </strong><strong>*</strong><strong>)</strong>:</p><ul><li><p><strong>Addition (</strong><strong>+</strong><strong>)</strong>: Addiert zwei Werte. Beispiel: int y = x + 2;</p></li><li><p><strong>Subtraktion (</strong><strong>-</strong><strong>)</strong>: Subtrahiert einen Wert von einem anderen. Beispiel: int y = x - 2;</p></li><li><p><strong>Multiplikation (</strong><strong>*</strong><strong>)</strong>: Multipliziert zwei Werte. Beispiel: int y = x * 2;</p></li><li><p><strong>Division (</strong><strong>/</strong><strong>)</strong>: Teilt einen Wert durch einen anderen. Beispiel: int y = x / 2;</p></li></ul></li><li><p><strong>Logische Operatoren (</strong><strong>&amp;&amp;</strong><strong>, </strong><strong>||</strong><strong>)</strong>:</p><ul><li><p><strong>Und (</strong><strong>&amp;&amp;</strong><strong>)</strong>: Wahr, wenn beide Bedingungen wahr sind. Beispiel: if (x &gt; 0 &amp;&amp; y &gt; 0)</p></li><li><p><strong>Oder (</strong><strong>||</strong><strong>)</strong>: Wahr, wenn eine der Bedingungen wahr ist. Beispiel: if (x &gt; 0 || y &gt; 0)</p></li></ul></li><li><p><strong>HIGH und LOW</strong>: Zustände, die häufig in digitalen Ein-/Ausgängen verwendet werden.</p><ul><li><p><strong>HIGH</strong>: Entspricht einem hohen Spannungspegel (meist 5 V oder 3.3 V). Beispiel: digitalWrite(pin, HIGH);</p></li><li><p><strong>LOW</strong>: Entspricht einem niedrigen Spannungspegel (0 V). Beispiel: digitalWrite(pin, LOW);</p></li></ul></li><li><p><strong>Semikolon (</strong><strong>;</strong><strong>)</strong>: Markiert das Ende einer Anweisung. Beispiel: int x = 5;</p></li><li><p><strong>Nicht-Operator (</strong><strong>!</strong><strong>)</strong>: Invertiert den Wahrheitswert einer Bedingung. Beispiel: if (!x)</p></li><li><p><strong>Vergleichsoperatoren (</strong><strong>&lt;</strong><strong>, </strong><strong>&gt;</strong><strong>, </strong><strong>&lt;=</strong><strong>, </strong><strong>&gt;=</strong><strong>)</strong>: Vergleicht zwei Werte.</p></li></ol><ul><li><p>Beispiel: if (x &lt; 5), if (x &gt;= 3)</p></li></ul><p><strong>Klammern (</strong><strong>()</strong><strong>, </strong><strong>{}</strong><strong>)</strong>:</p><ul><li><p><strong>Runde Klammern (</strong><strong>()</strong><strong>)</strong>: Werden für Funktionsaufrufe und zur Gruppierung von Ausdrücken verwendet. Beispiel: if (x &gt; 0), digitalWrite(pin, HIGH);</p></li><li><p><strong>Geschweifte Klammern (</strong><strong>{}</strong><strong>)</strong>: Markieren den Anfang und das Ende eines Codeblocks. Beispiel: if (x &gt; 0) { /* Codeblock */ }</p></li></ul>"
               }
             ]
           }
@@ -739,7 +627,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>LLMs (large language models) wie ChatGPT oder <a href=\"https://www.duinocodegenerator.com/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.duinocodegenerator.com/</u></a> sind sehr gut darin, Arduino-Code zu erzeugen. Das hat den Vorteil, dass damit schnell Resultate erzielt werden können, aber auch den Nachteil, dass der Code nicht verstanden wird, was Anpassungen schwierig macht und die eigenen Kompetenzen weniger stark erweitert. Wiederum positiv ist, dass die LLMs auch gut darin sind, Arduino-Code zu erklären oder bei Fehlermeldungen weiterzuhelfen. Wenn mit diesen Tools gearbeitet wird, sollten die von <a href=\"https://www.duinocodegenerator.com/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.duinocodegenerator.com/</u></a> verfassten Hinweise unten beachtet werden. Ob diese Tools eingesetzt werden, ist eine persönliche Entscheidung. Wichtig ist, dass deren Einsatz in Abgaben deklariert wird.</p><p>Gib der KI möglichst viel Kontext. Sie weiss zum Beispiel nicht, dass du vielleicht noch nie mit Arduino gearbeitet hast, also teile ihr deine Erfahrung mit. Sie weiss auch nicht, mit welchem Board du genau arbeitest und an welchen Anschlüssen du was angeschlossen hast.</p><p><strong>Für beste Ergebnisse:</strong></p><ul><li><p><strong>Sei spezifisch:</strong> Gib Details zu deinem Projekt an, einschliesslich des Arduino-Board-Typs, der Sensoren, Motoren und anderer Komponenten, die du verwenden möchtest.</p></li><li><p><strong>Teile auf:</strong> Wenn dein Prompt komplex ist, überlege, ihn in kleinere, handhabbare Teile zu zerlegen, um es dem Tool leichter zu machen, ihn zu verarbeiten.</p></li><li><p><strong>Teste und verfeinere:</strong> Teste deinen Prompt. Wenn das Ergebnis nicht deinen Erwartungen entspricht, versuche, deinen Input anzupassen.</p></li></ul><br/><p><strong>Gute Beispiele:</strong></p><ul><li><p><strong>Einfach:</strong> «Programmiere ein Arduino Uno, um eine LED, die an Pin 13 angeschlossen ist, alle 500 ms blinken zu lassen.»</p></li><li><p><strong>Spezifisch:</strong> «Lies einen DS18B20-Temperatursensor aus, der mit einem Arduino Uno verbunden ist, und zeige die Temperatur in Celsius auf einem DFR0063-LCD-Bildschirm an.»</p></li><li><p><strong>Detailliert:</strong> «Steuere ein automatisches Bewässerungssystem mit einem Arduino Mega, einem Bodenfeuchtigkeitssensor und einer Wasserpumpe. Der Code sollte die Sensordaten auslesen und die Pumpe aktivieren, wenn die Bodenfeuchtigkeit unter einen im Code festgelegten Schwellenwert fällt.»</p></li></ul><br/><p><strong>Schlechte Beispiele:</strong></p><ul><li><p><strong>Für ein einfaches Arduino Uno ungeeignet, Spezialhardware wäre nötig: «Führe einen maschinellen Lernalgorithmus aus, um Obst mit einer Kamera zu klassifizieren.»</strong></p></li><li><p><strong>Zu vage:</strong> «Programmiere einen Roboter, um mein Zimmer zu reinigen.»</p></li><li><p><strong>Benötigt mehr Details:</strong> «Steuere ein Ampelsystem, das die Farben zu verschiedenen Tageszeiten basierend auf einem vorprogrammierten Zeitplan ändert.»</p></li></ul>"
+                "html": "<p>LLMs (large language models) wie ChatGPT oder <a href=\"https://www.duinocodegenerator.com/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.duinocodegenerator.com/</u></a> sind sehr gut darin, Arduino-Code zu erzeugen. Das hat den Vorteil, dass damit schnell Resultate erzielt werden können, aber auch den Nachteil, dass der Code nicht verstanden wird, was Anpassungen schwierig macht und die eigenen Kompetenzen weniger stark erweitert. Wiederum positiv ist, dass die LLMs auch gut darin sind, Arduino-Code zu erklären oder bei Fehlermeldungen weiterzuhelfen. Wenn mit diesen Tools gearbeitet wird, sollten die von <a href=\"https://www.duinocodegenerator.com/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.duinocodegenerator.com/</u></a> verfassten Hinweise unten beachtet werden. Ob diese Tools eingesetzt werden, ist eine persönliche Entscheidung. Wichtig ist, dass deren Einsatz in Abgaben deklariert wird.</p><p>Gib der KI möglichst viel Kontext. Sie weiss zum Beispiel nicht, dass du vielleicht noch nie mit Arduino gearbeitet hast, also teile ihr deine Erfahrung mit. Sie weiss auch nicht, mit welchem Board du genau arbeitest und an welchen Anschlüssen du was angeschlossen hast.</p><p><strong>Für beste Ergebnisse:</strong></p><ul><li><p><strong>Sei spezifisch:</strong> Gib Details zu deinem Vorhaben an, einschliesslich des Arduino-Board-Typs, der Sensoren, Motoren und anderer Komponenten, die du verwenden möchtest.</p></li><li><p><strong>Teile auf:</strong> Wenn dein Prompt komplex ist, überlege, ihn in kleinere, handhabbare Teile zu zerlegen, um es dem Tool leichter zu machen, ihn zu verarbeiten.</p></li><li><p><strong>Teste und verfeinere:</strong> Teste deinen Prompt. Wenn das Ergebnis nicht deinen Erwartungen entspricht, versuche, deinen Input anzupassen.</p></li></ul><br/><p><strong>Gute Beispiele:</strong></p><ul><li><p><strong>Einfach:</strong> «Programmiere ein Arduino Uno, um eine LED, die an Pin 13 angeschlossen ist, alle 500 ms blinken zu lassen.»</p></li><li><p><strong>Spezifisch:</strong> «Lies einen DS18B20-Temperatursensor aus, der mit einem Arduino Uno verbunden ist, und zeige die Temperatur in Celsius auf einem DFR0063-LCD-Bildschirm an.»</p></li><li><p><strong>Detailliert:</strong> «Steuere ein automatisches Bewässerungssystem mit einem Arduino Mega, einem Bodenfeuchtigkeitssensor und einer Wasserpumpe. Der Code sollte die Sensordaten auslesen und die Pumpe aktivieren, wenn die Bodenfeuchtigkeit unter einen im Code festgelegten Schwellenwert fällt.»</p></li></ul><br/><p><strong>Schlechte Beispiele:</strong></p><ul><li><p><strong>Für ein einfaches Arduino Uno ungeeignet, Spezialhardware wäre nötig: «Führe einen maschinellen Lernalgorithmus aus, um Obst mit einer Kamera zu klassifizieren.»</strong></p></li><li><p><strong>Zu vage:</strong> «Programmiere einen Roboter, um mein Zimmer zu reinigen.»</p></li><li><p><strong>Benötigt mehr Details:</strong> «Steuere ein Ampelsystem, das die Farben zu verschiedenen Tageszeiten basierend auf einem vorprogrammierten Zeitplan ändert.»</p></li></ul>"
               }
             ]
           }
@@ -773,11 +661,11 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Der <strong>Serial Monitor</strong> in der Arduino-IDE ermöglicht es dir, Daten in Echtzeit zwischen deinem Arduino und deinem Computer auszutauschen. Du kannst damit Nachrichten, Sensorwerte oder andere Daten anzeigen lassen, was besonders hilfreich bei der Fehlersuche und Überwachung deines Programms ist. Den Serial Monitor findest du unter <strong>Werkzeuge &gt; Serieller Monitor </strong><strong>(oder über die Lupe oben rechts)</strong> oder durch Klicken auf das Lupensymbol in der rechten oberen Ecke.</p><p>Der <strong>Serial Plotter</strong> ist ein weiteres Tool in der Arduino-IDE, das Daten grafisch darstellt. Er ist nützlich, um Trends und Veränderungen in Echtzeit zu verfolgen, beispielsweise bei Sensorwerten. Den Serial Plotter findest du unter <strong>Werkzeuge &gt; Serieller Plotter</strong>. Mit ihm kannst du Daten als Diagramm anzeigen und so Muster und Veränderungen leichter erkennen.</p><h3 id=\"h.8lk2yyfipa63\"><strong>Beispielcode: Lichtsensor mit Serial Monitor und Serial Plotter</strong></h3><p>Hier ist ein einfacher Beispielcode, um die Werte eines lichtabhängigen Widerstands (LDR) im Serial Monitor anzuzeigen und im Serial Plotter darzustellen:</p>"
+                "html": "<p>Der <strong>Serial Monitor</strong> in der Arduino IDE ermöglicht es dir, Daten in Echtzeit zwischen deinem Arduino und deinem Computer auszutauschen. Du kannst damit Nachrichten, Sensorwerte oder andere Daten anzeigen lassen, was besonders hilfreich bei der Fehlersuche und Überwachung deines Programms ist. Den Serial Monitor findest du unter <strong>Werkzeuge &gt; Serieller Monitor </strong>oder durch Klicken auf das Lupensymbol in der rechten oberen Ecke.</p><p>Der <strong>Serial Plotter</strong> ist ein weiteres Tool in der Arduino IDE, das Daten grafisch darstellt. Er ist nützlich, um Trends und Veränderungen in Echtzeit zu verfolgen, beispielsweise bei Sensorwerten. Den Serial Plotter findest du unter <strong>Werkzeuge &gt; Serieller Plotter</strong>. Mit ihm kannst du Daten als Diagramm anzeigen und so Muster und Veränderungen leichter erkennen.</p><h3 id=\"h.8lk2yyfipa63\"><strong>Beispielcode: Lichtsensor mit Serial Monitor und Serial Plotter</strong></h3><p>Hier ist ein einfacher Beispielcode, um die Werte eines lichtabhängigen Widerstands (LDR) im Serial Monitor anzuzeigen und im Serial Plotter darzustellen:</p>"
               },
               {
                 "type": "code",
-                "code": "void setup() {\n  Serial.begin(9600);  // Starte die serielle Kommunikation mit 9600 Baud\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A0);  // Lese den Wert vom Lichtsensor (angeschlossen an A0)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
+                "code": "void setup() {\n  Serial.begin(9600);  // Starte die serielle Kommunikation mit 9600 Baud\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A0);  // Liest den Wert vom Lichtsensor (angeschlossen an A0)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
               }
             ]
           }
@@ -838,8 +726,8 @@
   },
   {
     "slug": "projekte",
-    "label": "Projekte",
-    "title": "Projekte",
+    "label": "Vorhaben",
+    "title": "Vorhaben",
     "sections": [
       {
         "id": "h.461dd4f2f4126a3e_144",
@@ -851,7 +739,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<h1 id=\"h.clyw7vndww2z\">Arduino PROJEKTE  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Hier </strong><strong>erhältst du einige Gedankenanstösse zu möglichen Arduino-Projekten</strong></p><br/>"
+                "html": "<h1 id=\"h.clyw7vndww2z\">Arduino-Vorhaben  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Hier </strong><strong>erhältst du einige Gedankenanstösse zu möglichen Arduino-Vorhaben.</strong></p><br/>"
               }
             ]
           }
@@ -886,7 +774,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Auf die Frage, wie schwierig ein Arduino-Projekt ist, gibt es keine pauschale Antwort.  Hier können darum nur Tendenzen aufgezeigt werden.</p><p><strong>Hardware </strong></p><ul><li><p>Umfang: Je mehr einzelne Komponenten (z. B. LED, Servos, Berührungssensoren) eingesetzt werden, umso anspruchsvoller das Projekt. Mehr Komponenten bedeuten mehr Arbeit und jede zusätzliche Komponente ist auch eine potenzielle Fehlerquelle, bei einem Fehler ist die Fehlersuche schwieriger.</p></li><li><p>Die Art der Komponenten beeinflusst den Schwierigkeitsgrad.</p><ul><li><p>einfach: LED, Touch-Sensor</p></li><li><p>mittel: NeoPixel, Servo, Lichtsensor, Lautsprecher, Taster, Joystick, Bewegungssensor</p></li><li><p>schwierig: Schrittmotor, andere starke Motoren, Mikrofon, LCD, Distanzsensor, Gassensor</p></li></ul></li></ul><p><strong>Programmcode</strong></p><ul><li><p>einfach: Programme, die den Input von einem Sensor direkt umsetzen, z. B.: Eine Lampe, die einschaltet, sobald es dunkel wird.  </p></li><li><p>mittel: Programme, die den Input von mehreren Sensoren direkt umsetzen, z. B.: Eine Lampe, die einschaltet, wenn es dunkel ist und eine Bewegung registriert wird.</p></li><li><p>schwierig: Programme, die eine Datenspeicherung verlangen, z. B. Tic-Tac-Toe, Wortuhren</p></li></ul>"
+                "html": "<p>Auf die Frage, wie schwierig ein Arduino-Vorhaben ist, gibt es keine pauschale Antwort.  Hier können darum nur Tendenzen aufgezeigt werden.</p><p><strong>Hardware </strong></p><ul><li><p>Umfang: Je mehr einzelne Komponenten (z. B. LED, Servos, Berührungssensoren) eingesetzt werden, umso anspruchsvoller das Vorhaben. Mehr Komponenten bedeuten mehr Arbeit und jede zusätzliche Komponente ist auch eine potenzielle Fehlerquelle, bei einem Fehler ist die Fehlersuche schwieriger.</p></li><li><p>Die Art der Komponenten beeinflusst den Schwierigkeitsgrad.</p><ul><li><p>einfach: LED, Touch-Sensor</p></li><li><p>mittel: NeoPixel, Servo, Lichtsensor, Lautsprecher, Taster, Joystick, Bewegungssensor</p></li><li><p>schwierig: Schrittmotor, andere starke Motoren, Mikrofon, LCD, Distanzsensor, Gassensor</p></li></ul></li></ul><p><strong>Programmcode</strong></p><ul><li><p>einfach: Programme, die den Input von einem Sensor direkt umsetzen, z. B.: Eine Lampe, die einschaltet, sobald es dunkel wird.  </p></li><li><p>mittel: Programme, die den Input von mehreren Sensoren direkt umsetzen, z. B.: Eine Lampe, die einschaltet, wenn es dunkel ist und eine Bewegung registriert wird.</p></li><li><p>schwierig: Programme, die eine Datenspeicherung verlangen, z. B. Tic-Tac-Toe, Wortuhren</p></li></ul>"
               }
             ]
           }
@@ -903,7 +791,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Nachdem der Entscheid für ein Projekt gefällt wurde, macht es Sinn, die Schaltung auf einem Breadboard aufzubauen und das Programm zu erstellen. Je komplexer das Projekt, umso wichtiger ist es, Schritt für Schritt vorzugehen und Teilsysteme zu prüfen.</p><ul><li><p>Hardware aufbauen und einzelne Teilsysteme mit einem Testprogramm testen (also z. B. die LEDs mit dem Blink-Programm blinken lassen). Siehe dazu auch den Abschnitt Serial Monitor und Plotter auf der Seite Arduino programmieren.</p></li><li><p>Teilprogramme erstellen: Wenn möglich/sinnvoll, werden Teilprogramme erstellt und erprobt.</p></li><li><p>Erst jetzt werden alle Teile zu einem Programm zusammengefügt.</p></li><li><p>Wenn der Prototyp auf dem Breadboard funktioniert, kann nun dazu übergegangen werden, diesen in ein Objekt fix einzubauen.</p></li></ul>"
+                "html": "<p>Nachdem der Entscheid für ein Vorhaben gefällt wurde, ist es sinnvoll, die Schaltung auf einem Breadboard aufzubauen und das Programm zu erstellen. Je komplexer das Vorhaben, umso wichtiger ist es, Schritt für Schritt vorzugehen und Teilsysteme zu prüfen.</p><ul><li><p>Hardware aufbauen und einzelne Teilsysteme mit einem Testprogramm testen (also z. B. die LEDs mit dem Blink-Programm blinken lassen). Siehe dazu auch den Abschnitt Serial Monitor und Plotter auf der Seite Arduino programmieren.</p></li><li><p>Teilprogramme erstellen: Wenn möglich/sinnvoll, werden Teilprogramme erstellt und erprobt.</p></li><li><p>Erst jetzt werden alle Teile zu einem Programm zusammengefügt.</p></li><li><p>Wenn der Prototyp auf dem Breadboard funktioniert, kann nun dazu übergegangen werden, diesen in ein Objekt fix einzubauen.</p></li></ul>"
               }
             ]
           }
@@ -973,7 +861,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<h1 id=\"h.ql9jah2lussn\">SENSOREN  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Mit Sensoren können physikalische Phänomene für ein Arduino erfassbar gemacht werden. Hier findest du einige der am häufigsten eingesetzten Sensoren.</strong></p>"
+                "html": "<h1 id=\"h.ql9jah2lussn\">Sensoren  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Mit Sensoren können physikalische Phänomene für ein Arduino erfassbar gemacht werden. Hier findest du einige der am häufigsten eingesetzten Sensoren.</strong></p>"
               }
             ]
           }
@@ -1076,7 +964,7 @@
               },
               {
                 "type": "code",
-                "code": "void setup() {\n  pinMode(A0, INPUT);   // Setze den Pin A0 als Eingang für den LDR\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A0);  // Lese den Wert des LDR\n  Serial.println(sensorValue);       // Sende den Wert des LDR über die serielle Schnittstelle\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 ms vor der nächsten Messung\n}"
+                "code": "void setup() {\n  pinMode(A0, INPUT);   // Setze den Pin A0 als Eingang für den LDR\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A0);  // Liest den Wert des LDR\n  Serial.println(sensorValue);       // Sende den Wert des LDR über die serielle Schnittstelle\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 ms vor der nächsten Messung\n}"
               },
               {
                 "type": "html",
@@ -1113,7 +1001,7 @@
               },
               {
                 "type": "code",
-                "code": "void setup() {\n  pinMode(A0, INPUT);   // Setze den Pin A0 als Eingang für die X-Achse des Joysticks\n  pinMode(A1, INPUT);   // Setze den Pin A1 als Eingang für die Y-Achse des Joysticks\n  pinMode(9, OUTPUT);   // Setze den Pin 9 als Ausgang für die erste LED\n  pinMode(10, OUTPUT);  // Setze den Pin 10 als Ausgang für die zweite LED\n}\n\nvoid loop() {\n  int xValue = analogRead(A0);  // Lese den Wert der X-Achse des Joysticks\n  int yValue = analogRead(A1);  // Lese den Wert der Y-Achse des Joysticks\n  // Konvertiere die Joystick-Werte (0-1023) in PWM-Werte (0-255)\n  int led1Brightness = map(xValue, 0, 1023, 0, 255);\n  int led2Brightness = map(yValue, 0, 1023, 0, 255);\n\n  // Steuere die LEDs entsprechend der Joystick-Position\n  analogWrite(9, led1Brightness);\n  analogWrite(10, led2Brightness);\n  delay(15);  // Warte kurz, um eine sanfte Änderung der Helligkeit zu ermöglichen\n}"
+                "code": "void setup() {\n  pinMode(A0, INPUT);   // Setze den Pin A0 als Eingang für die X-Achse des Joysticks\n  pinMode(A1, INPUT);   // Setze den Pin A1 als Eingang für die Y-Achse des Joysticks\n  pinMode(9, OUTPUT);   // Setze den Pin 9 als Ausgang für die erste LED\n  pinMode(10, OUTPUT);  // Setze den Pin 10 als Ausgang für die zweite LED\n}\n\nvoid loop() {\n  int xValue = analogRead(A0);  // Liest den Wert der X-Achse des Joysticks\n  int yValue = analogRead(A1);  // Liest den Wert der Y-Achse des Joysticks\n  // Konvertiere die Joystick-Werte (0-1023) in PWM-Werte (0-255)\n  int led1Brightness = map(xValue, 0, 1023, 0, 255);\n  int led2Brightness = map(yValue, 0, 1023, 0, 255);\n\n  // Steuere die LEDs entsprechend der Joystick-Position\n  analogWrite(9, led1Brightness);\n  analogWrite(10, led2Brightness);\n  delay(15);  // Warte kurz, um eine sanfte Änderung der Helligkeit zu ermöglichen\n}"
               },
               {
                 "type": "html",
@@ -1146,7 +1034,7 @@
               },
               {
                 "type": "html",
-                "html": "<h3 id=\"h.2fns28t657qr\"><strong>Erklärung:</strong></h3><p>Der Ultraschall-Distanzsensor sendet einen Ultraschallimpuls über den <strong>Trig</strong>-Pin und misst die Zeit, die der Impuls benötigt, um nach dem Reflektieren von einem Objekt zum <strong>Echo</strong>-Pin zurückzukehren. Diese Zeit wird in eine Entfernung umgerechnet.</p><ul><li><p><strong>pulseIn(10, HIGH, 30000UL)</strong>: Diese Funktion misst die Zeitspanne (in Mikrosekunden), während der Echo-Pin (Pin 10) HIGH ist. Das bedeutet, dass pulseIn() die Zeit misst, die der Ultraschallimpuls benötigt, um vom Sensor ausgesendet zu werden, von einem Objekt reflektiert zu werden und schliesslich wieder vom Sensor empfangen zu werden.</p></li></ul><p>In diesem Beispiel wird die LED heller, je näher ein Objekt am Sensor ist. Die pulseIn()-Funktion spielt hierbei eine zentrale Rolle, da sie die Zeit für die Rückkehr des Ultraschallsignals misst und daraus die Entfernung berechnet.</p><br/>"
+                "html": "<h3 id=\"h.2fns28t657qr\"><strong>Erklärung:</strong></h3><p>Der Ultraschall-Distanzsensor sendet einen Ultraschallimpuls über den <strong>Trig</strong>-Pin und misst die Zeit, die der Impuls benötigt, um nach dem Reflektieren von einem Objekt zum <strong>Echo</strong>-Pin zurückzukehren. Diese Zeit wird in eine Entfernung umgerechnet.</p><ul><li><p><strong>pulseIn(10, HIGH, 30000UL)</strong>: Diese Funktion misst die Zeitspanne (in Mikrosekunden), während der Echo-Pin (Pin 10) HIGH ist. Das bedeutet, dass pulseIn() die Zeit misst, die der Ultraschallimpuls benötigt, um vom Sensor ausgesendet zu werden, von einem Objekt reflektiert zu werden und schliesslich wieder vom Sensor empfangen zu werden.</p></li></ul><p>In diesem Beispiel wird die LED heller, je näher ein Objekt am Sensor ist. Die pulseIn()-Funktion spielt hierbei eine zentrale Rolle, da sie die Zeit für die Rückkehr des Ultraschallsignals misst. Daraus berechnet der Code die Entfernung.</p><br/>"
               }
             ]
           }
@@ -1170,7 +1058,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<h1 id=\"h.ybj5bwyatghl\">AKTOREN  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Mit Aktoren kann man Licht, Bewegung oder Schall erzeugen. Hier findest du einige der am häufigsten mit Arduino eingesetzten Aktoren.</strong></p>"
+                "html": "<h1 id=\"h.ybj5bwyatghl\">Aktoren  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Mit Aktoren kann man Licht, Bewegung oder Schall erzeugen. Hier findest du einige der am häufigsten mit Arduino eingesetzten Aktoren.</strong></p>"
               }
             ]
           }
@@ -1256,7 +1144,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Eine LED (Light Emitting Diode) ist ein einfaches, aber vielseitiges Bauteil, das in einer Vielzahl von Projekten verwendet wird, um visuelle Signale zu geben oder Beleuchtungseffekte zu erzeugen. In diesem Beispiel zeigen wir, wie eine LED mit einem Arduino gesteuert werden kann, um sie blinken zu lassen.</p><p id=\"h.lenhvon9mnlf\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p>Rotes Kabel: Anode (langes Beinchen) der LED → 220-Ω-Vorwiderstand → Digitaler Pin 13 (Arduino)</p></li><li><p><strong>Schwarzes Kabel</strong>: Kathode (kurzes Beinchen) der LED → GND (Arduino)</p></li><li><p><strong>Widerstand: Ein 220-Ω-Vorwiderstand zwischen Pin 13 und der Anode begrenzt den Strom und schützt LED und Arduino-Pin. Bei einer externen, einzelnen LED ist dieser Widerstand erforderlich.</strong></p></li></ul><p id=\"h.fmyn0ko6xhdr\"><strong>Arduino-Code zur Steuerung der LED:</strong></p>"
+                "html": "<p>Eine LED (Light Emitting Diode) ist ein einfaches, aber vielseitiges Bauteil, das vielseitig eingesetzt wird, um visuelle Signale zu geben oder Beleuchtungseffekte zu erzeugen. In diesem Beispiel zeigen wir, wie eine LED mit einem Arduino gesteuert werden kann, um sie blinken zu lassen.</p><p id=\"h.lenhvon9mnlf\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p>Rotes Kabel: Anode (langes Beinchen) der LED → 220-Ω-Vorwiderstand → Digitaler Pin 13 (Arduino)</p></li><li><p><strong>Schwarzes Kabel</strong>: Kathode (kurzes Beinchen) der LED → GND (Arduino)</p></li><li><p><strong>Widerstand: Ein 220-Ω-Vorwiderstand zwischen Pin 13 und der Anode begrenzt den Strom und schützt LED und Arduino-Pin. Bei einer externen, einzelnen LED ist dieser Widerstand erforderlich.</strong></p></li></ul><p id=\"h.fmyn0ko6xhdr\"><strong>Arduino-Code zur Steuerung der LED:</strong></p>"
               },
               {
                 "type": "code",
@@ -1264,7 +1152,7 @@
               },
               {
                 "type": "html",
-                "html": "<p id=\"h.vp1sb5wfv5du\"><strong>Funktionsweise:</strong></p><p>In diesem Beispiel wird die LED an Pin 13 des Arduino angeschlossen. Der Code im setup() definiert diesen Pin als Ausgang, sodass er die LED ansteuern kann. In der loop()-Funktion wird die LED mit digitalWrite(13, HIGH) eingeschaltet, eine Sekunde lang (1000 Millisekunden) leuchten gelassen und dann mit digitalWrite(13, LOW) wieder ausgeschaltet. Anschliessend wartet der Arduino eine weitere Sekunde, bevor die LED wieder eingeschaltet wird. Dies führt dazu, dass die LED kontinuierlich ein- und ausgeschaltet wird und somit blinkt.</p><p>Dieses Setup eignet sich ideal für einfache visuelle Signale, z. B. in Blinklichtprojekten, als Betriebsanzeige oder als Teil von interaktiven Installationen. Durch Anpassungen des delay()-Wertes kann die Blinkfrequenz verändert werden, und durch Hinzufügen weiterer LEDs können komplexere Lichtmuster erstellt werden.</p>"
+                "html": "<p id=\"h.vp1sb5wfv5du\"><strong>Funktionsweise:</strong></p><p>In diesem Beispiel wird die LED an Pin 13 des Arduino angeschlossen. Der Code im setup() definiert diesen Pin als Ausgang, sodass er die LED ansteuern kann. In der loop()-Funktion wird die LED mit digitalWrite(13, HIGH) eingeschaltet, eine Sekunde lang (1000 Millisekunden) leuchten gelassen und dann mit digitalWrite(13, LOW) wieder ausgeschaltet. Anschliessend wartet der Arduino eine weitere Sekunde, bevor die LED wieder eingeschaltet wird. Dies führt dazu, dass die LED kontinuierlich ein- und ausgeschaltet wird und somit blinkt.</p><p>Dieser Aufbau eignet sich ideal für einfache visuelle Signale, z. B. in Blinklichtprojekten, als Betriebsanzeige oder als Teil von interaktiven Installationen. Durch Anpassungen des delay()-Wertes kann die Blinkfrequenz verändert werden, und durch Hinzufügen weiterer LEDs können komplexere Lichtmuster erstellt werden.</p>"
               }
             ]
           }
@@ -1281,7 +1169,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>NeoPixel-LEDs sind RGB(Rot-Grün-Blau)-LEDs, die einzeln adressierbar sind und mit denen sich komplexe Beleuchtungseffekte erzeugen lassen.</p><p id=\"h.jf9ot7ht82v1\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC (NeoPixel) → 5V (Arduino)</p></li><li><p><strong>Schwarzes oder braunes Kabel</strong>: GND (NeoPixel) → GND (Arduino)</p></li><li><p><strong>Grünes Kabel</strong>: DIN (NeoPixel, DataIN, nicht mit OUT verwechseln!) → Digitaler Pin 2 (Arduino)</p></li></ul><p id=\"h.rh0kjjd9sulf\"><strong>Arduino-Code zur Steuerung der NeoPixel-LEDs:</strong></p>"
+                "html": "<p>NeoPixel-LEDs sind RGB-LEDs (Rot, Grün, Blau), die einzeln adressierbar sind und mit denen sich komplexe Beleuchtungseffekte erzeugen lassen.</p><p id=\"h.jf9ot7ht82v1\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC (NeoPixel) → 5V (Arduino)</p></li><li><p><strong>Schwarzes oder braunes Kabel</strong>: GND (NeoPixel) → GND (Arduino)</p></li><li><p><strong>Grünes Kabel</strong>: DIN (NeoPixel, DataIN, nicht mit OUT verwechseln) → Digitaler Pin 2 (Arduino)</p></li></ul><p id=\"h.rh0kjjd9sulf\"><strong>Arduino-Code zur Steuerung der NeoPixel-LEDs:</strong></p>"
               },
               {
                 "type": "code",
@@ -1289,7 +1177,7 @@
               },
               {
                 "type": "html",
-                "html": "<p id=\"h.j9zunvwcw8i6\"><strong>Funktionsweise:</strong></p><p>In diesem Beispiel leuchten die ersten sieben LEDs des NeoPixel-Streifens in unterschiedlichen Farben. Jede LED wird einzeln angesprochen und kann in jeder gewünschten Farbe leuchten. Der Code ist einfach und kann leicht erweitert werden, um komplexere Muster oder Animationen zu erstellen. Dieses Setup eignet sich gut für Projekte, bei denen eine mehrfarbige Beleuchtung erforderlich ist, wie z. B. in dekorativen Displays oder als visuelles Feedback in interaktiven Anwendungen.</p>"
+                "html": "<p id=\"h.j9zunvwcw8i6\"><strong>Funktionsweise:</strong></p><p>In diesem Beispiel leuchten die ersten sieben LEDs des NeoPixel-Streifens in unterschiedlichen Farben. Jede LED wird einzeln angesprochen und kann in jeder gewünschten Farbe leuchten. Der Code ist einfach und kann leicht erweitert werden, um komplexere Muster oder Animationen zu erstellen. Dieser Aufbau eignet sich gut für Anwendungen, bei denen eine mehrfarbige Beleuchtung erforderlich ist, wie z. B. in dekorativen Displays oder als visuelles Feedback in interaktiven Anwendungen.</p>"
               }
             ]
           }
@@ -1306,7 +1194,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Ein Servo ist ein kleiner Motor, der präzise Winkelsteuerungen ermöglicht. Er wird häufig in Projekten verwendet, bei denen eine genaue Positionierung erforderlich ist, wie zum Beispiel in Robotik, Modellbau oder Automatisierungsanwendungen. In diesem Beispiel zeigen wir, wie ein Servo mit einem Arduino kontinuierlich hin und her bewegt werden kann.</p><p id=\"h.ds2152afxrnc\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC (Servo) → 5V (Arduino)</p></li><li><p><strong>Schwarzes oder braunes Kabel</strong>: GND (Servo) → GND (Arduino)</p></li><li><p><strong>Gelbes oder oranges Kabel</strong>: Signal (Servo) → Digitaler Pin 9 (Arduino)</p></li></ul><p id=\"h.2967e6qyxavr\"><strong>Arduino-Code zur kontinuierlichen Bewegung des Servos:</strong></p>"
+                "html": "<p>Ein Servo ist ein kleiner Motor, der präzise Winkelsteuerungen ermöglicht. Er wird häufig eingesetzt, bei denen eine genaue Positionierung erforderlich ist, wie zum Beispiel in Robotik, Modellbau oder Automatisierungsanwendungen. In diesem Beispiel zeigen wir, wie ein Servo mit einem Arduino kontinuierlich hin und her bewegt werden kann.</p><p id=\"h.ds2152afxrnc\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC (Servo) → 5V (Arduino)</p></li><li><p><strong>Schwarzes oder braunes Kabel</strong>: GND (Servo) → GND (Arduino)</p></li><li><p><strong>Gelbes oder oranges Kabel</strong>: Signal (Servo) → Digitaler Pin 9 (Arduino)</p></li></ul><p id=\"h.2967e6qyxavr\"><strong>Arduino-Code zur kontinuierlichen Bewegung des Servos:</strong></p>"
               },
               {
                 "type": "code",
@@ -1314,7 +1202,7 @@
               },
               {
                 "type": "html",
-                "html": "<p id=\"h.2wvegwk0aaqd\"><strong>Erklärung des Codes:</strong></p><ul><li><p><strong>Servo-Bibliothek</strong>: Die Servo.h-Bibliothek wird verwendet, um die Steuerung des Servos zu vereinfachen.</p></li><li><p><strong>Servo-Objekt</strong>: Ein Objekt myServo wird erstellt, um den Servo zu steuern.</p></li><li><p><strong>Loop-Funktion</strong>: Der Servo wird von 0 Grad auf 180 Grad bewegt und anschliessend wieder zurück auf 0 Grad. Dies wird kontinuierlich wiederholt, um eine gleichmässige Hin- und Herbewegung zu erzeugen.</p></li></ul><p id=\"h.5vmjt9813lw3\"><strong>Funktionsweise:</strong></p><p>In diesem Beispiel bewegt sich der Servo kontinuierlich hin und her, ohne dass ein externer Knopf oder eine andere Eingabe erforderlich ist. Die Bewegungsgeschwindigkeit kann durch Anpassung des delay-Werts verändert werden. Dieses einfache Setup eignet sich gut für Anwendungen, bei denen eine wiederholte Bewegung erforderlich ist, wie zum Beispiel in automatisierten Systemen oder animierten Objekten.</p><p>Hinweis: Das Beispiel setzt einen für 5 V geeigneten Positionsservo voraus. Ob die Versorgung über den 5V-Pin ausreicht, hängt vom Strombedarf des Servos und der Board-Versorgung ab. Auch beim Anlaufen kann der Strombedarf hoch sein. Verwende bei unzureichender Versorgung eine externe 5-V-Stromquelle mit ausreichend Strom. Verbinde deren GND mit Arduino-GND und den roten Servoanschluss mit der externen Versorgung. Der tatsächliche Winkelbereich und die zulässigen Steuerimpulse hängen vom Servo ab.</p>"
+                "html": "<p id=\"h.2wvegwk0aaqd\"><strong>Erklärung des Codes:</strong></p><ul><li><p><strong>Servo-Bibliothek</strong>: Die Servo.h-Bibliothek wird verwendet, um die Steuerung des Servos zu vereinfachen.</p></li><li><p><strong>Servo-Objekt</strong>: Ein Objekt myServo wird erstellt, um den Servo zu steuern.</p></li><li><p><strong>Loop-Funktion</strong>: Der Servo wird von 0 Grad auf 180 Grad bewegt und anschliessend wieder zurück auf 0 Grad. Dies wird kontinuierlich wiederholt, um eine gleichmässige Hin- und Herbewegung zu erzeugen.</p></li></ul><p id=\"h.5vmjt9813lw3\"><strong>Funktionsweise:</strong></p><p>In diesem Beispiel bewegt sich der Servo kontinuierlich hin und her, ohne dass ein externer Knopf oder eine andere Eingabe erforderlich ist. Die Bewegungsgeschwindigkeit kann durch Anpassung des delay-Werts verändert werden. Dieser einfache Aufbau eignet sich gut für Anwendungen, bei denen eine wiederholte Bewegung erforderlich ist, wie zum Beispiel in automatisierten Systemen oder animierten Objekten.</p><p>Hinweis: Das Beispiel setzt einen für 5 V geeigneten Positionsservo voraus. Ob die Versorgung über den 5V-Pin ausreicht, hängt vom Strombedarf des Servos und der Board-Versorgung ab. Auch beim Anlaufen kann der Strombedarf hoch sein. Verwende bei unzureichender Versorgung eine externe 5-V-Stromquelle mit ausreichend Strom. Verbinde deren GND mit Arduino-GND und den roten Servoanschluss mit der externen Versorgung. Der tatsächliche Winkelbereich und die zulässigen Steuerimpulse hängen vom Servo ab.</p>"
               }
             ]
           }
@@ -1335,7 +1223,7 @@
               },
               {
                 "type": "html",
-                "html": "<p>Ein Schrittmotor ist ein präziser Motor, der in <strong>diskreten</strong> (klar abgegrenzten) Schritten rotiert. Er wird häufig in Projekten verwendet, bei denen eine genaue Positionierung und Bewegung erforderlich ist, wie zum Beispiel in CNC-Maschinen, 3D-Druckern oder Kamerasteuerungen. In diesem Beispiel zeigen wir, wie ein Schrittmotor mit einem Arduino gesteuert werden kann, um den Motor eine bestimmte Anzahl von Schritten in eine Richtung zu bewegen.</p><p id=\"h.1qaz1rfs3vp4\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC / + des ULN2003-Moduls → +5 V einer externen Stromquelle mit ausreichend Strom für den Motor. Den fünfpoligen Motorstecker in die passende Buchse des Treibermoduls stecken.</p></li><li><p><strong>Schwarzes Kabel</strong>: GND / − (Schrittmotortreiber) → Minuspol der Stromquelle und GND (Arduino)</p></li><li><p><strong>Grünes Kabel</strong>: IN1 (Schrittmotortreiber) → Digitaler Pin 8 (Arduino)</p></li><li><p><strong>Gelbes Kabel</strong>: IN2 (Schrittmotortreiber) → Digitaler Pin 9 (Arduino)</p></li><li><p><strong>Blaues Kabel</strong>: IN3 (Schrittmotortreiber) → Digitaler Pin 10 (Arduino)</p></li><li><p><strong>Oranges Kabel</strong>: IN4 (Schrittmotortreiber) → Digitaler Pin 11 (Arduino)</p></li></ul><p><em>(Hinweis: Ein </em><em><strong>Treiber</strong></em><em> ist eine elektronische Schaltung, die den Motor mit dem nötigen Strom und der nötigen Spannung versorgt, da der Arduino alleine dafür nicht leistungsfähig genug ist.)</em></p><p id=\"h.1pmj6s2nqoa8\"><strong>Arduino-Code zur Steuerung des Schrittmotors:</strong></p>"
+                "html": "<p>Ein Schrittmotor ist ein präziser Motor, der in <strong>diskreten</strong> (klar abgegrenzten) Schritten rotiert. Er wird häufig eingesetzt, bei denen eine genaue Positionierung und Bewegung erforderlich ist, wie zum Beispiel in CNC-Maschinen, 3D-Druckern oder Kamerasteuerungen. In diesem Beispiel zeigen wir, wie ein Schrittmotor mit einem Arduino gesteuert werden kann, um den Motor eine bestimmte Anzahl von Schritten in eine Richtung zu bewegen.</p><p id=\"h.1qaz1rfs3vp4\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC / + des ULN2003-Moduls → +5 V einer externen Stromquelle mit ausreichend Strom für den Motor. Den fünfpoligen Motorstecker in die passende Buchse des Treibermoduls stecken.</p></li><li><p><strong>Schwarzes Kabel</strong>: GND / − (Schrittmotortreiber) → Minuspol der Stromquelle und GND (Arduino)</p></li><li><p><strong>Grünes Kabel</strong>: IN1 (Schrittmotortreiber) → Digitaler Pin 8 (Arduino)</p></li><li><p><strong>Gelbes Kabel</strong>: IN2 (Schrittmotortreiber) → Digitaler Pin 9 (Arduino)</p></li><li><p><strong>Blaues Kabel</strong>: IN3 (Schrittmotortreiber) → Digitaler Pin 10 (Arduino)</p></li><li><p><strong>Oranges Kabel</strong>: IN4 (Schrittmotortreiber) → Digitaler Pin 11 (Arduino)</p></li></ul><p><em>(Hinweis: Ein </em><em><strong>Treiber</strong></em><em> ist eine elektronische Schaltung, die den Motor mit dem nötigen Strom und der nötigen Spannung versorgt, da der Arduino alleine dafür nicht leistungsfähig genug ist.)</em></p><p id=\"h.1pmj6s2nqoa8\"><strong>Arduino-Code zur Steuerung des Schrittmotors:</strong></p>"
               },
               {
                 "type": "code",
@@ -1343,7 +1231,7 @@
               },
               {
                 "type": "html",
-                "html": "<p id=\"h.7st4isdrir24\"><strong>Funktionsweise:</strong></p><p>Die Stepper.h-Bibliothek ermöglicht es, den Schrittmotor in <strong>diskreten</strong> Schritten zu bewegen, was eine präzise Steuerung der Position erlaubt. Die Variable stepsPerRevolution enthält die angenommene Zahl der Vollschritte pro Umdrehung der Abtriebswelle. Im Beispiel sind es ungefähr 2048.</p><p>Der Schrittmotor wird über einen <strong>Treiber</strong> an die digitalen Pins 8, 9, 10 und 11 des Arduino angeschlossen. In der Setup-Funktion wird die Geschwindigkeit auf ungefähr 6 Umdrehungen pro Minute gesetzt. In der Loop-Funktion bewegt sich die Abtriebswelle abwechselnd ungefähr eine Umdrehung in eine Richtung und dann zurück, mit einer Sekunde Pause dazwischen. Die Pinreihenfolge im Stepper-Konstruktor unterscheidet sich absichtlich von der Reihenfolge IN1 bis IN4 am Treiber.</p><p>Dieses Setup eignet sich für langsame Bewegungen kleiner Modelle. Getriebespiel und mögliche Schrittverluste begrenzen die Genauigkeit. Der Motor meldet seine tatsächliche Position nicht an den Arduino zurück.</p><p>Hinweis Stromversorgung: Versorge die hier beschriebene 5-V-Motorvariante über das ULN2003-Modul aus einer externen 5-V-Stromquelle. Eine unzureichende Versorgung kann zu Schrittverlusten, Spannungseinbrüchen und Neustarts führen. GND von Netzteil, Treiber und Arduino müssen verbunden sein.</p>"
+                "html": "<p id=\"h.7st4isdrir24\"><strong>Funktionsweise:</strong></p><p>Die Stepper.h-Bibliothek ermöglicht es, den Schrittmotor in <strong>diskreten</strong> Schritten zu bewegen, was eine präzise Steuerung der Position erlaubt. Die Variable stepsPerRevolution enthält die angenommene Zahl der Vollschritte pro Umdrehung der Abtriebswelle. Im Beispiel sind es ungefähr 2048.</p><p>Der Schrittmotor wird über einen <strong>Treiber</strong> an die digitalen Pins 8, 9, 10 und 11 des Arduino angeschlossen. In der Setup-Funktion wird die Geschwindigkeit auf ungefähr 6 Umdrehungen pro Minute gesetzt. In der Loop-Funktion bewegt sich die Abtriebswelle abwechselnd ungefähr eine Umdrehung in eine Richtung und dann zurück, mit einer Sekunde Pause dazwischen. Die Pinreihenfolge im Stepper-Konstruktor unterscheidet sich absichtlich von der Reihenfolge IN1 bis IN4 am Treiber.</p><p>Dieser Aufbau eignet sich für langsame Bewegungen kleiner Modelle. Getriebespiel und mögliche Schrittverluste begrenzen die Genauigkeit. Der Motor meldet seine tatsächliche Position nicht an den Arduino zurück.</p><p>Hinweis Stromversorgung: Versorge die hier beschriebene 5-V-Motorvariante über das ULN2003-Modul aus einer externen 5-V-Stromquelle. Eine unzureichende Versorgung kann zu Schrittverlusten, Spannungseinbrüchen und Neustarts führen. GND von Netzteil, Treiber und Arduino müssen verbunden sein.</p>"
               }
             ]
           }
@@ -1360,7 +1248,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Ein Piezo-Lautsprecher ist ein einfaches elektronisches Bauteil, das Töne erzeugen kann, wenn es mit einem Signal angesteuert wird. Er wird häufig in Projekten verwendet, um akustische Signale, Alarme oder einfache Melodien wiederzugeben. Dieses Beispiel zeigt, wie ein Piezo-Lautsprecher mit einem Arduino gesteuert werden kann, um eine Tonsequenz zu erzeugen.</p><p id=\"h.qufvs7kh10oj\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC (Piezo-Lautsprecher) → Digitaler Pin 8 (Arduino)</p></li><li><p><strong>Schwarzes Kabel</strong>: GND (Piezo-Lautsprecher) → GND (Arduino)</p></li></ul><p id=\"h.u1tlvywj0u9t\"><strong>Arduino-Code zur Steuerung des Piezo-Lautsprechers:</strong></p>"
+                "html": "<p>Ein Piezo-Lautsprecher ist ein einfaches elektronisches Bauteil, das Töne erzeugen kann, wenn es mit einem Signal angesteuert wird. Er wird häufig eingesetzt, um akustische Signale, Alarme oder einfache Melodien wiederzugeben. Dieses Beispiel zeigt, wie ein Piezo-Lautsprecher mit einem Arduino gesteuert werden kann, um eine Tonsequenz zu erzeugen.</p><p id=\"h.qufvs7kh10oj\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: + (Piezo-Lautsprecher) → Digitaler Pin 8 (Arduino)</p></li><li><p><strong>Schwarzes Kabel</strong>: − (Piezo-Lautsprecher) → GND (Arduino)</p></li></ul><p id=\"h.u1tlvywj0u9t\"><strong>Arduino-Code zur Steuerung des Piezo-Lautsprechers:</strong></p>"
               },
               {
                 "type": "code",
@@ -1368,7 +1256,7 @@
               },
               {
                 "type": "html",
-                "html": "<p id=\"h.72pb5g10xeq8\"><strong>Funktionsweise:</strong></p><p>In diesem Beispiel erzeugt der Arduino über den digitalen Pin 8 einen Ton von 1000 Hz, der für 500 ms (Millisekunden) abgespielt wird, gefolgt von einer 500 ms langen Pause, bevor der Ton erneut abgespielt wird.</p><p>Die tone()-Funktion erzeugt eine rechteckige Wellenform mit einer bestimmten Frequenz (hier 1000 Hz), die den Piezo-Lautsprecher in Schwingung versetzt und so einen hörbaren Ton erzeugt. Die noTone()-Funktion stoppt den Ton. Der Lautsprecher ist direkt an einen digitalen Pin des Arduino angeschlossen, wodurch einfache Töne erzeugt werden können.</p><p>Dieses Setup eignet sich gut für Projekte, bei denen akustische Signale als Feedback oder Alarm benötigt werden, wie beispielsweise in einfachen Alarmanlagen, Spielen oder interaktiven Installationen. Der Piezo-Lautsprecher kann durch Ändern der Frequenz oder Dauer der Töne vielfältig eingesetzt werden.</p><br/><p>MP3-Modul für normalen Lautsprecher: <a href=\"https://wiki.dfrobot.com/dfr0534/docs/19890\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://wiki.dfrobot.com/dfr0534/docs/19890</u></a> </p>"
+                "html": "<p id=\"h.72pb5g10xeq8\"><strong>Funktionsweise:</strong></p><p>In diesem Beispiel erzeugt der Arduino über den digitalen Pin 8 einen Ton von 1000 Hz, der für 500 ms (Millisekunden) abgespielt wird, gefolgt von einer 500 ms langen Pause, bevor der Ton erneut abgespielt wird.</p><p>Die tone()-Funktion erzeugt eine rechteckige Wellenform mit einer bestimmten Frequenz (hier 1000 Hz), die den Piezo-Lautsprecher in Schwingung versetzt und so einen hörbaren Ton erzeugt. Die noTone()-Funktion stoppt den Ton. Der Lautsprecher ist direkt an einen digitalen Pin des Arduino angeschlossen, wodurch einfache Töne erzeugt werden können.</p><p>Dieser Aufbau eignet sich gut für Anwendungen, bei denen akustische Signale als Feedback oder Alarm benötigt werden, wie beispielsweise in einfachen Alarmanlagen, Spielen oder interaktiven Installationen. Der Piezo-Lautsprecher kann durch Ändern der Frequenz oder Dauer der Töne vielfältig eingesetzt werden.</p><br/><p>MP3-Modul für normalen Lautsprecher: <a href=\"https://wiki.dfrobot.com/dfr0534/docs/19890\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://wiki.dfrobot.com/dfr0534/docs/19890</u></a> </p>"
               }
             ]
           }
@@ -1644,7 +1532,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Ist deine Hardware korrekt aufgebaut? Es kann Sinn machen, die einzelnen Hardwarekomponenten isoliert anzuschliessen. Also zum Beispiel zuerst nur die LED, dann nur den Lichtsensor und dann nur den Taster und die Funktion dieser Teilsysteme mit einem eigenen Programm anzusteuern.</p>"
+                "html": "<p>Ist deine Hardware korrekt aufgebaut? Es kann sinnvoll sein, die einzelnen Hardwarekomponenten isoliert anzuschliessen. Also zum Beispiel zuerst nur die LED, dann nur den Lichtsensor und dann nur den Taster und die Funktion dieser Teilsysteme mit einem eigenen Programm anzusteuern.</p>"
               }
             ]
           }
@@ -1661,7 +1549,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Wenn die einzelnen Systeme wie Sensor oder LED funktionieren, aber nicht das passiert, was passieren soll, liegt der Fehler wahrscheinlich in der Programmlogik. Dann kann es Sinn machen, die Programmlogik grafisch darzustellen, z. B. mit einem Flussdiagramm.</p>"
+                "html": "<p>Wenn die einzelnen Systeme wie Sensor oder LED funktionieren, aber nicht das passiert, was passieren soll, liegt der Fehler wahrscheinlich in der Programmlogik. Dann kann es sinnvoll sein, die Programmlogik grafisch darzustellen, z. B. mit einem Flussdiagramm.</p>"
               }
             ]
           }
@@ -1708,7 +1596,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<h1 id=\"h.jgx3syvxqjl6\">SMART TEXTILES  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Arduino-kompatible Boards wie LilyPad lassen sich in Textilien einnähen. Geeignete LilyPad-Projekte können vorsichtig von Hand gewaschen werden: vorher die Batterie entfernen und vor dem Einschalten vollständig trocknen lassen. Beachte auch die Pflegehinweise der übrigen Bauteile. </strong><strong> Damit lassen sich textile Produkte entwickeln, die mit ihrer Umwelt interagieren.</strong></p>"
+                "html": "<h1 id=\"h.jgx3syvxqjl6\">Smart Textiles  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p><strong>Arduino-kompatible Boards wie LilyPad lassen sich in Textilien einnähen. Geeignete LilyPad-Arbeiten können vorsichtig von Hand gewaschen werden: vorher die Batterie entfernen und vor dem Einschalten vollständig trocknen lassen. Beachte auch die Pflegehinweise der übrigen Bauteile. </strong><strong> Damit lassen sich textile Produkte entwickeln, die mit ihrer Umwelt interagieren.</strong></p>"
               }
             ]
           }
@@ -1785,7 +1673,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Im Video unten finden sich einige Impressionen zu möglichen Projekten.</p>"
+                "html": "<p>Im Video unten finden sich einige Impressionen zu möglichen Vorhaben.</p>"
               }
             ]
           }
@@ -1820,7 +1708,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Verbinde ein LilyPad mit einer LED. Teste den Aufbau mit dem Code, den du unter Datei / Beispiele / Basics / Blink findest. Allenfalls musst du die Angaben zum Pin entsprechend deinem Aufbau anpassen. Erweitere dann Code und Aufbau um eine zweite LED.</p>"
+                "html": "<p>Verbinde ein LilyPad mit einer LED. Teste den Aufbau mit dem Code, den du unter Datei › Beispiele › 01.Basics › Blink findest. Allenfalls musst du die Angaben zum Pin entsprechend deinem Aufbau anpassen. Erweitere dann Code und Aufbau um eine zweite LED.</p>"
               }
             ]
           },
@@ -1849,7 +1737,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Verbinde ein LilyPad mit einem Buzzer. Teste den Aufbau mit dem Code, den du unter Datei / Beispiele / Digital / ToneMelody findest. Allenfalls musst du die Angaben zum Pin entsprechend deinem Aufbau anpassen. Erweitere dann den Code so, dass ein einfaches Lied abgespielt wird.</p>"
+                "html": "<p>Verbinde ein LilyPad mit einem Buzzer. Teste den Aufbau mit dem Code, den du unter Datei › Beispiele › 02.Digital › toneMelody findest. Allenfalls musst du die Angaben zum Pin entsprechend deinem Aufbau anpassen. Erweitere dann den Code so, dass ein einfaches Lied abgespielt wird.</p>"
               }
             ]
           },
@@ -1882,7 +1770,7 @@
               },
               {
                 "type": "code",
-                "code": "void setup() {\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n  pinMode(A4, INPUT);   // Setze den Pin A4 als Eingang für den Lichtsensor\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A4);  // Lese den Wert vom Lichtsensor (angeschlossen an A4)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
+                "code": "void setup() {\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n  pinMode(A4, INPUT);   // Setze den Pin A4 als Eingang für den Lichtsensor\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A4);  // Liest den Wert vom Lichtsensor (angeschlossen an A4)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
               }
             ]
           },
@@ -1968,7 +1856,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<h1 id=\"impressum-titel\">Impressum  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p>Teile von Texten und Codes auf dieser Seite wurden mit ChatGPT-4o generiert und überarbeitet. Fragen oder Rückmeldungen können an <a href=\"mailto:lukas.jordi@phbern.ch\" rel=\"noopener noreferrer\" target=\"_blank\"><u>lukas.jordi@phbern.ch</u></a> gerichtet werden.</p><p>Lukas Jordi, Juni 2026</p>"
+                "html": "<h1 id=\"impressum-titel\">Impressum  <a href=\"https://sites.google.com/view/design-und-technik/home\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Design &amp; Technik</u></a></h1><p>Teile von Texten und Codes auf dieser Seite wurden mit ChatGPT (GPT-4o) erstellt und in Co-Autorschaft mit Claude (KI-Assistent von Anthropic) überarbeitet. Fragen oder Rückmeldungen können an <a href=\"mailto:lukas.jordi@phbern.ch\" rel=\"noopener noreferrer\" target=\"_blank\"><u>lukas.jordi@phbern.ch</u></a> gerichtet werden.</p><p>Lukas Jordi, Stand Oktober 2026</p><p>Die Seite steht unter der Lizenz Creative Commons BY-NC-SA 4.0. Ausgenommen sind Bilder Dritter.</p>"
               }
             ]
           }
@@ -1986,8 +1874,8 @@
               {
                 "type": "image",
                 "src": "/assets/impressum-01.png",
-                "alt": "Impressum",
-                "href": "",
+                "alt": "Lizenz Creative Commons BY-NC-SA 4.0",
+                "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de",
                 "width": 403,
                 "height": 141
               }

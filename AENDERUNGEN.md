@@ -1,6 +1,6 @@
 # Korrekturen gegenüber der Vorlage
 
-Stand: 9. September 2026. Seitenstruktur, Aufgaben und Bilder bleiben erhalten.
+Stand: 28. Oktober 2026. Seitenstruktur, Aufgaben und Bilder bleiben erhalten.
 
 - **Home:** Arduino als Plattform aus Boards und Software beschrieben; vom Mikrocontroller auf dem Board unterschieden. [Arduino](https://www.arduino.cc/en/Main/AboutUs)
 - **Arduino einrichten:** Board und Port als Verbindungskriterium erklärt. Die frühere Unterscheidung nach Fettdruck ersetzt. [Board und Port wählen](https://support.arduino.cc/hc/en-us/articles/4406856349970-Select-board-and-port-in-Arduino-IDE)
@@ -25,14 +25,14 @@ Vollständiger Wort-für-Wort-Durchgang mit rund 90 Korrekturen: restliche „ß
 
 ## Lokale Umsetzung
 
-Die Website ist eine einzelne Datei `arduino.html`, erzeugt aus `content.json` per `build.py`. 30 Codeblöcke mit Kopierbuttons als „Codeausschnitt". Kopiert wird der reine Programmtext ohne Überschrift oder Buttontext. 29 Bilder (als WebP) und die Lato-Schrift sind eingebettet. Die Seitensuche ist als lokale Inhaltssuche implementiert. Originalvideos bleiben per Klick eingebettet. Aufklappbare Aufgaben als Karten mit runden Ecken statt der Google-Sites-Trennlinien.
+Die Website ist eine einzelne Datei `arduino.html`, erzeugt aus `content.json` per `build.py`. 30 Codeblöcke mit Kopierbuttons als „Codeausschnitt". Kopiert wird der reine Programmtext ohne Überschrift oder Buttontext. 28 Bilder (als WebP) und die Lato-Schrift sind eingebettet. Die Seitensuche ist als lokale Inhaltssuche implementiert. Originalvideos bleiben per Klick eingebettet. Aufklappbare Aufgaben als Karten mit runden Ecken statt der Google-Sites-Trennlinien.
 
-Keine Veröffentlichung und keine Änderung an der bestehenden Google-Sites-Seite.
+Veröffentlicht über GitHub Pages (https://ljuokr.github.io/arduino-einfuehrung/). Die bestehende Google-Sites-Seite bleibt unverändert.
 
 ## Ergänzende fachliche Prüfung
 
-- Den fehlenden LED-Vorwiderstand auch beim Smart-Textiles-Foto ausdrücklich benannt und die Erweiterungsaufgabe in Tinkercad ergänzt. Die Originalbilder bleiben erhalten und sind dort ohne diese Ergänzung keine vollständige Aufbauanleitung.
-- Die OLED-Voraussetzungen konkretisiert: SSD1306, I²C, 128 × 32 Pixel, Adresse 0x3C, kein separat angesteuerter Reset. [Adafruit](https://learn.adafruit.com/monochrome-oled-breakouts/arduino-library-and-examples)
+- Ein Hinweis zum LED-Vorwiderstand beim Smart-Textiles-Foto wurde am 21. September 2026 mit den übrigen Vorwiderstand-Vorschriften wieder entfernt.
+- Die OLED-Voraussetzungen konkretisiert (SSD1306, I²C, 128 × 32 Pixel). Am 28. Oktober 2026 für Einsteigende gekürzt, dafür Bibliothek und Pins am Uno (SDA = A4, SCL = A5) genannt. [Adafruit](https://learn.adafruit.com/monochrome-oled-breakouts/arduino-library-and-examples)
 - Texte, vollständige Codebeispiele und relevante Schaltungsbilder nochmals miteinander abgeglichen. Unvollständige Ergänzungsaufgaben sind absichtlich keine eigenständig lauffähigen Programme.
 
 Die Prüfung umfasst eine Quellen-, Text- und Codeprüfung. Die Arduino-Beispiele wurden nicht mit den tatsächlichen Boards und Bauteilen kompiliert oder auf Hardware ausgeführt. Die Funktionsprüfung der Website ist davon getrennt. Eine vollständige praktische Freigabe für den Unterricht setzt einen Test mit dem konkret verwendeten Material voraus.
@@ -41,5 +41,15 @@ Die Prüfung umfasst eine Quellen-, Text- und Codeprüfung. Die Arduino-Beispiel
 
 - Die Navigation verwendet direkte lokale Links. Damit hängt der Seitenwechsel nicht vom fehlerhaften Client-Router des statischen Exports ab.
 - Das mobile Menü zeigt alle Links mit ausreichendem Abstand untereinander.
-- Der Kopierbutton verwendet zuerst das synchrone Kopieren innerhalb des Klicks und zeigt die Erfolgsrückmeldung «Kopiert!».
+- Der Kopierbutton verwendet zuerst das synchrone Kopieren innerhalb des Klicks und zeigt die Erfolgsrückmeldung «Kopiert».
 - Navigation, Aufklappen und Suche mit Sprung zum passenden Abschnitt wurden im eingebauten Browser durchgeklickt.
+
+## Überarbeitung 28. Oktober 2026
+
+Review aus mehreren Perspektiven. Umgesetzt wurde nur, was für Studierende ohne Elektronikvorkenntnisse keine zusätzliche Komplexität bringt.
+
+- Kleine fachliche Korrekturen: Piezo mit + und − statt VCC, Satz zu pulseIn(), Menüpfade wie in der Arduino IDE, Touch-Sensor-Anschlüsse, CH340-Treiber nur bei Nachbauten, Servo-Fehlermeldung als «falls».
+- Sprache: «Vorhaben» statt «Projekt» im Unterrichtskontext (Seite «Vorhaben», Slug `projekte` bleibt), Seitentitel ohne Versalien, «Sinn machen», «Setup», Kommentare «Liest», Tippfehler, Strichpunkte und Ausrufezeichen.
+- Impressum: Co-Autorschaft Claude, Lizenzsatz CC BY-NC-SA 4.0 mit Ausnahme Bilder Dritter, Stand Oktober 2026.
+- Bedienung: mobiles Menü schliesst per Escape und Tipp daneben und ist geschlossen nicht mehr per Tab erreichbar, Fokus beim Seitenwechsel auf den Titel, Aufgabentitel als Überschriften, beschreibende Alt-Texte der Tinkercad-Schaltungen, aktive Seite sichtbar markiert, gut lesbare Codeschrift, grösserer Kopierbutton.
+- Seite «Erste Schritte (mit Tinkercad)» entfernt (Lukas, 28. Oktober 2026).

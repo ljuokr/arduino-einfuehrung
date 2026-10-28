@@ -177,7 +177,7 @@ def render_block(block: dict) -> str:
         return f'<div class="prose-content">{rewrite_links(block["html"])}</div>'
     if kind == "code":
         return f"""<div class="code-block"><div class="code-toolbar"><span>Codeausschnitt</span>
-<button type="button" class="copy" aria-label="Code kopieren">{icon("copy", 14)}<span aria-live="polite">Code kopieren</span></button>
+<button type="button" class="copy">{icon("copy", 14)}<span aria-live="polite">Code kopieren</span></button>
 </div><pre tabindex="0" aria-label="Arduino-Code"><code>{highlight(block["code"])}</code></pre></div>"""
     if kind == "image":
         img = (
@@ -210,7 +210,7 @@ def render_section(section: dict, slug: str) -> str:
 
     if section.get("accordion"):
         return f"""<details class="lesson" id="{anchor}" {meta}>
-<summary class="lesson-title"><span class="lesson-heading"><span>{html.escape(section["title"])}</span></span>{icon("chevron", 20, "lesson-icon")}</summary>
+<summary class="lesson-title"><h2 class="lesson-heading"><span>{html.escape(section["title"])}</span></h2>{icon("chevron", 20, "lesson-icon")}</summary>
 <div class="lesson-content">{cells}</div></details>"""
 
     classes = "content-section"
@@ -244,10 +244,16 @@ function show(slug, anchor) {
   const changed = page.hidden;
   pages.forEach(p => { p.hidden = p !== page; });
   navLinks.forEach(a => a.setAttribute('aria-current', a.hash.slice(1).split('/')[0] === page.dataset.slug ? 'page' : 'false'));
-  document.title = page.dataset.pageTitle;
-  body.classList.remove('nav-open');
+  document.title = page === pages[0] ? 'Arduino-Einführung' : page.dataset.pageTitle + ' - Arduino-Einführung';
+  setNav(false);
   // Seitenwechsel springt direkt, sonst laufen zwei Smooth-Scrolls gegeneinander.
-  if (!anchor) { window.scrollTo({ top: 0, behavior: 'instant' }); return; }
+  if (!anchor) {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    // Fokus auf den Seitentitel, damit Tastatur und Screenreader den Wechsel mitbekommen.
+    const h1 = changed && page.querySelector('h1');
+    if (h1) { h1.tabIndex = -1; h1.focus({ preventScroll: true }); }
+    return;
+  }
   const target = page.querySelector('#' + CSS.escape(anchor));
   if (!target) return;
   const lesson = target.closest('details');
@@ -255,15 +261,27 @@ function show(slug, anchor) {
   requestAnimationFrame(() => target.scrollIntoView({ block: 'start', behavior: changed ? 'instant' : 'smooth' }));
 }
 
+// Navigation mobil: schliesst auch per Escape und per Tipp neben das Menue
+const menu = document.querySelector('.mobile-menu');
+function setNav(open) {
+  body.classList.toggle('nav-open', open);
+  menu.setAttribute('aria-expanded', open);
+  menu.setAttribute('aria-label', open ? 'Navigation schliessen' : 'Navigation öffnen');
+}
+menu.onclick = e => { e.stopPropagation(); setNav(!body.classList.contains('nav-open')); };
+document.addEventListener('click', e => {
+  if (body.classList.contains('nav-open') && !e.target.closest('.site-sidebar')) setNav(false);
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && body.classList.contains('nav-open')) { setNav(false); menu.focus(); }
+});
+
 function route() {
   const [slug, anchor] = decodeURIComponent(location.hash.slice(1)).split('/');
   show(slug, anchor);
 }
 addEventListener('hashchange', route);
 route();
-
-// Navigation mobil
-document.querySelector('.mobile-menu').onclick = () => body.classList.toggle('nav-open');
 
 // Suche ueber die Abschnitte, die ohnehin schon im Dokument stehen
 const search = document.querySelector('.site-search');
@@ -322,7 +340,7 @@ document.addEventListener('click', async e => {
     try { await navigator.clipboard.writeText(code); ok = true; } catch {}
   }
   button.firstChild.outerHTML = ok ? ICON_CHECK : ICON_COPY;
-  label.textContent = ok ? 'Kopiert!' : 'Bitte Code markieren';
+  label.textContent = ok ? 'Kopiert' : 'Bitte Code markieren';
   setTimeout(() => {
     button.firstChild.outerHTML = ICON_COPY;
     label.textContent = 'Code kopieren';
@@ -366,19 +384,19 @@ def build() -> None:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(pages[0]["title"])}</title>
+<title>Arduino-Einführung</title>
 <link rel="icon" href="data:image/svg+xml;base64,{base64.b64encode((ROOT / "favicon.svg").read_bytes()).decode()}">
 <style>__STYLE__</style>
 </head>
 <body>
 <a href="#main" class="skip-link">Zum Inhalt springen</a>
-<nav class="site-sidebar" aria-label="Hauptnavigation">
+<nav class="site-sidebar" id="site-sidebar" aria-label="Hauptnavigation">
 <div class="brand"><a href="#home">ARDUINO</a></div>
 <div class="site-navigation">{nav}</div>
 </nav>
 <div class="site-main">
 <header class="utility-bar">
-<button class="mobile-menu icon-button" aria-label="Navigation &ouml;ffnen">{icon("menu", 23)}</button>
+<button class="mobile-menu icon-button" aria-label="Navigation &ouml;ffnen" aria-expanded="false" aria-controls="site-sidebar">{icon("menu", 23)}</button>
 <button class="icon-button search-toggle" aria-label="Website durchsuchen" aria-expanded="false">{icon("search")}</button>
 </header>
 <section class="site-search" aria-label="Website durchsuchen" hidden>

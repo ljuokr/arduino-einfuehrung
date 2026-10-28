@@ -1,10 +1,10 @@
 # Arduino · Design & Technik
 
-Lokale Single-File-Version von https://sites.google.com/view/arduino-einfuehrung/home für den begleiteten Workshop mit Lehrpersonen. Stand: 21. September 2026.
+Single-File-Version von https://sites.google.com/view/arduino-einfuehrung/home für den begleiteten Workshop. Live unter https://ljuokr.github.io/arduino-einfuehrung/. Stand: 28. Oktober 2026.
 
 ## Verwenden
 
-Doppelklick auf **arduino.html**. Kein Server, kein Node, kein Internet nötig. Alle 13 Seiten, 29 Bilder, 30 Codebeispiele mit Kopierbutton, Suche und Schriften stecken in der einen Datei (rund 2 MB). Nur die zwei SWITCHtube-Videos laden auf Klick von extern.
+Doppelklick auf **arduino.html**. Kein Server, kein Node, kein Internet nötig. Alle 12 Seiten, 28 Bilder, 30 Codebeispiele mit Kopierbutton, Suche und Schriften stecken in der einen Datei (rund 2 MB). Nur die zwei SWITCHtube-Videos laden auf Klick von extern.
 
 ## Bearbeiten
 
