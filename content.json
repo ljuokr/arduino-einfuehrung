@@ -263,7 +263,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf. Wenn du ein Lautsprechermodul (Lautsprecher mit eingebautem Verstärker) statt eines Piezo-Lautsprechers verwendest, schliesst du dieses an GND und 5V an, den Signalpin verbindest du mit Pin 8.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf. Wenn du ein Lautsprechermodul (Lautsprecher mit eingebautem Verstärker) statt eines Piezo-Lautsprechers verwendest, verbindest du − mit GND, + mit 5V und S mit Pin 8.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/>"
               },
               {
                 "type": "code",
@@ -1360,7 +1360,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Ein Piezo-Lautsprecher ist ein einfaches elektronisches Bauteil, das Töne erzeugen kann, wenn es mit einem Signal angesteuert wird. Er wird häufig eingesetzt, um akustische Signale, Alarme oder einfache Melodien wiederzugeben. Dieses Beispiel zeigt, wie ein Piezo-Lautsprecher mit einem Arduino gesteuert werden kann, um eine Tonsequenz zu erzeugen.</p><p id=\"h.qufvs7kh10oj\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: + (Piezo-Lautsprecher) → Digitaler Pin 8 (Arduino)</p></li><li><p><strong>Schwarzes Kabel</strong>: − (Piezo-Lautsprecher) → GND (Arduino)</p></li></ul><p id=\"h.u1tlvywj0u9t\"><strong>Arduino-Code zur Steuerung des Piezo-Lautsprechers:</strong></p>"
+                "html": "<p>Ein Piezo-Lautsprecher ist ein einfaches elektronisches Bauteil, das Töne erzeugen kann, wenn es mit einem Signal angesteuert wird. Er wird häufig eingesetzt, um akustische Signale, Alarme oder einfache Melodien wiederzugeben. Dieses Beispiel zeigt, wie ein Piezo-Lautsprecher mit einem Arduino gesteuert werden kann, um eine Tonsequenz zu erzeugen.</p><p id=\"h.qufvs7kh10oj\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: + (Piezo-Lautsprecher) → Digitaler Pin 8 (Arduino)</p></li><li><p><strong>Schwarzes Kabel</strong>: − (Piezo-Lautsprecher) → GND (Arduino)</p></li></ul><p>Ein Lautsprechermodul mit eingebautem Verstärker (z. B. SC8002B) ist lauter. Anschluss: S → Pin 8, + → 5V, − → GND. Die Lautstärke stellst du am Drehregler ein, der Code bleibt gleich.</p><p id=\"h.u1tlvywj0u9t\"><strong>Arduino-Code zur Steuerung des Piezo-Lautsprechers:</strong></p>"
               },
               {
                 "type": "code",
