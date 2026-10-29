@@ -188,6 +188,14 @@
                 "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/>"
               },
               {
+                "type": "image",
+                "src": "/assets/erste-schritte-01.png",
+                "alt": "Schaltung: LED mit dem kurzen Bein an GND und dem langen Bein an Pin 12",
+                "href": "",
+                "width": 1280,
+                "height": 570
+              },
+              {
                 "type": "code",
                 "code": "// Einfaches Blink-Programm - LED an Pin 12\n\nvoid setup() {\n  pinMode(12, OUTPUT);  // Pin 12 als Ausgang\n}\n\nvoid loop() {\n  digitalWrite(12, HIGH);  // LED ein\n  delay(500);              // 0.5 s warten\n  digitalWrite(12, LOW);   // LED aus\n  delay(500);              // 0.5 s warten\n}"
               },
@@ -198,18 +206,6 @@
               {
                 "type": "code",
                 "code": "pinMode(A0, OUTPUT);     // Pin A0 als Ausgang\ndigitalWrite(A0, HIGH);  // LED ein\ndigitalWrite(A0, LOW);   // LED aus"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "type": "image",
-                "src": "/assets/erste-schritte-01.png",
-                "alt": "Schaltung: LED mit dem kurzen Bein an GND und dem langen Bein an Pin 12",
-                "href": "",
-                "width": 1280,
-                "height": 570
               }
             ]
           }
@@ -229,24 +225,20 @@
                 "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p class=\"library-note\">Falls die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code> erscheint, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo ein und klicke auf Installieren.</p></li></ul><br/>"
               },
               {
-                "type": "code",
-                "code": "// Bewegt den Servo langsam vor und zurück.\n\n#include <Servo.h>  // Lädt die Servo-Bibliothek, damit wir Servos steuern können\n\nServo servo9;  // Erstellt einen Servo. Der Name servo9 ist frei gewählt,\n               // die 9 erinnert nur an den verwendeten Pin 9.\nint pos = 0;   // Variable für die Position (Winkel) des Servos, Startwert 0\n\nvoid setup() {                  // Wird einmal beim Start ausgeführt\n  servo9.attach(9, 500, 2500);  // Verbindet den Servo mit Pin 9\n                                // 500 und 2500: kürzeste/längste Steuerimpulslänge (Mikrosekunden)\n}\n\nvoid loop() {  // Wird immer wieder wiederholt\n\n  // vorwärts: Winkel zählt Schritt für Schritt von 0 bis 180 hoch\n  for (pos = 0; pos <= 180; pos += 1) {\n    servo9.write(pos);  // Fährt den Servo auf den aktuellen Winkel\n    delay(15);          // Wartet 15 Millisekunden, damit die Bewegung langsam wirkt\n  }\n\n  // rückwärts: Winkel zählt Schritt für Schritt von 180 zurück auf 0\n  for (pos = 180; pos >= 0; pos -= 1) {\n    servo9.write(pos);  // Fährt den Servo auf den aktuellen Winkel\n    delay(15);          // Wartet 15 Millisekunden\n  }\n}"
-              },
-              {
-                "type": "html",
-                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Verändere das Verhalten des Servos, indem du die Werte <em>Position</em> und <em>delay</em> änderst. Der hier verwendete Positionsservo wird mit Werten von 0 bis 180 angesteuert. Der tatsächliche Bewegungsbereich und die passenden Impulsgrenzen hängen vom Servo ab.</p></li></ul><br/>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
                 "type": "image",
                 "src": "/assets/erste-schritte-02.png",
                 "alt": "Schaltung: Servo mit Plus an 5V, Minus an GND und Signal an Pin 9",
                 "href": "",
                 "width": 1280,
                 "height": 543
+              },
+              {
+                "type": "code",
+                "code": "// Bewegt den Servo langsam vor und zurück.\n\n#include <Servo.h>  // Lädt die Servo-Bibliothek, damit wir Servos steuern können\n\nServo servo9;  // Erstellt einen Servo. Der Name servo9 ist frei gewählt,\n               // die 9 erinnert nur an den verwendeten Pin 9.\nint pos = 0;   // Variable für die Position (Winkel) des Servos, Startwert 0\n\nvoid setup() {                  // Wird einmal beim Start ausgeführt\n  servo9.attach(9, 500, 2500);  // Verbindet den Servo mit Pin 9\n                                // 500 und 2500: kürzeste/längste Steuerimpulslänge (Mikrosekunden)\n}\n\nvoid loop() {  // Wird immer wieder wiederholt\n\n  // vorwärts: Winkel zählt Schritt für Schritt von 0 bis 180 hoch\n  for (pos = 0; pos <= 180; pos += 1) {\n    servo9.write(pos);  // Fährt den Servo auf den aktuellen Winkel\n    delay(15);          // Wartet 15 Millisekunden, damit die Bewegung langsam wirkt\n  }\n\n  // rückwärts: Winkel zählt Schritt für Schritt von 180 zurück auf 0\n  for (pos = 180; pos >= 0; pos -= 1) {\n    servo9.write(pos);  // Fährt den Servo auf den aktuellen Winkel\n    delay(15);          // Wartet 15 Millisekunden\n  }\n}"
+              },
+              {
+                "type": "html",
+                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Verändere das Verhalten des Servos, indem du die Werte <em>Position</em> und <em>delay</em> änderst. Der hier verwendete Positionsservo wird mit Werten von 0 bis 180 angesteuert. Der tatsächliche Bewegungsbereich und die passenden Impulsgrenzen hängen vom Servo ab.</p></li></ul><br/>"
               }
             ]
           }
@@ -266,24 +258,20 @@
                 "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf. Wenn du ein Lautsprechermodul (Lautsprecher mit eingebautem Verstärker) statt eines Piezo-Lautsprechers verwendest, verbindest du − mit GND, + mit 5V und S mit Pin 8.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/>"
               },
               {
-                "type": "code",
-                "code": "// Melodie auf Pin 8\n// Notennamen und ihre Frequenz in Hz: grössere Zahl = höherer Ton\n#define G3 196\n#define A3 220\n#define B3 247\n#define C4 262\nconst int melody[] = { C4, G3, G3, A3, G3, 0,  B3, C4 };  // Tonfolge, 0 = Pause\nconst int dur[]    = { 4,  8,  8,  4,  4,  4,  4,  4  };  // Dauer pro Ton: 4 = Viertelnote, 8 = Achtel\nvoid setup() {\n  // bleibt leer - tone() braucht keine Vorbereitung\n}\nvoid loop() {\n  const int n = sizeof(melody) / sizeof(melody[0]);  // zählt die Anzahl Töne (hier 8)\n  for (int i = 0; i < n; i++) {                      // geht alle Töne durch, i = Nummer des Tons\n    int ms = 1000 / dur[i];                          // Tondauer in ms: 1000/4=250, 1000/8=125\n    // wenn keine Pause (Wert > 0): Ton melody[i] auf Pin 8 für ms Millisekunden spielen\n    if (melody[i] > 0) tone(8, melody[i], ms);\n    delay(ms * 1.30);  // etwas länger warten (130 %) gibt Lücke zwischen Noten\n    noTone(8);         // Ton sicher abschalten, auch bei Pause\n  }\n}"
-              },
-              {
-                "type": "html",
-                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Verändere die Melodie, indem du neue Töne definierst (define) oder deren Reihenfolge (melody) oder Länge (dur) änderst.</p></li><li><p>Gib den Code einer KI und bitte um eine Anpassung in eine andere Melodie.</p></li></ul>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
                 "type": "image",
                 "src": "/assets/erste-schritte-03.png",
                 "alt": "Schaltung: Piezo-Lautsprecher mit Minus an GND und Plus an Pin 8",
                 "href": "",
                 "width": 1280,
                 "height": 674
+              },
+              {
+                "type": "code",
+                "code": "// Melodie auf Pin 8\n// Notennamen und ihre Frequenz in Hz: grössere Zahl = höherer Ton\n#define G3 196\n#define A3 220\n#define B3 247\n#define C4 262\nconst int melody[] = { C4, G3, G3, A3, G3, 0,  B3, C4 };  // Tonfolge, 0 = Pause\nconst int dur[]    = { 4,  8,  8,  4,  4,  4,  4,  4  };  // Dauer pro Ton: 4 = Viertelnote, 8 = Achtel\nvoid setup() {\n  // bleibt leer - tone() braucht keine Vorbereitung\n}\nvoid loop() {\n  const int n = sizeof(melody) / sizeof(melody[0]);  // zählt die Anzahl Töne (hier 8)\n  for (int i = 0; i < n; i++) {                      // geht alle Töne durch, i = Nummer des Tons\n    int ms = 1000 / dur[i];                          // Tondauer in ms: 1000/4=250, 1000/8=125\n    // wenn keine Pause (Wert > 0): Ton melody[i] auf Pin 8 für ms Millisekunden spielen\n    if (melody[i] > 0) tone(8, melody[i], ms);\n    delay(ms * 1.30);  // etwas länger warten (130 %) gibt Lücke zwischen Noten\n    noTone(8);         // Ton sicher abschalten, auch bei Pause\n  }\n}"
+              },
+              {
+                "type": "html",
+                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Verändere die Melodie, indem du neue Töne definierst (define) oder deren Reihenfolge (melody) oder Länge (dur) änderst.</p></li><li><p>Gib den Code einer KI und bitte um eine Anpassung in eine andere Melodie.</p></li></ul>"
               }
             ]
           }
@@ -303,24 +291,20 @@
                 "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p class=\"library-note\">Auch hier musst du eine Bibliothek installieren: «Adafruit NeoPixel» (Vorgehen wie bei der Aufgabe Servo).</p></li></ul><br/><br/><br/>"
               },
               {
-                "type": "code",
-                "code": "#include <Adafruit_NeoPixel.h>                       // Bibliothek für NeoPixel laden\nAdafruit_NeoPixel pixels = Adafruit_NeoPixel(7, 2);  // 7 NeoPixel werden über Pin 2 angesteuert\n\nvoid setup() {\n  pixels.begin();  // NeoPixel startklar machen\n}\nvoid loop() {\n  // setPixelColor(Nummer, Farbe): legt für ein Pixel die Farbe fest (noch unsichtbar)\n  // Color(Rot, Grün, Blau): Mischwerte 0 bis 255, 0 = aus, 255 = volle Helligkeit\n  pixels.setPixelColor(0, pixels.Color(50, 0, 0));    // Pixel 0: rot\n  pixels.setPixelColor(1, pixels.Color(0, 50, 0));    // Pixel 1: grün\n  pixels.setPixelColor(2, pixels.Color(0, 0, 255));   // Pixel 2: blau (volle Helligkeit)\n  pixels.setPixelColor(3, pixels.Color(50, 50, 0));   // Pixel 3: rot + grün = gelb\n  pixels.setPixelColor(4, pixels.Color(0, 50, 50));   // Pixel 4: grün + blau = türkis\n  pixels.setPixelColor(5, pixels.Color(50, 0, 50));   // Pixel 5: rot + blau = violett\n  pixels.setPixelColor(6, pixels.Color(50, 50, 50));  // Pixel 6: alle gleich = weiss\n  pixels.show();                                      // schickt die Farbwerte an die NeoPixel\n\n  // delay(500);   // ausgeschaltet: würde 500 ms warten\n  // pixels.setPixelColor(0, pixels.Color(0, 50, 0));   // ausgeschaltet: Pixel 0 grün\n  // pixels.setPixelColor(1, pixels.Color(50, 0, 0));   // ausgeschaltet: Pixel 1 rot\n  // pixels.show();    // ausgeschaltet: Farben anzeigen\n  // delay(500);   // ausgeschaltet: 500 ms warten\n}"
-              },
-              {
-                "type": "html",
-                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Passe die Farben an.</p></li><li><p>Entferne die // vor den letzten 5 Zeilen. Zwei NeoPixel sollten nun blinken. Bringe auch die weiteren NeoPixel zum Blinken.</p></li></ul><br/><p>Hinweis: In jedem NeoPixel sind je eine rote, eine grüne und eine blaue LED verbaut. Die Zahlen in den Klammern nach <em>pixels.Color</em><em> </em>geben an, wie stark die jeweilige LED leuchten soll. 0 bedeutet ausgeschaltet, 255 bedeutet maximale Helligkeit je Farbe. Der erste Wert steuert die rote LED, der zweite die grüne, der dritte die blaue.</p>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
                 "type": "image",
                 "src": "/assets/erste-schritte-04.png",
                 "alt": "Schaltung: NeoPixel-Streifen mit +5V an 5V, GND an GND und DIN an Pin 2",
                 "href": "",
                 "width": 1280,
                 "height": 558
+              },
+              {
+                "type": "code",
+                "code": "#include <Adafruit_NeoPixel.h>                       // Bibliothek für NeoPixel laden\nAdafruit_NeoPixel pixels = Adafruit_NeoPixel(7, 2);  // 7 NeoPixel werden über Pin 2 angesteuert\n\nvoid setup() {\n  pixels.begin();  // NeoPixel startklar machen\n}\nvoid loop() {\n  // setPixelColor(Nummer, Farbe): legt für ein Pixel die Farbe fest (noch unsichtbar)\n  // Color(Rot, Grün, Blau): Mischwerte 0 bis 255, 0 = aus, 255 = volle Helligkeit\n  pixels.setPixelColor(0, pixels.Color(50, 0, 0));    // Pixel 0: rot\n  pixels.setPixelColor(1, pixels.Color(0, 50, 0));    // Pixel 1: grün\n  pixels.setPixelColor(2, pixels.Color(0, 0, 255));   // Pixel 2: blau (volle Helligkeit)\n  pixels.setPixelColor(3, pixels.Color(50, 50, 0));   // Pixel 3: rot + grün = gelb\n  pixels.setPixelColor(4, pixels.Color(0, 50, 50));   // Pixel 4: grün + blau = türkis\n  pixels.setPixelColor(5, pixels.Color(50, 0, 50));   // Pixel 5: rot + blau = violett\n  pixels.setPixelColor(6, pixels.Color(50, 50, 50));  // Pixel 6: alle gleich = weiss\n  pixels.show();                                      // schickt die Farbwerte an die NeoPixel\n\n  // delay(500);   // ausgeschaltet: würde 500 ms warten\n  // pixels.setPixelColor(0, pixels.Color(0, 50, 0));   // ausgeschaltet: Pixel 0 grün\n  // pixels.setPixelColor(1, pixels.Color(50, 0, 0));   // ausgeschaltet: Pixel 1 rot\n  // pixels.show();    // ausgeschaltet: Farben anzeigen\n  // delay(500);   // ausgeschaltet: 500 ms warten\n}"
+              },
+              {
+                "type": "html",
+                "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Passe die Farben an.</p></li><li><p>Entferne die // vor den letzten 5 Zeilen. Zwei NeoPixel sollten nun blinken. Bringe auch die weiteren NeoPixel zum Blinken.</p></li></ul><br/><p>Hinweis: In jedem NeoPixel sind je eine rote, eine grüne und eine blaue LED verbaut. Die Zahlen in den Klammern nach <em>pixels.Color</em><em> </em>geben an, wie stark die jeweilige LED leuchten soll. 0 bedeutet ausgeschaltet, 255 bedeutet maximale Helligkeit je Farbe. Der erste Wert steuert die rote LED, der zweite die grüne, der dritte die blaue.</p>"
               }
             ]
           }
@@ -337,7 +321,15 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino</p></li></ul><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/>"
+              },
+              {
+                "type": "image",
+                "src": "/assets/erste-schritte-05.png",
+                "alt": "Schaltung: LED an GND und Pin 11, Lichtsensor zwischen GND und A0",
+                "href": "",
+                "width": 1280,
+                "height": 647
               },
               {
                 "type": "code",
@@ -346,18 +338,6 @@
               {
                 "type": "html",
                 "html": "<p><strong>Aufgabe</strong></p><ul><li><p>Öffne den Seriellen Plotter (unter Werkzeuge) und beobachte, wie sich der Messwert verändert, wenn du deine Hand über den Lichtsensor hältst. Hier gilt: Je dunkler, desto grösser der Wert.</p></li><li><p>Verändere den Schwellenwert (250) so, dass die LED leuchtet, wenn der Lichtsensor im Schatten deiner Hand ist.</p></li></ul>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "type": "image",
-                "src": "/assets/erste-schritte-05.png",
-                "alt": "Schaltung: LED an GND und Pin 11, Lichtsensor zwischen GND und A0",
-                "href": "",
-                "width": 1280,
-                "height": 647
               }
             ]
           }
@@ -1072,7 +1052,19 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Ein Lichtsensor oder Lichtabhängiger Widerstand (LDR, Light Dependent Resistor) ist ein Widerstand, dessen Widerstandswert sich mit der Lichtintensität ändert. Er kann zum Beispiel verwendet werden, um eine LED einzuschalten, wenn es dunkel wird.</p><h3 id=\"h.j1eu2a3u3xxz\"><strong>Beispiel-Verkabelung:</strong></h3><ul><li><p><strong>Einen Anschluss des LDR</strong> → <strong>5V</strong> (Arduino)</p></li><li><p><strong>Der andere Anschluss des LDR</strong> → <strong>Analog-Pin A0</strong> (Arduino) und <strong>einen 10-kΩ-Widerstand</strong></p></li><li><p><strong>Der andere Anschluss des 10-kΩ-Widerstands</strong> → <strong>GND</strong> (Arduino)</p></li></ul><p>Zusätzlich für das Beispiel:</p><ul><li><p>Anode (langes Beinchen) der LED → 220-Ω-Vorwiderstand → Digitaler Pin 13 (Arduino)</p></li><li><p><strong>Kathode</strong> (kurzes Beinchen) der <strong>LED</strong> → <strong>GND</strong> (Arduino)</p></li></ul><h3 id=\"h.ca7x5rmyhfyq\"><strong>Arduino-Code mit LED-Steuerung:</strong></h3>"
+                "html": "<p>Ein Lichtsensor oder Lichtabhängiger Widerstand (LDR, Light Dependent Resistor) ist ein Widerstand, dessen Widerstandswert sich mit der Lichtintensität ändert. Er kann zum Beispiel verwendet werden, um eine LED einzuschalten, wenn es dunkel wird.</p><h3 id=\"h.j1eu2a3u3xxz\"><strong>Beispiel-Verkabelung:</strong></h3><ul><li><p><strong>Einen Anschluss des LDR</strong> → <strong>5V</strong> (Arduino)</p></li><li><p><strong>Der andere Anschluss des LDR</strong> → <strong>Analog-Pin A0</strong> (Arduino) und <strong>einen 10-kΩ-Widerstand</strong></p></li><li><p><strong>Der andere Anschluss des 10-kΩ-Widerstands</strong> → <strong>GND</strong> (Arduino)</p></li></ul><p>Zusätzlich für das Beispiel:</p><ul><li><p>Anode (langes Beinchen) der LED → 220-Ω-Vorwiderstand → Digitaler Pin 13 (Arduino)</p></li><li><p><strong>Kathode</strong> (kurzes Beinchen) der <strong>LED</strong> → <strong>GND</strong> (Arduino)</p></li></ul>"
+              },
+              {
+                "type": "image",
+                "src": "/assets/sensoren-05.png",
+                "alt": "Lichtsensor",
+                "href": "",
+                "width": 1166,
+                "height": 716
+              },
+              {
+                "type": "html",
+                "html": "<h3 id=\"h.ca7x5rmyhfyq\"><strong>Arduino-Code mit LED-Steuerung:</strong></h3>"
               },
               {
                 "type": "code",
@@ -1081,18 +1073,6 @@
               {
                 "type": "html",
                 "html": "<h3 id=\"h.uxo7m6gk4q24\"><strong>Erklärung:</strong></h3><ul><li><p>Der lichtabhängige Widerstand (LDR) bildet zusammen mit einem 10-kΩ-Widerstand einen Spannungsteiler. Der Punkt zwischen dem LDR und dem Widerstand wird an den analogen Eingang (A0) des Arduino angeschlossen. Abhängig von der Lichtintensität ändert sich der Widerstand des LDR, was eine Änderung der Spannung am analogen Pin bewirkt.</p></li><li><p>Wenn es dunkel ist, steigt der Widerstand des LDR, wodurch die Spannung am analogen Eingang niedriger wird. Der Code überprüft diesen Wert, und wenn er unter einem bestimmten Schwellenwert liegt (z. B. 500), schaltet er die LED ein.</p></li></ul><p>In diesem Beispiel wird die LED eingeschaltet, wenn der LDR eine geringe Lichtintensität erkennt, also wenn es dunkel wird. Sobald es wieder heller wird, geht die LED aus.</p>"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
-                "type": "image",
-                "src": "/assets/sensoren-05.png",
-                "alt": "Lichtsensor",
-                "href": "",
-                "width": 1166,
-                "height": 716
               }
             ]
           }
@@ -1881,20 +1861,16 @@
                 "html": "<p>Baue die Schaltung entsprechend dem Bild auf und lade den Code unten auf das LilyPad.  Starte dann den seriellen Monitor, den du unter Werkzeuge findest. Nun solltest du die Messwerte des Sensors in der Arduino IDE sehen. Teste, welcher Schwellenwert ideal ist, damit die interne LED aufleuchtet, sobald der Lichtsensor mit der Hand abgedeckt wird. Passe den Schwellenwert (500) entsprechend an, lade das Programm erneut hoch und teste es.</p><p><strong>Erweiterung:</strong> Verbinde zusätzlich den Buzzer mit dem Arduino und passe den Code so an, dass dieser abhängig vom Lichteinfall einen anderen Ton von sich gibt.</p><br/>"
               },
               {
-                "type": "code",
-                "code": "void setup() {\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n  pinMode(A4, INPUT);   // Setze den Pin A4 als Eingang für den Lichtsensor\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A4);  // Lies den Wert vom Lichtsensor (angeschlossen an A4)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
                 "type": "image",
                 "src": "/assets/smart-textiles-05.jpg",
                 "alt": "Aufgabe Lichtsensor",
                 "href": "",
                 "width": 1280,
                 "height": 811
+              },
+              {
+                "type": "code",
+                "code": "void setup() {\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n  pinMode(A4, INPUT);   // Setze den Pin A4 als Eingang für den Lichtsensor\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A4);  // Lies den Wert vom Lichtsensor (angeschlossen an A4)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
               }
             ]
           }
@@ -1914,20 +1890,16 @@
                 "html": "<p>Baue die Schaltung gemäss dem Bild auf und teste diese mit dem Code unten. Passe dann die Farben an und erweitere um ein zusätzliches NeoPixel.</p><br/>"
               },
               {
-                "type": "code",
-                "code": "#include <Adafruit_NeoPixel.h>\n\n// Pin-Definitionen\n#define TOUCH_PIN 9   // Pin für den Touch-Sensor\n#define PIXEL_PIN 10  // Pin für den NeoPixel\n#define NUMPIXELS 1   // Anzahl der NeoPixel (in diesem Fall 1)\n\n// Erstelle ein NeoPixel-Objekt\nAdafruit_NeoPixel pixel(NUMPIXELS, PIXEL_PIN, NEO_GRB + NEO_KHZ800);\n\nvoid setup() {\n  pinMode(TOUCH_PIN, INPUT);  // Touch-Sensor als Eingang festlegen\n  pixel.begin();              // NeoPixel starten\n  pixel.show();               // Alle Pixel ausschalten\n}\n\nvoid loop() {\n  static int currentColor = 0;\n  static bool wasTouched = false;\n  bool touched = digitalRead(TOUCH_PIN) == HIGH;  // Aktueller Berührungszustand\n\n  // nur beim Beginn einer neuen Berührung\n  if (touched && !wasTouched) {\n    // Farbe wechseln\n    currentColor = (currentColor + 1) % 6;  // nächste der 6 Farben wählen\n\n    // Farbe setzen basierend auf currentColor\n    if (currentColor == 0) {\n      pixel.setPixelColor(0, pixel.Color(255, 0, 0));  // Rot\n    } else if (currentColor == 1) {\n      pixel.setPixelColor(0, pixel.Color(0, 255, 0));  // Grün\n    } else if (currentColor == 2) {\n      pixel.setPixelColor(0, pixel.Color(0, 0, 255));  // Blau\n    } else if (currentColor == 3) {\n      pixel.setPixelColor(0, pixel.Color(255, 255, 0));  // Gelb\n    } else if (currentColor == 4) {\n      pixel.setPixelColor(0, pixel.Color(0, 255, 255));  // Cyan\n    } else if (currentColor == 5) {\n      pixel.setPixelColor(0, pixel.Color(255, 0, 255));  // Magenta\n    }\n\n    pixel.show();  // Die Farbe anzeigen\n\n  }\n  wasTouched = touched;\n}"
-              }
-            ]
-          },
-          {
-            "blocks": [
-              {
                 "type": "image",
                 "src": "/assets/smart-textiles-06.jpg",
                 "alt": "Touch-Sensor mit NeoPixel",
                 "href": "",
                 "width": 1280,
                 "height": 960
+              },
+              {
+                "type": "code",
+                "code": "#include <Adafruit_NeoPixel.h>\n\n// Pin-Definitionen\n#define TOUCH_PIN 9   // Pin für den Touch-Sensor\n#define PIXEL_PIN 10  // Pin für den NeoPixel\n#define NUMPIXELS 1   // Anzahl der NeoPixel (in diesem Fall 1)\n\n// Erstelle ein NeoPixel-Objekt\nAdafruit_NeoPixel pixel(NUMPIXELS, PIXEL_PIN, NEO_GRB + NEO_KHZ800);\n\nvoid setup() {\n  pinMode(TOUCH_PIN, INPUT);  // Touch-Sensor als Eingang festlegen\n  pixel.begin();              // NeoPixel starten\n  pixel.show();               // Alle Pixel ausschalten\n}\n\nvoid loop() {\n  static int currentColor = 0;\n  static bool wasTouched = false;\n  bool touched = digitalRead(TOUCH_PIN) == HIGH;  // Aktueller Berührungszustand\n\n  // nur beim Beginn einer neuen Berührung\n  if (touched && !wasTouched) {\n    // Farbe wechseln\n    currentColor = (currentColor + 1) % 6;  // nächste der 6 Farben wählen\n\n    // Farbe setzen basierend auf currentColor\n    if (currentColor == 0) {\n      pixel.setPixelColor(0, pixel.Color(255, 0, 0));  // Rot\n    } else if (currentColor == 1) {\n      pixel.setPixelColor(0, pixel.Color(0, 255, 0));  // Grün\n    } else if (currentColor == 2) {\n      pixel.setPixelColor(0, pixel.Color(0, 0, 255));  // Blau\n    } else if (currentColor == 3) {\n      pixel.setPixelColor(0, pixel.Color(255, 255, 0));  // Gelb\n    } else if (currentColor == 4) {\n      pixel.setPixelColor(0, pixel.Color(0, 255, 255));  // Cyan\n    } else if (currentColor == 5) {\n      pixel.setPixelColor(0, pixel.Color(255, 0, 255));  // Magenta\n    }\n\n    pixel.show();  // Die Farbe anzeigen\n\n  }\n  wasTouched = touched;\n}"
               }
             ]
           }
