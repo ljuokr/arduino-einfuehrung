@@ -335,6 +335,8 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
 
 /* --- Breadboard-Grafik --- */
 .breadboard-guide { margin: 0 0 20px; max-width: 580px; }
+.module-drawing { margin: 16px 0 20px; max-width: 460px; }
+.module-drawing svg { display: block; width: 100%; height: auto; }
 .breadboard-diagram {
   overflow-x: auto;
   background: #fff;
