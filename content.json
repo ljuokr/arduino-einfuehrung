@@ -226,7 +226,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p>Falls die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code> erscheint, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo ein und klicke auf Installieren.</p></li></ul><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p class=\"library-note\">Falls die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code> erscheint, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo ein und klicke auf Installieren.</p></li></ul><br/>"
               },
               {
                 "type": "code",
@@ -300,7 +300,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p>Auch hier wirst du wieder eine Bibliothek/Library installieren müssen (siehe Aufgabe Servo)</p></li></ul><br/><br/><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p class=\"library-note\">Auch hier musst du eine Bibliothek installieren: «Adafruit NeoPixel» (Vorgehen wie bei der Aufgabe Servo).</p></li></ul><br/><br/><br/>"
               },
               {
                 "type": "code",
@@ -416,7 +416,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Der Code passt zu einem OLED-Display SSD1306 mit 128 × 32 Pixeln (I²C). Installiere die Bibliothek «Adafruit SSD1306» und wähle bei der Rückfrage «Alle installieren».</p></li><li><p>Verbinde das Display folgendermassen: </p></li></ul><p>GND auf GND</p><p>VCC auf 5V</p><p>SCL auf A5</p><p>SDA auf A4</p><ul><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Der Code passt zu einem OLED-Display SSD1306 mit 128 × 32 Pixeln (I²C).</p></li><li><p class=\"library-note\">Installiere die Bibliothek «Adafruit SSD1306» und wähle bei der Rückfrage «Alle installieren».</p></li><li><p>Verbinde das Display folgendermassen: </p></li></ul><p>GND auf GND</p><p>VCC auf 5V</p><p>SCL auf A5</p><p>SDA auf A4</p><ul><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/><br/>"
               },
               {
                 "type": "code",
@@ -722,7 +722,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Libraries, oder Bibliotheken, sind Sammlungen von vorgefertigtem Code, welche die Programmierung erleichtern. Man kann sich das als Sammlung von Unterprogrammen vorstellen, die mit einem Befehl gestartet werden können. Ein Beispiel ist die Servo-Bibliothek (Servo.h): Statt die Steuerimpulse für den Servo selbst zu berechnen, genügt der Befehl servo.write(90);, um den Servo auf 90 Grad zu fahren.</p><br/><p>Eine Fehlermeldung wie</p><br/><p>Compilation error: Servo.h: No such file or directory</p><br/><p>deutet darauf hin, dass eine im Programmcode verwendete Library nicht installiert ist. Klicke dann auf das Bibliotheks-Icon, suche nach der Library und installiere sie.</p>"
+                "html": "<p>Libraries, oder Bibliotheken, sind Sammlungen von vorgefertigtem Code, welche die Programmierung erleichtern. Man kann sich das als Sammlung von Unterprogrammen vorstellen, die mit einem Befehl gestartet werden können. Ein Beispiel ist die Servo-Bibliothek (Servo.h): Statt die Steuerimpulse für den Servo selbst zu berechnen, genügt der Befehl servo.write(90);, um den Servo auf 90 Grad zu fahren.</p><br/><p class=\"library-note\">Eine Fehlermeldung wie <code>Compilation error: Servo.h: No such file or directory</code> deutet darauf hin, dass eine im Programmcode verwendete Library nicht installiert ist. Klicke dann auf das Bibliotheks-Icon, suche nach der Library und installiere sie.</p>"
               }
             ]
           }
