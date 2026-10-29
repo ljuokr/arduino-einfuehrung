@@ -314,7 +314,8 @@ field.oninput = () => {
     a.innerHTML = '<strong></strong><span></span>';
     a.firstChild.textContent = hit.node.dataset.title || hit.page.dataset.pageTitle;
     a.lastChild.textContent = hit.page.dataset.label;
-    a.onclick = () => { search.hidden = true; field.value = ''; };
+    // Ueber den Knopf schliessen, damit Symbol und aria-Zustand mitkommen
+    a.onclick = () => { document.querySelector('.search-toggle').click(); field.value = ''; };
     li.append(a);
     list.append(li);
   }

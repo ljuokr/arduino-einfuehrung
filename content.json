@@ -226,7 +226,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p>Falls die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code> erscheint, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo.h ein und klicke auf Installieren.</p></li></ul><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li><li><p>Falls die Fehlermeldung <code>Compilation error: Servo.h: No such file or directory</code> erscheint, musst du die Bibliothek Servo von Arduino installieren. Klicke dazu auf das Büchersymbol links, tippe Servo ein und klicke auf Installieren.</p></li></ul><br/>"
               },
               {
                 "type": "code",
@@ -441,7 +441,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Du kannst nun versuchen, weitere <a href=\"/sensoren\"><u>Sensoren</u></a> und <a href=\"/aktoren\"><u>Aktoren</u></a> einzeln oder in Kombination in Betrieb zu nehmen. Wenn du die Beispielcodes selbstständig (und nicht mit KI) zusammenführen willst, musst du den Abschnitt <a href=\"/arduino-programmieren\"><u>Programmcodes zusammenführen unter Aufbau eines Arduino-Programms</u></a> beachten.</p><br/><p>Weitere Lehrgänge finden sich hier:</p><p><a href=\"https://www.arduino.cc/en/Tutorial/BuiltInExamples\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.arduino.cc/en/Tutorial/BuiltInExamples</u></a></p><p>Erklärungen zu den Einsteigerprojekten, die in der Arduino IDE bereits enthalten sind. (EN)</p><br/><p><a href=\"https://funduino.de/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://funduino.de/</u></a><br/><a href=\"https://starthardware.org/\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://starthardware.org/</u></a> ;<a href=\"https://www.makinginderschule.ch/arduino.html\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://www.makinginderschule.ch/arduino.html</u></a></p><p><a href=\"https://starthardware.org/category/kurs/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://starthardware.org/category/kurs/</u></a> ;</p><p>Anleitungen, Lehrgänge, teilweise auch zu den Einsteigerprojekten. (DE)</p>"
+                "html": "<p>Du kannst nun versuchen, weitere <a href=\"/sensoren\"><u>Sensoren</u></a> und <a href=\"/aktoren\"><u>Aktoren</u></a> einzeln oder in Kombination in Betrieb zu nehmen. Wenn du die Beispielcodes selbstständig (und nicht mit KI) zusammenführen willst, musst du den Abschnitt <a href=\"/arduino-programmieren\"><u>Programmcodes zusammenführen unter Aufbau eines Arduino-Programms</u></a> beachten.</p><br/><p>Weitere Lehrgänge finden sich hier:</p><p><a href=\"https://www.arduino.cc/en/Tutorial/BuiltInExamples\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://www.arduino.cc/en/Tutorial/BuiltInExamples</u></a></p><p>Erklärungen zu den Einsteigerprojekten, die in der Arduino IDE bereits enthalten sind. (EN)</p><br/><p><a href=\"https://funduino.de/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://funduino.de/</u></a><br/><a href=\"https://starthardware.org/\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://starthardware.org/</u></a><br/><a href=\"https://www.makinginderschule.ch/arduino.html\" rel=\"noopener noreferrer\" target=\"_blank\"> <u>https://www.makinginderschule.ch/arduino.html</u></a></p><p><a href=\"https://starthardware.org/category/kurs/\" rel=\"noopener noreferrer\" target=\"_blank\"><u>https://starthardware.org/category/kurs/</u></a></p><p>Anleitungen, Lehrgänge, teilweise auch zu den Einsteigerprojekten. (DE)</p>"
               }
             ]
           }
@@ -756,7 +756,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Digitale Signale sind binäre Signale, die nur zwei Zustände haben: «0» (LOW) und «1» (HIGH). Diese Zustände repräsentieren typischerweise niedrige (z. B. 0 Volt) und hohe Spannungen (z. B. 5 Volt) und eignen sich für klare, eindeutige Aktionen wie das Ein- oder Ausschalten von Geräten. Beispiel: <code>digitalWrite(13, HIGH); // Schaltet Pin 13 auf HIGH (5 V)</code></p><p>Analoge Signale hingegen können einen kontinuierlichen Bereich von Werten annehmen, im Gegensatz zu den binären Zuständen digitaler Signale. Sie repräsentieren Spannungen, die stufenlos zwischen einem Minimum (z. B. 0 Volt) und einem Maximum (z. B. 5 Volt) variieren können. Diese Signale sind ideal für Anwendungen, bei denen es auf fein abgestufte Informationen ankommt, wie z. B. das Messen von Sensorwerten (Temperatur, Lichtintensität, etc.). Beispiel: <code>int sensorValue = analogRead(A0); // Liest einen analogen Wert von Pin A0</code></p>"
+                "html": "<p>Digitale Signale sind binäre Signale, die nur zwei Zustände haben: «0» (LOW) und «1» (HIGH). Diese Zustände repräsentieren typischerweise niedrige (z. B. 0 Volt) und hohe Spannungen (z. B. 5 Volt) und eignen sich für klare, eindeutige Aktionen wie das Ein- oder Ausschalten von Geräten. Beispiel: <code>digitalWrite(13, HIGH); // Schaltet Pin 13 auf HIGH (5 V)</code></p><p>Analoge Signale hingegen können einen kontinuierlichen Bereich von Werten annehmen, im Gegensatz zu den binären Zuständen digitaler Signale. Sie repräsentieren Spannungen, die stufenlos zwischen einem Minimum (z. B. 0 Volt) und einem Maximum (z. B. 5 Volt) variieren können. Diese Signale sind ideal für Anwendungen, bei denen es auf fein abgestufte Informationen ankommt, wie z. B. das Messen von Sensorwerten (Temperatur, Lichtintensität, etc.). Beispiel: <code>int sensorValue = analogRead(A0); // Lies einen analogen Wert von Pin A0</code></p>"
               }
             ]
           }
@@ -777,7 +777,7 @@
               },
               {
                 "type": "code",
-                "code": "void setup() {\n  Serial.begin(9600);  // Starte die serielle Kommunikation mit 9600 Baud\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A0);  // Liest den Wert vom Lichtsensor (angeschlossen an A0)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
+                "code": "void setup() {\n  Serial.begin(9600);  // Starte die serielle Kommunikation mit 9600 Baud\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A0);  // Lies den Wert vom Lichtsensor (angeschlossen an A0)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
               }
             ]
           }
@@ -913,7 +913,7 @@
       {
         "id": "h.3c762dca05235383_0",
         "accordion": true,
-        "title": "Projekte Zyklus 3",
+        "title": "Vorhaben Zyklus 3",
         "anchor": "h.6zrf4dkriuye",
         "cells": [
           {
@@ -1076,7 +1076,7 @@
               },
               {
                 "type": "code",
-                "code": "void setup() {\n  pinMode(A0, INPUT);   // Setze den Pin A0 als Eingang für den LDR\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A0);  // Liest den Wert des LDR\n  Serial.println(sensorValue);       // Sende den Wert des LDR über die serielle Schnittstelle\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 ms vor der nächsten Messung\n}"
+                "code": "void setup() {\n  pinMode(A0, INPUT);   // Setze den Pin A0 als Eingang für den LDR\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A0);  // Lies den Wert des LDR\n  Serial.println(sensorValue);       // Sende den Wert des LDR über die serielle Schnittstelle\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 ms vor der nächsten Messung\n}"
               },
               {
                 "type": "html",
@@ -1113,7 +1113,7 @@
               },
               {
                 "type": "code",
-                "code": "void setup() {\n  pinMode(A0, INPUT);   // Setze den Pin A0 als Eingang für die X-Achse des Joysticks\n  pinMode(A1, INPUT);   // Setze den Pin A1 als Eingang für die Y-Achse des Joysticks\n  pinMode(9, OUTPUT);   // Setze den Pin 9 als Ausgang für die erste LED\n  pinMode(10, OUTPUT);  // Setze den Pin 10 als Ausgang für die zweite LED\n}\n\nvoid loop() {\n  int xValue = analogRead(A0);  // Liest den Wert der X-Achse des Joysticks\n  int yValue = analogRead(A1);  // Liest den Wert der Y-Achse des Joysticks\n  // Konvertiere die Joystick-Werte (0-1023) in PWM-Werte (0-255)\n  int led1Brightness = map(xValue, 0, 1023, 0, 255);\n  int led2Brightness = map(yValue, 0, 1023, 0, 255);\n\n  // Steuere die LEDs entsprechend der Joystick-Position\n  analogWrite(9, led1Brightness);\n  analogWrite(10, led2Brightness);\n  delay(15);  // Warte kurz, um eine sanfte Änderung der Helligkeit zu ermöglichen\n}"
+                "code": "void setup() {\n  pinMode(A0, INPUT);   // Setze den Pin A0 als Eingang für die X-Achse des Joysticks\n  pinMode(A1, INPUT);   // Setze den Pin A1 als Eingang für die Y-Achse des Joysticks\n  pinMode(9, OUTPUT);   // Setze den Pin 9 als Ausgang für die erste LED\n  pinMode(10, OUTPUT);  // Setze den Pin 10 als Ausgang für die zweite LED\n}\n\nvoid loop() {\n  int xValue = analogRead(A0);  // Lies den Wert der X-Achse des Joysticks\n  int yValue = analogRead(A1);  // Lies den Wert der Y-Achse des Joysticks\n  // Konvertiere die Joystick-Werte (0-1023) in PWM-Werte (0-255)\n  int led1Brightness = map(xValue, 0, 1023, 0, 255);\n  int led2Brightness = map(yValue, 0, 1023, 0, 255);\n\n  // Steuere die LEDs entsprechend der Joystick-Position\n  analogWrite(9, led1Brightness);\n  analogWrite(10, led2Brightness);\n  delay(15);  // Warte kurz, um eine sanfte Änderung der Helligkeit zu ermöglichen\n}"
               },
               {
                 "type": "html",
@@ -1882,7 +1882,7 @@
               },
               {
                 "type": "code",
-                "code": "void setup() {\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n  pinMode(A4, INPUT);   // Setze den Pin A4 als Eingang für den Lichtsensor\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A4);  // Liest den Wert vom Lichtsensor (angeschlossen an A4)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
+                "code": "void setup() {\n  Serial.begin(9600);   // Starte die serielle Kommunikation mit 9600 Baud\n  pinMode(A4, INPUT);   // Setze den Pin A4 als Eingang für den Lichtsensor\n  pinMode(13, OUTPUT);  // Setze den Pin 13 als Ausgang für die LED\n}\n\nvoid loop() {\n  int sensorValue = analogRead(A4);  // Lies den Wert vom Lichtsensor (angeschlossen an A4)\n  Serial.println(sensorValue);       // Sende den Wert an den Serial Monitor und Plotter\n\n  if (sensorValue < 500) {   // Wenn es dunkel ist (Wert unter 500)\n    digitalWrite(13, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(13, LOW);  // Schalte die LED aus\n  }\n\n  delay(100);  // Warte 100 Millisekunden vor der nächsten Messung\n}"
               }
             ]
           },

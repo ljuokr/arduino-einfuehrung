@@ -49,6 +49,6 @@ Die Prüfung umfasst eine Quellen-, Text- und Codeprüfung. Die Arduino-Beispiel
 Review aus mehreren Perspektiven. Umgesetzt wurde nur, was für Studierende ohne Elektronikvorkenntnisse keine zusätzliche Komplexität bringt.
 
 - Kleine fachliche Korrekturen: Piezo mit + und − statt VCC, Satz zu pulseIn(), Menüpfade wie in der Arduino IDE, Touch-Sensor-Anschlüsse, CH340-Treiber nur bei Nachbauten, Servo-Fehlermeldung als «falls».
-- Sprache: «Vorhaben» statt «Projekt» im Unterrichtskontext (Seite «Vorhaben», Slug `projekte` bleibt), Seitentitel ohne Versalien, «Sinn machen», «Setup», Kommentare «Liest», Tippfehler, Strichpunkte und Ausrufezeichen.
+- Sprache: «Vorhaben» statt «Projekt» im Unterrichtskontext (Seite «Vorhaben», Slug `projekte` bleibt), Seitentitel ohne Versalien, «Sinn machen», «Setup», Kommentare «Lies», Tippfehler, Strichpunkte und Ausrufezeichen.
 - Impressum: Co-Autorschaft Claude, Lizenzsatz CC BY-NC-SA 4.0 mit Ausnahme Bilder Dritter, Stand Oktober 2026.
 - Bedienung: mobiles Menü schliesst per Escape und Tipp daneben und ist geschlossen nicht mehr per Tab erreichbar, Fokus beim Seitenwechsel auf den Titel, Aufgabentitel als Überschriften, beschreibende Alt-Texte der Tinkercad-Schaltungen, aktive Seite sichtbar markiert, gut lesbare Codeschrift, grösserer Kopierbutton.
