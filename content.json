@@ -1039,6 +1039,43 @@
         "gallery": false
       },
       {
+        "id": "sensor-taster",
+        "accordion": true,
+        "title": "Taster",
+        "anchor": "sensor-taster",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p>Ein Taster schliesst einen Stromkreis, solange er gedrückt wird. Er ist das einfachste Eingabeelement, zum Beispiel für einen Startknopf.</p><h3><strong>Beispiel-Verkabelung:</strong></h3><ul><li><p>Anschluss auf der einen Seite des Tasters → <strong>Digitaler Pin 2</strong> (Arduino)</p></li><li><p>Anschluss auf der anderen Seite des Tasters → <strong>GND</strong> (Arduino)</p></li></ul><p>Der Code schaltet mit <code>INPUT_PULLUP</code> einen eingebauten Widerstand ein. Darum braucht es keinen zusätzlichen Widerstand. Gedrückt liest der Arduino LOW, losgelassen HIGH.</p>"
+              },
+              {
+                "type": "image",
+                "src": "/assets/sensoren-taster.png",
+                "alt": "Schaltung: Taster mit einer Seite an Pin 2 und der anderen Seite an GND",
+                "href": "",
+                "width": 1280,
+                "height": 610
+              },
+              {
+                "type": "html",
+                "html": "<h3><strong>Arduino-Code mit LED-Steuerung:</strong></h3>"
+              },
+              {
+                "type": "code",
+                "code": "void setup() {\n  pinMode(2, INPUT_PULLUP);      // Setze den Pin 2 als Eingang mit eingebautem Widerstand\n  pinMode(LED_BUILTIN, OUTPUT);  // Setze die eingebaute LED als Ausgang\n}\n\nvoid loop() {\n  if (digitalRead(2) == LOW) {        // Wenn der Taster gedrückt ist\n    digitalWrite(LED_BUILTIN, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(LED_BUILTIN, LOW);   // Schalte die LED aus\n  }\n}"
+              },
+              {
+                "type": "html",
+                "html": "<p>Solange der Taster gedrückt ist, leuchtet die eingebaute LED (L) auf dem Board.</p>"
+              }
+            ]
+          }
+        ],
+        "gallery": false
+      },
+      {
         "id": "h.a08a762ff073fd3_33",
         "accordion": true,
         "title": "Lichtsensor",
@@ -1069,6 +1106,43 @@
               {
                 "type": "html",
                 "html": "<h3 id=\"h.uxo7m6gk4q24\"><strong>Erklärung:</strong></h3><ul><li><p>Der lichtabhängige Widerstand (LDR) bildet zusammen mit einem 10-kΩ-Widerstand einen Spannungsteiler. Der Punkt zwischen dem LDR und dem Widerstand wird an den analogen Eingang (A0) des Arduino angeschlossen. Abhängig von der Lichtintensität ändert sich der Widerstand des LDR, was eine Änderung der Spannung am analogen Pin bewirkt.</p></li><li><p>Wenn es dunkel ist, steigt der Widerstand des LDR, wodurch die Spannung am analogen Eingang niedriger wird. Der Code überprüft diesen Wert, und wenn er unter einem bestimmten Schwellenwert liegt (z. B. 500), schaltet er die LED ein.</p></li></ul><p>In diesem Beispiel wird die LED eingeschaltet, wenn der LDR eine geringe Lichtintensität erkennt, also wenn es dunkel wird. Sobald es wieder heller wird, geht die LED aus.</p>"
+              }
+            ]
+          }
+        ],
+        "gallery": false
+      },
+      {
+        "id": "sensor-potentiometer",
+        "accordion": true,
+        "title": "Potentiometer",
+        "anchor": "sensor-potentiometer",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p>Ein Potentiometer (Drehregler) ist ein verstellbarer Widerstand. Je nach Stellung liefert es am mittleren Anschluss eine Spannung zwischen 0 und 5 V. Der Arduino misst sie an einem analogen Pin als Zahl zwischen 0 und 1023.</p><h3><strong>Beispiel-Verkabelung:</strong></h3><ul><li><p>Äusserer Anschluss → <strong>5V</strong> (Arduino)</p></li><li><p>Mittlerer Anschluss (Schleifer) → <strong>Analoger Pin A0</strong> (Arduino)</p></li><li><p>Anderer äusserer Anschluss → <strong>GND</strong> (Arduino)</p></li></ul><p>Vertauschst du die beiden äusseren Anschlüsse, ändert sich nur die Drehrichtung.</p>"
+              },
+              {
+                "type": "image",
+                "src": "/assets/sensoren-potentiometer.png",
+                "alt": "Schaltung: Potentiometer mit äusseren Anschlüssen an 5V und GND, Schleifer an A0",
+                "href": "",
+                "width": 1280,
+                "height": 744
+              },
+              {
+                "type": "html",
+                "html": "<h3><strong>Arduino-Code mit LED-Steuerung:</strong></h3>"
+              },
+              {
+                "type": "code",
+                "code": "void setup() {\n  Serial.begin(9600);            // Starte die serielle Kommunikation mit 9600 Baud\n  pinMode(LED_BUILTIN, OUTPUT);  // Setze die eingebaute LED als Ausgang\n}\n\nvoid loop() {\n  int wert = analogRead(A0);        // Lies den Wert des Potentiometers (0 bis 1023)\n  Serial.println(wert);             // Sende den Wert an den seriellen Monitor\n  digitalWrite(LED_BUILTIN, HIGH);  // Schalte die LED ein\n  delay(wert);                      // Warte so lange, wie der Wert angibt\n  digitalWrite(LED_BUILTIN, LOW);   // Schalte die LED aus\n  delay(wert);\n}"
+              },
+              {
+                "type": "html",
+                "html": "<p>Drehst du am Potentiometer, blinkt die eingebaute LED schneller oder langsamer. Im seriellen Plotter (unter Werkzeuge) siehst du den Messwert als Kurve. Mit einem Potentiometer lässt sich zum Beispiel auch ein Servo steuern.</p>"
               }
             ]
           }
@@ -1123,6 +1197,43 @@
               {
                 "type": "html",
                 "html": "<h3 id=\"h.2fns28t657qr\"><strong>Erklärung:</strong></h3><p>Der Ultraschall-Distanzsensor sendet einen Ultraschallimpuls über den <strong>Trig</strong>-Pin und misst die Zeit, die der Impuls benötigt, um nach dem Reflektieren von einem Objekt zum <strong>Echo</strong>-Pin zurückzukehren. Diese Zeit wird in eine Entfernung umgerechnet.</p><ul><li><p><strong>pulseIn(10, HIGH, 30000UL)</strong>: Diese Funktion misst die Zeitspanne (in Mikrosekunden), während der Echo-Pin (Pin 10) HIGH ist. Das bedeutet, dass pulseIn() die Zeit misst, die der Ultraschallimpuls benötigt, um vom Sensor ausgesendet zu werden, von einem Objekt reflektiert zu werden und schliesslich wieder vom Sensor empfangen zu werden.</p></li></ul><p>In diesem Beispiel wird die LED heller, je näher ein Objekt am Sensor ist. Die pulseIn()-Funktion spielt hierbei eine zentrale Rolle, da sie die Zeit für die Rückkehr des Ultraschallsignals misst. Daraus berechnet der Code die Entfernung.</p><br/>"
+              }
+            ]
+          }
+        ],
+        "gallery": false
+      },
+      {
+        "id": "sensor-bewegung",
+        "accordion": true,
+        "title": "Bewegungssensor (PIR)",
+        "anchor": "sensor-bewegung",
+        "cells": [
+          {
+            "blocks": [
+              {
+                "type": "html",
+                "html": "<p>Ein Bewegungssensor (PIR-Sensor) reagiert auf die Wärme von Menschen und Tieren, die sich vor ihm bewegen. Er meldet nur «Bewegung» oder «keine Bewegung». Er eignet sich zum Beispiel für ein Objekt, das reagiert, wenn jemand vorbeigeht.</p><h3><strong>Beispiel-Verkabelung:</strong></h3><ul><li><p><strong>OUT</strong> bzw. <strong>S</strong> (Bewegungssensor) → <strong>Digitaler Pin 2</strong> (Arduino)</p></li><li><p><strong>VCC</strong> bzw. <strong>+</strong> (Bewegungssensor) → <strong>5V</strong> (Arduino)</p></li><li><p><strong>GND</strong> bzw. <strong>−</strong> (Bewegungssensor) → <strong>GND</strong> (Arduino)</p></li></ul><p>Achte auf die Beschriftung am Sensor. Die Reihenfolge der Anschlüsse ist nicht bei allen Modellen gleich. Nach dem Einschalten braucht der Sensor etwa eine Minute, bis er zuverlässig misst. Mit den zwei Drehreglern auf dem Modul stellst du die Empfindlichkeit und die Dauer des Signals ein.</p>"
+              },
+              {
+                "type": "image",
+                "src": "/assets/sensoren-pir.png",
+                "alt": "Schaltung: Bewegungssensor mit Signal an Pin 2, Plus an 5V und Minus an GND",
+                "href": "",
+                "width": 1280,
+                "height": 671
+              },
+              {
+                "type": "html",
+                "html": "<h3><strong>Arduino-Code mit LED-Steuerung:</strong></h3>"
+              },
+              {
+                "type": "code",
+                "code": "void setup() {\n  pinMode(2, INPUT);             // Setze den Pin 2 als Eingang für den Bewegungssensor\n  pinMode(LED_BUILTIN, OUTPUT);  // Setze die eingebaute LED als Ausgang\n}\n\nvoid loop() {\n  if (digitalRead(2) == HIGH) {       // Wenn eine Bewegung erkannt wird\n    digitalWrite(LED_BUILTIN, HIGH);  // Schalte die LED ein\n  } else {\n    digitalWrite(LED_BUILTIN, LOW);   // Schalte die LED aus\n  }\n}"
+              },
+              {
+                "type": "html",
+                "html": "<p>Solange der Sensor eine Bewegung meldet, leuchtet die eingebaute LED (L) auf dem Board.</p>"
               }
             ]
           }

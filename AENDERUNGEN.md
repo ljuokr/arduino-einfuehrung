@@ -52,3 +52,4 @@ Review aus mehreren Perspektiven. Umgesetzt wurde nur, was für Studierende ohne
 - Sprache: «Vorhaben» statt «Projekt» im Unterrichtskontext (Seite «Vorhaben», Slug `projekte` bleibt), Seitentitel ohne Versalien, «Sinn machen», «Setup», Kommentare «Lies», Tippfehler, Strichpunkte und Ausrufezeichen.
 - Impressum: Co-Autorschaft Claude, Lizenzsatz CC BY-NC-SA 4.0 mit Ausnahme Bilder Dritter, Stand Oktober 2026.
 - Bedienung: mobiles Menü schliesst per Escape und Tipp daneben und ist geschlossen nicht mehr per Tab erreichbar, Fokus beim Seitenwechsel auf den Titel, Aufgabentitel als Überschriften, beschreibende Alt-Texte der Tinkercad-Schaltungen, aktive Seite sichtbar markiert, gut lesbare Codeschrift, grösserer Kopierbutton.
+- Sensoren um Taster, Potentiometer und Bewegungssensor (PIR) ergänzt, je mit Tinkercad-Schaltung und Beispielcode mit der eingebauten LED (2. November 2026).
