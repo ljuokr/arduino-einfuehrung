@@ -23,6 +23,17 @@ Zwischenzeitlich waren 22 markierte Lernhilfen ergänzt. Da der Workshop begleit
 
 Vollständiger Wort-für-Wort-Durchgang mit rund 90 Korrekturen: restliche „ß" auf Schweizer Schreibweise, Anführungszeichen einheitlich «…», Grammatik- und Tippfehler (u. a. „under", „GND der Arduinos"), Durchkopplungen, NeoPixel-Schreibweise, beschreibende Alt-Texte für alle Galeriebilder. Alle 30 Codeblöcke einheitlich formatiert (2 Leerzeichen, bündige Kommentare) und die Kommentare für die Zielgruppe redigiert.
 
+## Review mit Agents (3. November 2026)
+
+Fünf Prüfungen (Studierende, Lektorat, Elektronik, Barrierefreiheit, Didaktik und Recht), sortiert durch den Prüfagenten und von Lukas entschieden.
+
+- **Fachlich:** Joystick-Pins in «Bewegte Figur» an Sensoren angeglichen. Taster mit diagonal gegenüberliegenden Beinchen. Servo ohne Impulsgrenzen. NeoPixel «wechseln die Farbe». Touch-Anschluss «OUT bzw. I/O». Ultraschall-Bereich 0-100 cm. Smart Textiles ohne Servo, erste Berührung zeigt Rot.
+- **Hinweise:** Vorwiderstand im Dauerbetrieb sinnvoll. Board-Name, Port und wohin der Code kommt. Servo-Kabelfarben, FET als Schalter, Lichtsensor-Logik, externe 5-V-Quelle.
+- **Neu nach Entscheid:** Satz zum Gestaltungsprozess, Tinkercad-Klassenanmeldung ohne E-Mail, Lizenz- und Datenschutzsatz, AliExpress nur für Kleinteile mit Hinweis zu Haftung und Inverkehrbringen.
+- **Bilder:** Hersteller- und Händlerfotos durch Fritzing-Grafiken (CC BY-SA 3.0), zwei Commons-Fotos (CC BY-SA 4.0) und eigene Zeichnungen ersetzt, Bildnachweis im Impressum. Das Bluno-Beetle-Foto ist ohne Ersatz entfernt.
+- **Sprache:** Vorhaben statt Projekt, Serieller Monitor, Bibliothek, der Arduino, Code-Kommentare im Imperativ, Grammatik.
+- **Barrierefreiheit:** Skip-Link, Fokus nach Kopieren, Suche, Ankersprung und Video, mobiles Menü per Tastatur, Kontraste, Alt-Texte, echte Überschriften, Link «Design & Technik» aus der h1 gelöst.
+
 ## Lokale Umsetzung
 
 Die Website ist eine einzelne Datei `arduino.html`, erzeugt aus `content.json` per `build.py`. 30 Codeblöcke mit Kopierbuttons als „Codeausschnitt". Kopiert wird der reine Programmtext ohne Überschrift oder Buttontext. 29 Bilder (als WebP) und die Lato-Schrift sind eingebettet. Die Seitensuche ist als lokale Inhaltssuche implementiert. Originalvideos bleiben per Klick eingebettet. Aufklappbare Aufgaben als Karten mit runden Ecken statt der Google-Sites-Trennlinien.

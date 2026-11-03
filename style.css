@@ -35,6 +35,7 @@ pre:focus-visible, summary:focus-visible {
   top: 0;
   align-self: flex-start;
   height: 100vh;
+  height: 100dvh;
   overflow-y: auto;
 }
 .brand {
@@ -103,6 +104,15 @@ pre:focus-visible, summary:focus-visible {
   text-transform: uppercase;
   margin: 0 0 20px;
 }
+.page-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 10px;
+  margin: 0 0 20px;
+}
+.page-heading h1 { margin: 0; }
+.page-heading > a,
 .prose-content h1 a {
   font-size: 12px;
   display: inline-block;
@@ -140,6 +150,7 @@ pre:focus-visible, summary:focus-visible {
 .prose-content li:has(> .library-note) { list-style: none; }
 .prose-content br + br { display: none; }
 .prose-content:has(h1) + * { margin-top: 20px; }
+main:focus { outline: none; }
 .content-section .prose-content { padding-inline: 8px; }
 .page-home .content-section:first-child,
 .page-home .content-section:nth-child(2) { margin-bottom: 64px; }
@@ -266,7 +277,7 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
 .site-search label { display: block; font-weight: 700; margin-bottom: 10px; }
 .site-search input {
   width: 100%;
-  border: 1px solid #aaa;
+  border: 1px solid #767676;
   padding: 10px 12px;
   font: inherit;
 }
@@ -404,6 +415,8 @@ figure img { display: block; width: 100%; height: auto; object-fit: contain; }
   body.nav-open .site-sidebar {
     transform: none;
     visibility: visible;
+    /* sofort sichtbar, sonst landet der Fokus beim Oeffnen im Leeren */
+    transition: transform 0.2s, visibility 0s;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.18);
   }
   [id], .lesson { scroll-margin-top: 70px; }

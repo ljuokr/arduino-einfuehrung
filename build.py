@@ -154,7 +154,7 @@ def breadboard() -> str:
             f'<circle cx="{x}" cy="{y}" r="5" fill="#fff" stroke="#495253" stroke-width="2"/>'
             for x in [48, 80, *BREADBOARD_COLUMNS]
         )
-        stroke = "#28735a" if y == 126 else "#acb7b3"
+        stroke = "#28735a" if y == 126 else "#7d8a86"
         rows += (
             f'<g><path d="M146 {y}H258 M342 {y}H454" stroke="{stroke}" stroke-width="8" '
             f'stroke-linecap="round"/>{holes}</g>'
@@ -180,11 +180,13 @@ def breadboard() -> str:
 def render_block(block: dict) -> str:
     kind = block["type"]
     if kind == "html":
-        return f'<div class="prose-content">{rewrite_links(block["html"])}</div>'
+        # Der Link «Design & Technik» gehoert nicht zum Namen der Ueberschrift
+        markup = re.sub(r'(<h1[^>]*>)(.*?)\s*(<a [^>]*>.*?</a>)</h1>', r'<div class="page-heading">\1\2</h1>\3</div>', block["html"], count=1)
+        return f'<div class="prose-content">{rewrite_links(markup)}</div>'
     if kind == "code":
         return f"""<div class="code-block"><div class="code-toolbar"><span>Codeausschnitt</span>
 <button type="button" class="copy">{icon("copy", 14)}<span aria-live="polite">Code kopieren</span></button>
-</div><pre tabindex="0" aria-label="Arduino-Code"><code>{highlight(block["code"])}</code></pre></div>"""
+</div><pre tabindex="0" role="region" aria-label="Arduino-Code"><code>{highlight(block["code"])}</code></pre></div>"""
     if kind == "image":
         img = (
             f'<img src="{embed_image(block["src"])}" alt="{html.escape(block.get("alt") or "")}" '
@@ -195,12 +197,12 @@ def render_block(block: dict) -> str:
         return f"<figure>{img}</figure>"
     if kind == "video":
         return f"""<div class="video-block"><button type="button" class="video-load" data-src="{html.escape(block["src"])}" data-title="{html.escape(block.get("title") or "")}">
-{icon("play", 30)}<span>Projektvideo abspielen</span><small>Video von SWITCHtube laden</small></button></div>"""
+{icon("play", 30)}<span>Video abspielen</span><small>Video von SWITCHtube laden</small></button></div>"""
     if kind == "didactic":
         note_id = block["id"]
         diagram = breadboard() if block.get("diagram") == "breadboard" else ""
         return f"""<aside id="{note_id}" class="didactic-note" aria-labelledby="{note_id}-title">
-<p class="didactic-title" id="{note_id}-title">{html.escape(block["title"])}</p>
+<h2 class="didactic-title" id="{note_id}-title">{html.escape(block["title"])}</h2>
 {diagram}<div class="prose-content">{rewrite_links(block["html"])}</div></aside>"""
     return ""
 
@@ -248,6 +250,7 @@ const body = document.body;
 function show(slug, anchor) {
   const page = pages.find(p => p.dataset.slug === slug) || pages[0];
   const changed = page.hidden;
+  const navWasOpen = body.classList.contains('nav-open');
   pages.forEach(p => { p.hidden = p !== page; });
   navLinks.forEach(a => a.setAttribute('aria-current', a.hash.slice(1).split('/')[0] === page.dataset.slug ? 'page' : 'false'));
   document.title = page === pages[0] ? 'Arduino-Einführung' : page.dataset.pageTitle + ' - Arduino-Einführung';
@@ -258,6 +261,7 @@ function show(slug, anchor) {
     // Fokus auf den Seitentitel, damit Tastatur und Screenreader den Wechsel mitbekommen.
     const h1 = changed && page.querySelector('h1');
     if (h1) { h1.tabIndex = -1; h1.focus({ preventScroll: true }); }
+    else if (navWasOpen) menu.focus();
     return;
   }
   const target = page.querySelector('#' + CSS.escape(anchor));
@@ -265,6 +269,10 @@ function show(slug, anchor) {
   const lesson = target.closest('details');
   if (lesson) lesson.open = true;
   requestAnimationFrame(() => target.scrollIntoView({ block: 'start', behavior: changed ? 'instant' : 'smooth' }));
+  // Fokus mitnehmen, damit Tastatur und Screenreader am Ziel weiterlesen
+  const focusTarget = target.matches('details') ? target.querySelector('summary') : target;
+  if (!focusTarget.matches('summary, a, button')) focusTarget.tabIndex = -1;
+  focusTarget.focus({ preventScroll: true });
 }
 
 // Navigation mobil: schliesst auch per Escape und per Tipp neben das Menue
@@ -273,7 +281,15 @@ function setNav(open) {
   body.classList.toggle('nav-open', open);
   menu.setAttribute('aria-expanded', open);
   menu.setAttribute('aria-label', open ? 'Navigation schliessen' : 'Navigation öffnen');
+  // Inhalt hinter dem offenen Menue ist fuer die Tastatur gesperrt
+  document.getElementById('main').inert = open;
+  document.querySelector('.site-search').inert = open;
+  if (open) navLinks[0].focus();
 }
+// Link auf die bereits offene Seite loest kein hashchange aus, darum hier schliessen
+navLinks.forEach(a => a.addEventListener('click', () => {
+  if (a.hash === location.hash && body.classList.contains('nav-open')) { setNav(false); menu.focus(); }
+}));
 menu.onclick = e => { e.stopPropagation(); setNav(!body.classList.contains('nav-open')); };
 document.addEventListener('click', e => {
   if (body.classList.contains('nav-open') && !e.target.closest('.site-sidebar')) setNav(false);
@@ -283,7 +299,11 @@ document.addEventListener('keydown', e => {
 });
 
 function route() {
-  const [slug, anchor] = decodeURIComponent(location.hash.slice(1)).split('/');
+  // Der Skip-Link ist kein Seitenwechsel
+  if (location.hash === '#main') { document.getElementById('main').focus(); return; }
+  let hash = '';
+  try { hash = decodeURIComponent(location.hash.slice(1)); } catch {}
+  const [slug, anchor] = hash.split('/');
   show(slug, anchor);
 }
 addEventListener('hashchange', route);
@@ -305,6 +325,7 @@ document.querySelector('.search-toggle').onclick = function () {
   this.setAttribute('aria-label', open ? 'Suche schliessen' : 'Website durchsuchen');
   this.innerHTML = open ? ICON_X : ICON_SEARCH;
   if (open) field.focus();
+  else this.focus();
 };
 field.oninput = () => {
   const term = field.value.toLocaleLowerCase('de').trim();
@@ -321,7 +342,13 @@ field.oninput = () => {
     a.firstChild.textContent = hit.node.dataset.title || hit.page.dataset.pageTitle;
     a.lastChild.textContent = hit.page.dataset.label;
     // Ueber den Knopf schliessen, damit Symbol und aria-Zustand mitkommen
-    a.onclick = () => { document.querySelector('.search-toggle').click(); field.value = ''; };
+    a.onclick = () => {
+      const same = a.hash === location.hash;
+      document.querySelector('.search-toggle').click();
+      field.value = '';
+      field.oninput();
+      if (same) route();
+    };
     li.append(a);
     list.append(li);
   }
@@ -343,6 +370,7 @@ document.addEventListener('click', async e => {
   field.select();
   try { ok = document.execCommand('copy'); } catch { ok = false; }
   field.remove();
+  button.focus();
   if (!ok && navigator.clipboard && isSecureContext) {
     try { await navigator.clipboard.writeText(code); ok = true; } catch {}
   }
@@ -364,6 +392,7 @@ document.addEventListener('click', e => {
   frame.allow = 'fullscreen';
   frame.allowFullscreen = true;
   button.replaceWith(frame);
+  frame.focus();
 });
 
 // Beim Drucken alles aufklappen
@@ -412,7 +441,7 @@ def build() -> None:
 <output class="search-count" hidden></output>
 <ul hidden></ul>
 </section>
-<main id="main">{body}</main>
+<main id="main" tabindex="-1">{body}</main>
 </div>
 <script>{script}</script>
 </body>
