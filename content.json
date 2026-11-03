@@ -185,7 +185,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><br/>"
+                "html": "<p><strong>Vorbereitung</strong></p><ul><li><p>Baue die Schaltung gemäss dem Bild unten auf.</p></li><li><p>Lade den Code auf das Arduino und teste diesen.</p></li></ul><p>Für kurze Versuche geht es ohne Widerstand. Soll eine LED länger oder dauernd leuchten, ist ein Vorwiderstand sinnvoll, er schont LED und Pin (siehe <a href=\"/aktoren#h.y626dblhotlw\">Aktoren › LED</a>).</p><br/>"
               },
               {
                 "type": "image",
@@ -1343,7 +1343,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Eine LED (Light Emitting Diode) ist ein einfaches, aber vielseitiges Bauteil, das vielseitig eingesetzt wird, um visuelle Signale zu geben oder Beleuchtungseffekte zu erzeugen. In diesem Beispiel zeigen wir, wie eine LED mit einem Arduino gesteuert werden kann, um sie blinken zu lassen.</p><p id=\"h.lenhvon9mnlf\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p>Rotes Kabel: Anode (langes Beinchen) der LED → 220-Ω-Vorwiderstand → Digitaler Pin 13 (Arduino)</p></li><li><p><strong>Schwarzes Kabel</strong>: Kathode (kurzes Beinchen) der LED → GND (Arduino)</p></li><li><p><strong>Widerstand: Ein 220-Ω-Vorwiderstand zwischen Pin 13 und der Anode begrenzt den Strom und schützt LED und Arduino-Pin. Bei einer externen, einzelnen LED ist dieser Widerstand erforderlich.</strong></p></li></ul><p id=\"h.fmyn0ko6xhdr\"><strong>Arduino-Code zur Steuerung der LED:</strong></p>"
+                "html": "<p>Eine LED (Light Emitting Diode) ist ein einfaches, aber vielseitiges Bauteil, das vielseitig eingesetzt wird, um visuelle Signale zu geben oder Beleuchtungseffekte zu erzeugen. In diesem Beispiel zeigen wir, wie eine LED mit einem Arduino gesteuert werden kann, um sie blinken zu lassen.</p><p id=\"h.lenhvon9mnlf\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p>Rotes Kabel: Anode (langes Beinchen) der LED → 220-Ω-Vorwiderstand → Digitaler Pin 13 (Arduino)</p></li><li><p><strong>Schwarzes Kabel</strong>: Kathode (kurzes Beinchen) der LED → GND (Arduino)</p></li><li><p><strong>Widerstand: Ein 220-Ω-Vorwiderstand zwischen Pin 13 und der Anode begrenzt den Strom und schützt LED und Arduino-Pin. Für kurze Versuche geht es auch ohne, im Dauerbetrieb ist er sinnvoll.</strong></p></li></ul><p id=\"h.fmyn0ko6xhdr\"><strong>Arduino-Code zur Steuerung der LED:</strong></p>"
               },
               {
                 "type": "code",
