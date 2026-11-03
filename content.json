@@ -991,7 +991,7 @@
               {
                 "type": "image",
                 "src": "/assets/sensoren-03.png",
-                "alt": "Joystick-Modul",
+                "alt": "Joystick-Modul mit den Anschlüssen VCC, VER, HOR, SEL und GND",
                 "href": "",
                 "width": 600,
                 "height": 750
@@ -1159,7 +1159,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>Ein <strong>Joystick</strong> ist ein Eingabegerät, das üblicherweise zwei Achsen (X und Y) hat, mit denen die Position in zwei Dimensionen erfasst wird. Er kann zum Beispiel verwendet werden, um die Helligkeit von zwei LEDs zu steuern.</p><h3 id=\"h.crjpaoto22rb\"><strong>Beispiel-Verkabelung:</strong></h3><ul><li><p><strong>VCC</strong> (Joystick) → <strong>5V</strong> (Arduino)</p></li><li><p><strong>GND</strong> (Joystick) → <strong>GND</strong> (Arduino)</p></li><li><p><strong>VRx</strong> (X-Achse des Joysticks) → <strong>Analog-Pin A0</strong> (Arduino)</p></li><li><p><strong>VRy</strong> (Y-Achse des Joysticks) → <strong>Analog-Pin A1</strong> (Arduino)</p></li></ul><p>Zusätzlich für das Beispiel:</p><ul><li><p>Anode (langes Beinchen) der LED 1 → 220-Ω-Vorwiderstand → Digitaler Pin 9 (Arduino) (PWM-Pin)</p></li><li><p><strong>Kathode</strong> (kurzes Beinchen) der <strong>LED 1</strong> → <strong>GND</strong> (Arduino)</p></li><li><p>Anode (langes Beinchen) der LED 2 → 220-Ω-Vorwiderstand → Digitaler Pin 10 (Arduino) (PWM-Pin)</p></li><li><p><strong>Kathode</strong> (kurzes Beinchen) der <strong>LED 2</strong> → <strong>GND</strong> (Arduino)</p></li></ul><br/><h3 id=\"h.qe5lh53qvcgk\"><strong>Arduino-Code zur Steuerung von zwei LEDs:</strong></h3>"
+                "html": "<p>Ein <strong>Joystick</strong> ist ein Eingabegerät, das üblicherweise zwei Achsen (X und Y) hat, mit denen die Position in zwei Dimensionen erfasst wird. Er kann zum Beispiel verwendet werden, um die Helligkeit von zwei LEDs zu steuern.</p><h3 id=\"h.crjpaoto22rb\"><strong>Beispiel-Verkabelung:</strong></h3><ul><li><p><strong>VCC</strong> (Joystick) → <strong>5V</strong> (Arduino)</p></li><li><p><strong>GND</strong> (Joystick) → <strong>GND</strong> (Arduino)</p></li><li><p><strong>VRx</strong> (X-Achse des Joysticks, auf manchen Modulen HOR) → <strong>Analog-Pin A0</strong> (Arduino)</p></li><li><p><strong>VRy</strong> (Y-Achse des Joysticks, auf manchen Modulen VER) → <strong>Analog-Pin A1</strong> (Arduino)</p></li></ul><p>Zusätzlich für das Beispiel:</p><ul><li><p>Anode (langes Beinchen) der LED 1 → 220-Ω-Vorwiderstand → Digitaler Pin 9 (Arduino) (PWM-Pin)</p></li><li><p><strong>Kathode</strong> (kurzes Beinchen) der <strong>LED 1</strong> → <strong>GND</strong> (Arduino)</p></li><li><p>Anode (langes Beinchen) der LED 2 → 220-Ω-Vorwiderstand → Digitaler Pin 10 (Arduino) (PWM-Pin)</p></li><li><p><strong>Kathode</strong> (kurzes Beinchen) der <strong>LED 2</strong> → <strong>GND</strong> (Arduino)</p></li></ul><br/><h3 id=\"h.qe5lh53qvcgk\"><strong>Arduino-Code zur Steuerung von zwei LEDs:</strong></h3>"
               },
               {
                 "type": "code",
@@ -1364,7 +1364,7 @@
             "blocks": [
               {
                 "type": "html",
-                "html": "<p>NeoPixel-LEDs sind RGB-LEDs (Rot, Grün, Blau), die einzeln adressierbar sind und mit denen sich komplexe Beleuchtungseffekte erzeugen lassen.</p><p id=\"h.jf9ot7ht82v1\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC (NeoPixel) → 5V (Arduino)</p></li><li><p><strong>Schwarzes oder braunes Kabel</strong>: GND (NeoPixel) → GND (Arduino)</p></li><li><p><strong>Grünes Kabel</strong>: DIN (NeoPixel, DataIN, nicht mit OUT verwechseln) → Digitaler Pin 2 (Arduino)</p></li></ul><p id=\"h.rh0kjjd9sulf\"><strong>Arduino-Code zur Steuerung der NeoPixel-LEDs:</strong></p>"
+                "html": "<p>NeoPixel-LEDs sind RGB-LEDs (Rot, Grün, Blau), die einzeln adressierbar sind und mit denen sich komplexe Beleuchtungseffekte erzeugen lassen.</p><p id=\"h.jf9ot7ht82v1\"><strong>Beispiel-Verkabelung:</strong></p><ul><li><p><strong>Rotes Kabel</strong>: VCC bzw. VDD oder +5V (NeoPixel) → 5V (Arduino)</p></li><li><p><strong>Schwarzes oder braunes Kabel</strong>: GND bzw. VSS (NeoPixel) → GND (Arduino)</p></li><li><p><strong>Grünes Kabel</strong>: DIN (NeoPixel, DataIN, nicht mit OUT verwechseln) → Digitaler Pin 2 (Arduino)</p></li></ul><p id=\"h.rh0kjjd9sulf\"><strong>Arduino-Code zur Steuerung der NeoPixel-LEDs:</strong></p>"
               },
               {
                 "type": "code",
