@@ -10,3 +10,6 @@ dist/
 .openai/
 tsconfig.tsbuildinfo
 next-env.d.ts
+
+# Gestaltungsvarianten, nur lokal
+layout-vorschlaege.html

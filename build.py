@@ -55,9 +55,15 @@ def embed_font(path: Path, text: str) -> str:
     options.layout_features = ["kern", "liga"]
     options.desubroutinize = True
     options.drop_tables += ["GSUB", "GPOS"]
+    options.name_IDs = ["*"]  # Copyright- und Lizenzeinträge der OFL behalten
     subsetter = Subsetter(options=options)
     subsetter.populate(text=text)
     subsetter.subset(font)
+    # Die OFL reserviert den Namen «Lato», eine veränderte Teilmenge darf ihn nicht tragen
+    for record in font["name"].names:
+        if record.nameID in (1, 3, 4, 6, 16, 18, 21):
+            alt = record.toUnicode()
+            record.string = alt.replace("Lato", "Seitenschrift")
     buf = io.BytesIO()
     font.save(buf)
     return "data:font/woff2;base64," + base64.b64encode(buf.getvalue()).decode()
@@ -160,12 +166,12 @@ def breadboard() -> str:
 <desc id="breadboard-description">Vereinfachter Ausschnitt. Pro nummerierter Reihe sind a bis e miteinander verbunden und f bis j miteinander verbunden. Zwischen e und f liegt eine trennende Mittelrille. Unterschiedliche Reihen sind getrennt. Die beiden links gezeigten Versorgungsschienen verlaufen l&auml;ngs und sind voneinander getrennt.</desc>
 <rect x="14" y="46" width="470" height="220" rx="8" fill="#fff" stroke="#a8aaad"/>
 <rect x="281" y="48" width="39" height="216" fill="#eef0f1"/>
-<g font-family="Lato, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#30383a">
+<g font-family="Seitenschrift, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#30383a">
 <text x="48" y="35" fill="#9c2424">+</text><text x="80" y="35" fill="#1b5390">&minus;</text>{labels}{numbers}</g>
 <path d="M48 74V249" stroke="#a72f2f" stroke-width="5"/>
 <path d="M80 74V249" stroke="#245b98" stroke-width="5"/>{rows}
 <path d="M300 275V290" stroke="#647074"/>
-<text x="300" y="307" font-family="Lato, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#30383a">Mittelrille: keine Verbindung</text>
+<text x="300" y="307" font-family="Seitenschrift, Arial, sans-serif" font-size="18" text-anchor="middle" fill="#30383a">Mittelrille: keine Verbindung</text>
 </svg></div>
 <figcaption>Vereinfachter Ausschnitt: Die Linien zeigen die Kontakte im Innern. Die seitlichen Schienen k&ouml;nnen je nach Breadboard unterbrochen sein.</figcaption>
 </figure>"""
@@ -416,9 +422,9 @@ def build() -> None:
     text = re.sub(r"<[^>]+>", " ", page) + "".join(chr(c) for c in range(32, 127))
     style = STYLE.read_text().replace(
         "/* Arduino-Einfuehrung",
-        "@font-face{font-family:Lato;font-weight:400;font-style:normal;font-display:swap;"
+        "@font-face{font-family:Seitenschrift;font-weight:400;font-style:normal;font-display:swap;"
         f'src:url("{embed_font(FONTS / "Lato-Regular.ttf", text)}") format("woff2")}}\n'
-        "@font-face{font-family:Lato;font-weight:700 900;font-style:normal;font-display:swap;"
+        "@font-face{font-family:Seitenschrift;font-weight:700 900;font-style:normal;font-display:swap;"
         f'src:url("{embed_font(FONTS / "Lato-Bold.ttf", text)}") format("woff2")}}\n'
         "/* Arduino-Einfuehrung",
         1,
